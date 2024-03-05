@@ -1,0 +1,97 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kristi&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-variation-settings:"slnt" 0;
+  @apply text-secondary;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #B52B33 !important;
+}
+.swiper-pagination-bullet {
+  width:30px !important;
+  height:30px !important;
+  margin:0 10px !important;
+  border:2px solid white;
+}
+.swiper-pagination {
+  bottom:25px !important;
+
+}
+.contain {
+  @apply !px-[5%] mx-auto 
+}
+.contain-80 {
+  @apply px-[8%] mx-auto 
+}
+
+.kristi-regular {
+  font-family: "Kristi", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.active-head {
+  @apply text-primary
+}
+.cent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.choose_us{
+  width: 100%;
+  aspect-ratio: 1;
+  background-repeat: no-repeat;
+  background-image: url('./assets/choose-us.svg');
+}
+.building-icon-big{
+  width: 70px;
+  height: 75px;
+  background-repeat: no-repeat;
+  background-image: url('./assets/building.svg');
+}
+.building-icon{
+  width: 40px;
+  height: 45px;
+  background-repeat: no-repeat;
+  background-image: url('./assets/building.svg');
+}
+.bed-icon{
+  width: 60px;
+  aspect-ratio: 1;
+  background-repeat: no-repeat;
+  background-image: url('./assets/bed.svg');
+}
+.credit-icon{
+  width: 60px;
+  height: 54px;
+  background-repeat: no-repeat;
+  background-image: url('./assets/credit.svg');
+}
+.table-icon{
+  width: 85px;
+  height: 74px;
+  background-repeat: no-repeat;
+  background-image: url('./assets/table.svg');
+}
+.tec-bac{
+  width: 100%;
+  aspect-ratio: 1439/1036;
+  background-repeat: no-repeat;
+  background-image: url('./assets/tec-background.svg');
+}
+.log{
+  width: 50px;
+  aspect-ratio: 1;
+  background-repeat: no-repeat;
+  background-image: url('./assets/log.svg');
+  @apply maxmd:w-[30px]
+}

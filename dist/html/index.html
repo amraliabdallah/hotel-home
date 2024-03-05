@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="../output.css" rel="stylesheet">
+    <link href="../assets/logo.jpg" rel="icon">
+    <title>hotelxml</title><link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" ></script>
+  </head>
+  <body class="text-[#393939] ">
+    <header class=" w-full fixed top-0  text-white text-lg  bg-no-repeat bg-cover bg-center z-50 bg-transparent" id="target">
+      <div class="  w-full ">
+        <div class="  flex justify-between items-center contain   py-2  gap-[3%]" x-data="{sideBar:true,isMobile: window.innerWidth &lt; 1024 }" x-init="sideBar = (window.innerWidth &gt; 1024)">
+          <div class="col-span-1  "> 
+            <div class="  flex justify-center h-[86px] maxxl:h-[64] maxlg:h-[34px] w-max"><img class="  h-[86px] maxxl:h-[64] maxlg:h-[34px]" src="../assets/logo.png" alt=""></div>
+          </div>
+          <div class="maxlg:fixed rtl:right-0 ltr:left-0 maxlg:top-0 maxlg:min-w-[280px] maxlg:pt-[60px] lg:flex items-center maxlg:bg-secondary maxlg:px-[16px] maxlg:h-screen maxlg:min-h-screen maxlg:text-white gap-[3%]" @click.away="isMobile? sideBar=false :''" x-show="sideBar">
+            <nav class="flex justify-between   gap-7 maxlg:flex-col maxlg:items-center min-w-max"><a href="http://" target="_blank" rel="noopener noreferrer"> 
+                <h5>Home</h5></a><a href="http://" target="_blank" rel="noopener noreferrer"> 
+                <h5>About Us</h5></a><a href="http://" target="_blank" rel="noopener noreferrer"> 
+                <h5>Services  </h5></a><a href="http://" target="_blank" rel="noopener noreferrer"> 
+                <h5>Technology </h5></a><a href="http://" target="_blank" rel="noopener noreferrer"> 
+                <h5>  Contact Us</h5></a></nav>
+            <div class="flex maxlg:flex-col justify-center items-center maxlg:w-full w-max gap-6 py-4 text-lg maxlg:mt-[40px]">
+              <button class="border-red-500 border rounded-full p-2 w-[91px] h-[33px] cent" type="button"> LogIn</button>
+              <button class="bg-red-500 border-red-500 border rounded-full p-2 w-[147px] h-[33px] cent" type="button"> Register B2B</button>
+            </div>
+          </div>
+          <div class=" lg:hidden flex justify-center w-max gap-6 py-4 text-lg ">
+            <button class="border-white border rounded-lg p-2  cent" type="button" x-on:click="sideBar=true"><i class="fa-solid fa-bars text-white"></i></button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="w-full  lg:aspect-[2/1]">
+      <div class="swiper mainSwiper h-full w-full">
+        <div class="swiper-wrapper h-full w-full">
+          <div class="swiper-slide !h-full">
+            <div class="bg-no-repeat bg-cover bg-center h-full" style="background-image: url('../assets/hero-bac.jpg');">
+              <div class="w-full  bg-[#071A37E5]">
+                <div class="w-full flex maxlg:flex-col maxlg:gap-[30px] justify-between contain py-[8%] maxlg:py-20 ">
+                  <div class="w-full ">
+                    <h2 class="kristi-regular text-third text-[117.2px] maxsm:text-[80px] leading-[146.5px]">welcome</h2>
+                    <h2 class="text-third font-bold text-[52px] maxsm:text-[30px]">To Hotelsxml.com</h2>
+                    <h2 class="text-fourth font-medium text-[34px] maxsm:text-[24px] mt-8">B2B Hotels online network </h2>
+                    <h2 class="text-white font-medium max-w-[471px] text-xl maxsm:text-base mt-5">Special price, instant confirmation of bookings, and 24/7 support to stay comfortable with us!</h2>
+                    <div class="  mx-[50px] maxsm:mx-0  flex items-center mt-14 w-full"><a class="maxsm:mx-auto inline-flex items-center justify-center px-8 maxsm:px-3 py-3 text-base font-bold  text-white bg-fifth rounded-full  hover:opacity-70 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-fifth" href="#">GET STARTED</a></div>
+                  </div>
+                  <div class="w-full flex items-center py-[5%] maxlg:px-[5%] maxlg:hidden">
+                    <div class="w-[40%] translate-y-[-5%] z-[10]">
+                      <div class="relative w-[100%] translate-x-[20%] z-[10] aspect-square border-[3px] border-white rounded-full"><img class="w-full aspect-square rounded-full" src="../assets/tec.jpg" alt=""><span class="absolute top-[10%] left-[-20%] inline-flex items-center justify-center px-8 maxsm:px-3  py-1 maxsm:py-[1px]  text-sm maxsm:text-[10px] font-bold   text-white bg-[#3C20C8] rounded-full md:w-auto  focus:outline-none focus:ring-2 focus:ring-offset-2 ">Special Rates</span><span class="absolute top-[30%] maxsm:top-[35%] left-[-35%] inline-flex items-center justify-center px-8 maxsm:px-3  py-1 maxsm:py-[1px] text-sm maxsm:text-[10px] font-bold   bg-[#EDD754] rounded-full md:w-auto  focus:outline-none focus:ring-2 focus:ring-offset-2 ">Easy to Use</span></div>
+                      <div class="relative w-[58%] translate-x-[140%] translate-y-[-45%] z-[20] aspect-square border-[3px] border-white rounded-full"><img class="w-full aspect-square rounded-full" src="../assets/tec.jpg" alt=""><span class="absolute   bottom-[25%] left-[-50%] inline-flex items-center justify-center w-full px-2 py-1 text-sm  maxsm:text-[8px]  maxsm:text-third text-white font-black">Tax Include</span><span class="absolute bottom-[10%] left-[-40%]  inline-flex items-center justify-center w-full px-2 py-1 text-sm  maxsm:text-[8px] text-white  font-black">Search Tools</span></div>
+                    </div>
+                    <div class="relative w-[60%] aspect-square border-[3px] border-white rounded-full"><img class="w-full aspect-square rounded-full" src="../assets/tec.jpg" alt=""><span class="absolute top-10 right-0 maxsm:right-[-10px] inline-flex items-center justify-center  px-8 maxsm:px-3  maxsm:py-[1px] py-1  text-sm maxsm:text-[10px] font-bold   text-[#3C20C8] bg-white rounded-full md:w-auto  focus:outline-none focus:ring-2 focus:ring-offset-2 ">24/7 Support</span><span class="absolute top-[25%] maxsm:top-20 right-[-40px] inline-flex items-center justify-center  px-8 maxsm:px-3 py-1 maxsm:py-[1px] text-sm maxsm:text-[10px] font-bold  text-white bg-[#FF735A] rounded-full w-auto  focus:outline-none focus:ring-2 focus:ring-offset-2 ">modern Filters</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide !h-full">
+            <div class="bg-no-repeat bg-cover bg-center " style="background-image: url('../assets/hero-bac.jpg');">
+              <div class="w-full  bg-[#071A37E5]">
+                <div class="w-full flex maxlg:flex-col maxlg:gap-[30px] justify-between contain py-[8%] maxlg:py-20 ">
+                  <div class="w-full ">
+                    <h2 class="kristi-regular text-third text-[117.2px] maxsm:text-[80px] leading-[146.5px]">welcome</h2>
+                    <h2 class="text-third font-bold text-[52px] maxsm:text-[30px]">To Hotelsxml.com</h2>
+                    <h2 class="text-white font-medium max-w-[471px] text-xl maxsm:text-base mt-5">Our partners are present everywhere to serve you, more than 2000+ destinations, and 50+ partners in tourism services with one click.</h2>
+                    <div class="  mx-[50px] maxsm:mx-0  flex items-center mt-14 w-full"><a class="maxsm:mx-auto inline-flex items-center justify-center px-8 maxsm:px-3 py-3 text-base font-bold  text-white bg-fifth rounded-full  hover:opacity-70 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-fifth" href="#">GET STARTED</a></div>
+                  </div>
+                  <div class="w-full flex items-center py-[5%] maxlg:px-[5%] maxlg:hidden">
+                    <div class="relative w-full aspect-[1/.64] rounded-xl"><img class="w-full h-full rounded-xl" src="../assets/partner.png" alt=""></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide !h-full">
+            <div class="bg-no-repeat bg-cover bg-center " style="background-image: url('../assets/hero-bac.jpg');">
+              <div class="w-full  bg-[#071A37E5]">
+                <div class="w-full flex maxlg:flex-col maxlg:gap-[30px] justify-between contain py-[8%] maxlg:py-20 ">
+                  <div class="w-full ">
+                    <h2 class="kristi-regular text-third text-[117.2px] maxsm:text-[80px] leading-[146.5px]">welcome</h2>
+                    <h2 class="text-third font-bold text-[52px] maxsm:text-[30px]">To Hotelsxml.com</h2>
+                    <h2 class="text-white font-medium max-w-[471px] text-xl maxsm:text-base mt-5">Modern and sophisticated system, Extensive database with lots of hotels around the world. and Secure login and reliable system</h2>
+                    <div class="  mx-[50px] maxsm:mx-0  flex items-center mt-14 w-full"><a class="maxsm:mx-auto inline-flex items-center justify-center px-8 maxsm:px-3 py-3 text-base font-bold  text-white bg-fifth rounded-full  hover:opacity-70 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-fifth" href="#">GET STARTED</a></div>
+                  </div>
+                  <div class="w-full flex items-center justify-end py-[5%] maxlg:px-[5%] maxlg:hidden">
+                    <div class="relative w-[63%]  rounded-full"><img class="w-full aspect-square rounded-full" src="../assets/all.png" alt=""></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="w-full h-5 bg-third"></div>
+    </section>
+    <section class="  py-[8%]  maxlg:py-20 bg-white w-full Statistics">
+      <div class=" w-full contain-80  ">
+        <div class=" text-center">
+          <h3 class="font-bold text-5xl  uppercase">Our Hotel <span class="text-primary">NETWORK</span></h3>
+          <div class="my-6 text-xl">
+            <p>A hotel booking network designed for travel agents and hotel suppliers, to enable our partners to book rooms by Hotelsxml.com</p>
+            <p>Our vision is to build a business with suppliers, agents, and hotels to provide the best prices and services. And maintain a long-term relationship with them to develop partnerships together.</p>
+          </div>
+        </div>
+        <div class="grid gap-[4%] grid-cols-4 maxlg:grid-cols-2 maxsm:grid-cols-1 font-bold  mt-10">
+          <div class="border-2 border-white relative bg-[#DFEBFE] rounded-[25px] ml-10 text-center">
+            <div class="border-[3.26px] border-white flex items-end justify-center rounded-full bg-[#2D5898] !min-w-[50px] !aspect-square mx-2 absolute top-[30%] left-[-40px]">
+              <div class="building-icon"></div>
+            </div>
+            <div class="  p-[10%] text-[21px] font-medium ">
+               More <span class="text-primary font-bold">1 million </span><br><span class="text-primary font-bold"> Hotels</span> ,Resort<br/> and Apartments</div>
+          </div>
+          <div class="border-2 border-white relative bg-[#DFEBFE] rounded-[25px] ml-10 ">
+            <div class="border-[3.26px] border-white flex items-end justify-center rounded-full bg-[#2D5898] !min-w-[50px] !aspect-square mx-2 absolute top-[30%]  left-[-40px]">
+              <div class="building-icon"></div>
+            </div>
+            <div class=" text-center p-[10%] maxmd:p-[5%] text-[20px] font-medium cards"> <span class="text-[33.57px] ">+</span><span class="text-[33.57px] num" data-goal="2000">0</span>
+              <p class="text-primary "> Destinations</p>
+            </div>
+          </div>
+          <div class="border-2 border-white relative bg-[#DFEBFE] rounded-[25px] ml-10 ">
+            <div class="border-[3.26px] border-white flex items-end justify-center rounded-full bg-[#2D5898] !min-w-[50px] !aspect-square mx-2 absolute top-[30%]  left-[-40px]">
+              <div class="building-icon"></div>
+            </div>
+            <div class=" text-center p-[10%] maxmd:p-[5%] text-[20px] font-medium cards"> <span class="text-[33.57px] ">+</span><span class="text-[33.57px] num" data-goal="40">0</span>
+              <p class="text-primary ">Office &Partners</p>
+            </div>
+          </div>
+          <div class="border-2 border-white relative bg-[#DFEBFE] rounded-[25px] ml-10 ">
+            <div class="border-[3.26px] border-white flex items-end justify-center rounded-full bg-[#2D5898] !min-w-[50px] !aspect-square mx-2 absolute top-[30%]  left-[-40px]">
+              <div class="building-icon"></div>
+            </div>
+            <div class=" text-center p-[10%] maxmd:p-[5%] text-[20px] font-medium cards"> <span class="text-[33.57px] ">+</span><span class="text-[33.57px] num" data-goal="110">0</span>
+              <p class="text-primary ">suppliers & Dmc</p>
+            </div>
+          </div>
+        </div>
+        <div class="pt-32">    
+          <div class=" font-bold swiper  mySwiper pt-10">
+            <div class="swiper-wrapper"> 
+              <div class="swiper-slide bg-white  !h-auto">
+                <div class="cent w-full h-full"><img class="w-fit h-[80px]" src="../assets/IMG-20240303-WA0001.jpg" alt=""></div>
+              </div>
+              <div class="swiper-slide bg-white  !h-auto">
+                <div class="cent w-full h-full"><img class="w-fit h-[80px]" src="../assets/IMG-20240303-WA0002.jpg" alt=""></div>
+              </div>
+              <div class="swiper-slide bg-white  !h-auto">
+                <div class="cent w-full h-full"><img class="w-fit h-[80px]" src="../assets/IMG-20240303-WA0003.jpg" alt=""></div>
+              </div>
+              <div class="swiper-slide bg-white  !h-auto">
+                <div class="cent w-full h-full"><img class="w-fit h-[80px]" src="../assets/IMG-20240303-WA0004.jpg" alt=""></div>
+              </div>
+              <div class="swiper-slide bg-white  !h-auto">
+                <div class="cent w-full h-full"><img class="w-fit h-[80px]" src="../assets/IMG-20240303-WA0005.jpg" alt=""></div>
+              </div>
+              <div class="swiper-slide bg-white  !h-auto">
+                <div class="cent w-full h-full"><img class="w-fit h-[80px]" src="../assets/IMG-20240303-WA0006.jpg" alt=""></div>
+              </div>
+              <div class="swiper-slide bg-white  !h-auto">
+                <div class="cent w-full h-full"><img class="w-fit h-[80px]" src="../assets/IMG-20240303-WA0007.jpg" alt=""></div>
+              </div>
+              <div class="swiper-slide bg-white  !h-auto">
+                <div class="cent w-full h-full"><img class="w-fit h-[80px]" src="../assets/IMG-20240303-WA0008.jpg" alt=""></div>
+              </div>
+              <div class="swiper-slide bg-white  !h-auto">
+                <div class="cent w-full h-full"><img class="w-fit h-[80px]" src="../assets/IMG-20240303-WA0010.jpg" alt=""></div>
+              </div>
+              <div class="swiper-slide bg-white  !h-auto">
+                <div class="cent w-full h-full"><img class="w-fit h-[80px]" src="../assets/IMG-20240303-WA0011.jpg" alt=""></div>
+              </div>
+              <div class="swiper-slide bg-white  !h-auto">
+                <div class="cent w-full h-full"><img class="w-fit h-[80px]" src="../assets/IMG-20240303-WA0012.jpg" alt=""></div>
+              </div>
+              <div class="swiper-slide bg-white  !h-auto">
+                <div class="cent w-full h-full"><img class="w-fit h-[80px]" src="../assets/IMG-20240303-WA0013.jpg" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pt-10">    
+          <div class=" font-bold swiper  mySwiper pt-10">
+            <div class="swiper-wrapper"> 
+              <div class="swiper-slide bg-white  !h-auto">
+                <div class="cent w-full h-full"><img class="w-fit h-[80px]" src="../assets/IMG-20240303-WA0015.jpg" alt=""></div>
+              </div>
+              <div class="swiper-slide bg-white  !h-auto">
+                <div class="cent w-full h-full"><img class="w-fit h-[80px]" src="../assets/IMG-20240303-WA0016.jpg" alt=""></div>
+              </div>
+              <div class="swiper-slide bg-white  !h-auto">
+                <div class="cent w-full h-full"><img class="w-fit h-[80px]" src="../assets/IMG-20240303-WA0017.jpg" alt=""></div>
+              </div>
+              <div class="swiper-slide bg-white  !h-auto">
+                <div class="cent w-full h-full"><img class="w-fit h-[80px]" src="../assets/IMG-20240303-WA0018.jpg" alt=""></div>
+              </div>
+              <div class="swiper-slide bg-white  !h-auto">
+                <div class="cent w-full h-full"><img class="w-fit h-[80px]" src="../assets/IMG-20240303-WA0019.jpg" alt=""></div>
+              </div>
+              <div class="swiper-slide bg-white  !h-auto">
+                <div class="cent w-full h-full"><img class="w-fit h-[80px]" src="../assets/IMG-20240303-WA0020.jpg" alt=""></div>
+              </div>
+              <div class="swiper-slide bg-white  !h-auto">
+                <div class="cent w-full h-full"><img class="w-fit h-[80px]" src="../assets/IMG-20240303-WA0021.jpg" alt=""></div>
+              </div>
+              <div class="swiper-slide bg-white  !h-auto">
+                <div class="cent w-full h-full"><img class="w-fit h-[80px]" src="../assets/IMG-20240303-WA0022.jpg" alt=""></div>
+              </div>
+              <div class="swiper-slide bg-white  !h-auto">
+                <div class="cent w-full h-full"><img class="w-fit h-[80px]" src="../assets/IMG-20240303-WA0023.jpg" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="  py-[5%]  maxlg:py-20 bg-white w-full">
+      <div class=" w-full contain "> 
+        <div class="cent gap-4 my-3 text-3xl maxlg:flex-col">
+          <h3 class="font-bold text-5xl text-primary uppercase">Our Services</h3>
+          <div class="  maxlg:hidden">|</div>
+          <p>HOTEL BOOKING SERVICES</p>
+        </div>
+        <div class="grid gap-[5%] gap-y-8 grid-cols-4 maxlg:grid-cols-2 maxsm:grid-cols-1 font-bold  mt-10">
+          <div class="hover:shadow-inner text-[#393939] rounded-2xl hover:text-white hover:bg-primary p-5 relative transition-colors duration-300 delay-200  ease"><span class="absolute inset-0 w-full h-full duration-300 delay-300 bg-primary opacity-0 group-hover:opacity-100"></span>
+            <div class="bed-icon"></div>
+            <div class="   my-1 uppercase  text-[18px] font-medium">Hotel Selection</div>
+            <hr class="border-[#C23647] my-2 w-[80%]">
+            <div class="  text-[14px] font-medium ">Browse through our selection of hotels and choose the one that suits your preferences. </div>
+          </div>
+          <div class="hover:shadow-inner text-[#393939] rounded-2xl hover:text-white hover:bg-primary p-5 relative transition-colors duration-300 delay-200  ease"><span class="absolute inset-0 w-full h-full duration-300 delay-300 bg-primary opacity-0 group-hover:opacity-100"></span>
+            <div class="bed-icon"></div>
+            <div class="   my-1 uppercase  text-[18px] font-medium">Hotel Selection</div>
+            <hr class="border-[#C23647] my-2 w-[80%]">
+            <div class="  text-[14px] font-medium ">Browse through our selection of hotels and choose the one that suits your preferences. </div>
+          </div>
+          <div class="hover:shadow-inner text-[#393939] rounded-2xl hover:text-white hover:bg-primary p-5 relative transition-colors duration-300 delay-200  ease"><span class="absolute inset-0 w-full h-full duration-300 delay-300 bg-primary opacity-0 group-hover:opacity-100"></span>
+            <div class="bed-icon"></div>
+            <div class="   my-1 uppercase  text-[18px] font-medium">Hotel Selection</div>
+            <hr class="border-[#C23647] my-2 w-[80%]">
+            <div class="  text-[14px] font-medium ">Browse through our selection of hotels and choose the one that suits your preferences. </div>
+          </div>
+          <div class="hover:shadow-inner text-[#393939] rounded-2xl hover:text-white hover:bg-primary p-5 relative transition-colors duration-300 delay-200  ease"><span class="absolute inset-0 w-full h-full duration-300 delay-300 bg-primary opacity-0 group-hover:opacity-100"></span>
+            <div class="bed-icon"></div>
+            <div class="   my-1 uppercase  text-[18px] font-medium">Hotel Selection</div>
+            <hr class="border-[#C23647] my-2 w-[80%]">
+            <div class="  text-[14px] font-medium ">Browse through our selection of hotels and choose the one that suits your preferences. </div>
+          </div>
+          <div class="hover:shadow-inner text-[#393939] rounded-2xl hover:text-white hover:bg-primary p-5 relative transition-colors duration-300 delay-200  ease"><span class="absolute inset-0 w-full h-full duration-300 delay-300 bg-primary opacity-0 group-hover:opacity-100"></span>
+            <div class="bed-icon"></div>
+            <div class="   my-1 uppercase  text-[18px] font-medium">Hotel Selection</div>
+            <hr class="border-[#C23647] my-2 w-[80%]">
+            <div class="  text-[14px] font-medium ">Browse through our selection of hotels and choose the one that suits your preferences. </div>
+          </div>
+          <div class="hover:shadow-inner text-[#393939] rounded-2xl hover:text-white hover:bg-primary p-5 relative transition-colors duration-300 delay-200  ease"><span class="absolute inset-0 w-full h-full duration-300 delay-300 bg-primary opacity-0 group-hover:opacity-100"></span>
+            <div class="bed-icon"></div>
+            <div class="   my-1 uppercase  text-[18px] font-medium">Hotel Selection</div>
+            <hr class="border-[#C23647] my-2 w-[80%]">
+            <div class="  text-[14px] font-medium ">Browse through our selection of hotels and choose the one that suits your preferences. </div>
+          </div>
+          <div class="hover:shadow-inner text-[#393939] rounded-2xl hover:text-white hover:bg-primary p-5 relative transition-colors duration-300 delay-200  ease"><span class="absolute inset-0 w-full h-full duration-300 delay-300 bg-primary opacity-0 group-hover:opacity-100"></span>
+            <div class="bed-icon"></div>
+            <div class="   my-1 uppercase  text-[18px] font-medium">Hotel Selection</div>
+            <hr class="border-[#C23647] my-2 w-[80%]">
+            <div class="  text-[14px] font-medium ">Browse through our selection of hotels and choose the one that suits your preferences. </div>
+          </div>
+          <div class="hover:shadow-inner text-[#393939] rounded-2xl hover:text-white hover:bg-primary p-5 relative transition-colors duration-300 delay-200  ease"><span class="absolute inset-0 w-full h-full duration-300 delay-300 bg-primary opacity-0 group-hover:opacity-100"></span>
+            <div class="bed-icon"></div>
+            <div class="   my-1 uppercase  text-[18px] font-medium">Hotel Selection</div>
+            <hr class="border-[#C23647] my-2 w-[80%]">
+            <div class="  text-[14px] font-medium ">Browse through our selection of hotels and choose the one that suits your preferences. </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="    text-white  w-full bg-no-repeat bg-cover bg-center " style="background-image: url('../assets/tec.jpg');">
+      <div class="py-[5%] maxlg:py-20 w-full  bg-secondary/90 ">
+        <div class=" w-full  px-[5%]">
+          <div class="flex justify-between maxlg:flex-col gap-4">
+            <div class="w-full">
+              <h4 class="font-bold text-2xl text-[#D2A124] uppercase">Explore Our</h4>
+              <h3 class="font-bold text-[80px] maxlg:text-[60px] maxsm:text-[40px] text-white uppercase">Technology</h3>
+            </div>
+            <div class="cent gap-4 text-3xl w-full">
+              <div class="  text-[20px]  text-2xl ">
+                 <span class="font-bold text-2xl text-[#D2A124]">We </span>  aspire to provide an advanced and modern technological service to facilitate work and support our partners in providing and following up on the service through an integrated system for faster growth.</div>
+            </div>
+          </div>
+          <div class="grid gap-[60px] maxlg:gap-[40px] maxmd:gap-[30px] grid-cols-3 maxlg:grid-cols-2 maxsm:grid-cols-1 font-bold text-white mt-28">
+            <div class="rounded-[30px] border-2 border-[#CEE5FF] relative">
+              <div class="cent rounded-full bg-[#D2A124] !min-w-[80px] maxmd:!min-w-[60px] !aspect-square mx-2 absolute top-[-40px] maxmd:top-[-30px] maxmd:right-[-20px] right-[-40px]">
+                <div class="log"></div>
+              </div>
+              <div class="  p-[10%] maxmd:p-[5%] text-[24px] font-medium ">In-house team to Support & and follow up for faster growth in one spirit</div>
+            </div>
+            <div class="rounded-[30px] border-2 border-[#CEE5FF] relative">
+              <div class="cent rounded-full bg-[#D2A124] !min-w-[80px] maxmd:!min-w-[60px] !aspect-square mx-2 absolute top-[-40px] maxmd:top-[-30px] maxmd:right-[-20px] right-[-40px]">
+                <div class="log"></div>
+              </div>
+              <div class="  p-[10%] maxmd:p-[5%] text-[24px] font-medium ">In-house team to Support & and follow up for faster growth in one spirit</div>
+            </div>
+            <div class="rounded-[30px] border-2 border-[#CEE5FF] relative">
+              <div class="cent rounded-full bg-[#D2A124] !min-w-[80px] maxmd:!min-w-[60px] !aspect-square mx-2 absolute top-[-40px] maxmd:top-[-30px] maxmd:right-[-20px] right-[-40px]">
+                <div class="log"></div>
+              </div>
+              <div class="  p-[10%] maxmd:p-[5%] text-[24px] font-medium ">In-house team to Support & and follow up for faster growth in one spirit</div>
+            </div>
+            <div class="rounded-[30px] border-2 border-[#CEE5FF] relative">
+              <div class="cent rounded-full bg-[#D2A124] !min-w-[80px] maxmd:!min-w-[60px] !aspect-square mx-2 absolute top-[-40px] maxmd:top-[-30px] maxmd:right-[-20px] right-[-40px]">
+                <div class="log"></div>
+              </div>
+              <div class="  p-[10%] maxmd:p-[5%] text-[24px] font-medium ">In-house team to Support & and follow up for faster growth in one spirit</div>
+            </div>
+            <div class="rounded-[30px] border-2 border-[#CEE5FF] relative">
+              <div class="cent rounded-full bg-[#D2A124] !min-w-[80px] maxmd:!min-w-[60px] !aspect-square mx-2 absolute top-[-40px] maxmd:top-[-30px] maxmd:right-[-20px] right-[-40px]">
+                <div class="log"></div>
+              </div>
+              <div class="  p-[10%] maxmd:p-[5%] text-[24px] font-medium ">In-house team to Support & and follow up for faster growth in one spirit</div>
+            </div>
+            <div class="rounded-[30px] border-2 border-[#CEE5FF] relative">
+              <div class="cent rounded-full bg-[#D2A124] !min-w-[80px] maxmd:!min-w-[60px] !aspect-square mx-2 absolute top-[-40px] maxmd:top-[-30px] maxmd:right-[-20px] right-[-40px]">
+                <div class="log"></div>
+              </div>
+              <div class="  p-[10%] maxmd:p-[5%] text-[24px] font-medium ">In-house team to Support & and follow up for faster growth in one spirit</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="  py-[5%]  maxlg:py-20 bg-white w-full">
+      <div class=" w-full contain -80 ">
+        <div class=" text-center">
+          <h3 class="font-bold text-5xl text-primary uppercase">booking process </h3>
+          <div class="cent gap-4 my-3 text-3xl">
+            <hr class="  w-[80px] border border-[#393939]">
+            <p>3 Simple Steps</p>
+            <hr class="  w-[80px] border border-[#393939]">
+          </div>
+        </div>
+        <div class="grid gap-[5%] grid-cols-3  maxmd:grid-cols-1 font-bold text-white py-10">
+          <div class="h-full">
+            <div class="bg-secondary  text-center mb-4 uppercase p-1 text-[27px]">Choose a Hotel</div>
+            <div class="bg-[#D1EAFF] h-full text-[#393939] p-[10%] maxmd:p-[5%] text-[20px] font-medium ">Browse through our selection of hotels and choose the one that suits your preferences. </div>
+          </div>
+          <div class="h-full">
+            <div class="bg-secondary  text-center mb-4 uppercase p-1 text-[27px]">Make a Reservation</div>
+            <div class="bg-[#D1EAFF] h-full text-[#393939] p-[10%] maxmd:p-[5%] text-[20px] font-medium">Securely book your stay online and pay with your preferred payment method </div>
+          </div>
+          <div class="h-full">
+            <div class="bg-secondary  text-center mb-4 uppercase p-1 text-[27px]">Confirm Your Stay</div>
+            <div class="bg-[#D1EAFF] h-full text-[#393939] p-[10%] maxmd:p-[5%] text-[20px] font-medium">Receive a confirmation for your booking and get ready for a great stay!</div>
+          </div>
+        </div>
+        <div class="cent pt-10 text-3xl">
+          <hr class="  w-full border-2 border-[#393939]">
+          <div class="cent rounded-full bg-secondary !min-w-[75px] !aspect-square mx-2">
+            <div class="building-icon-big"></div>
+          </div>
+          <hr class="  w-full border-2 border-[#393939]">
+          <hr class="  w-full border-2 border-[#393939]">
+          <div class="cent rounded-full bg-secondary !min-w-[75px] !aspect-square mx-2">
+            <div class="credit-icon"></div>
+          </div>
+          <hr class="  w-full border-2 border-[#393939]">
+          <hr class="  w-full border-2 border-[#393939]">
+          <div class="cent rounded-full bg-secondary !min-w-[75px] !aspect-square mx-2">
+            <div class="table-icon"></div>
+          </div>
+          <hr class="  w-full border-2 border-[#393939]">
+        </div>
+      </div>
+    </section>
+    <section class="bg-no-repeat bg-cover bg-center w-full aspect-[2/1]" style="background-image: url('../assets/map.jpg');">
+      <div class="   translate-y-[-100px]  flex justify-center items-end h-full w-full">
+        <button class="maxsm:mx-auto inline-flex items-center justify-center px-8 maxsm:px-3 py-3 text-base font-bold  text-white bg-[#EF7601] rounded-full  hover:opacity-70 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-fifth" type="button">OUR TOP DESTINATIONS</button>
+      </div>
+    </section>
+    <div class="contain-80 flex items-end  w-full h-full Statistics">
+      <div class="rounded-[30px] flex gap-[30px] p-[30px] w-full  bg-[#194C9AB2] translate-y-[-70px] relative">
+        <div class="  w-full grid grid-cols-6 maxlg:grid-cols-4 maxsm:grid-cols-2 gap-[10px]">
+          <div class="border-2 border-white relative bg-[#DFEBFE] rounded-[25px]">
+            <div class=" text-center p-[10%] maxmd:p-[5%] text-[20px] font-medium cards"> 
+              <p class="text-[#2F549A] font-bold"> EUROPE</p><span class="text-[27.57px] ">+</span><span class="text-[27.57px] num" data-goal="200">0</span>
+            </div>
+          </div>
+          <div class="border-2 border-white relative bg-[#DFEBFE] rounded-[25px]">
+            <div class=" text-center p-[10%] maxmd:p-[5%] text-[20px] font-medium cards"> 
+              <p class="text-[#2F549A] font-bold"> EUROPE</p><span class="text-[27.57px] ">+</span><span class="text-[27.57px] num" data-goal="200">0</span>
+            </div>
+          </div>
+          <div class="border-2 border-white relative bg-[#DFEBFE] rounded-[25px]">
+            <div class=" text-center p-[10%] maxmd:p-[5%] text-[20px] font-medium cards"> 
+              <p class="text-[#2F549A] font-bold"> EUROPE</p><span class="text-[27.57px] ">+</span><span class="text-[27.57px] num" data-goal="200">0</span>
+            </div>
+          </div>
+          <div class="border-2 border-white relative bg-[#DFEBFE] rounded-[25px]">
+            <div class=" text-center p-[10%] maxmd:p-[5%] text-[20px] font-medium cards"> 
+              <p class="text-[#2F549A] font-bold"> EUROPE</p><span class="text-[27.57px] ">+</span><span class="text-[27.57px] num" data-goal="200">0</span>
+            </div>
+          </div>
+          <div class="border-2 border-white relative bg-[#DFEBFE] rounded-[25px]">
+            <div class=" text-center p-[10%] maxmd:p-[5%] text-[20px] font-medium cards"> 
+              <p class="text-[#2F549A] font-bold"> EUROPE</p><span class="text-[27.57px] ">+</span><span class="text-[27.57px] num" data-goal="200">0</span>
+            </div>
+          </div>
+          <div class="border-2 border-white relative bg-[#DFEBFE] rounded-[25px]">
+            <div class=" text-center p-[10%] maxmd:p-[5%] text-[20px] font-medium cards"> 
+              <p class="text-[#2F549A] font-bold"> EUROPE</p><span class="text-[27.57px] ">+</span><span class="text-[27.57px] num" data-goal="200">0</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center h-[116px]"><i class="fa-solid fa-angle-right text-[40px] text-white"> </i></div>
+      </div>
+    </div>
+    <section class="w-full bg-white contain  py-0">
+      <div class="choose_us"></div>
+    </section>
+    <footer class=" text-white text-lg z-10 bg-no-repeat bg-cover bg-center " style="background-image: url('../assets/footer-image.jpeg');">
+      <div class="  w-full bg-[#202B45]/90">
+        <div class="  grid grid-cols-1 contain   py-5 gap-2 ">
+          <div class="col-span-1  "> 
+            <div class="rounded-lg w-full flex justify-center h-[86px] maxmd:h-[64px]"><img class=" rounded-lg h-[86px] maxmd:h-[64px]" src="../assets/logo.png" alt=""></div>
+            <div class=" w-full flex justify-center mt-5 text-center font-medium">
+              <div>Hotelsxml is a modern system for travel agents that is flexible to book your hotels online easily. The system creates and filters over 500000 hotels with the best prices and availability from a wide range of distributors And bedbanks worldwide.</div>
+            </div>
+          </div>
+          <div class="flex justify-center w-full gap-1 py-4 text-lg maxmd:mt-[40px]">
+            <div class="flex justify-between  w-[80%] gap-2 maxmd:flex-col maxmd:items-center "><a href="http://" target="_blank" rel="noopener noreferrer"> 
+                <h5>Blogs</h5></a><a href="http://" target="_blank" rel="noopener noreferrer"> 
+                <h5>Terms and Conditions</h5></a><a href="http://" target="_blank" rel="noopener noreferrer"> 
+                <h5>Privacy Policy</h5></a><a href="http://" target="_blank" rel="noopener noreferrer"> 
+                <h5>Legal Notice</h5></a><a href="http://" target="_blank" rel="noopener noreferrer"> 
+                <h5> Support</h5></a></div>
+          </div>
+          <div class="flex flex-col maxmd:justify-center maxmd:items-center w-full gap-1 py-4 text-lg ">
+            <div>follow us:</div>
+            <div class="flex  w-max gap-2  "><a href="http://" target="_blank" rel="noopener noreferrer"> <img class=" rounded-lg aspect-square h-[24px]" src="../assets/facebook.png" alt=""></a><a href="http://" target="_blank" rel="noopener noreferrer"> <img class=" rounded-lg aspect-square h-[24px]" src="../assets/snap.png" alt=""></a><a href="http://" target="_blank" rel="noopener noreferrer"> <img class=" rounded-lg aspect-square h-[24px]" src="../assets/instgram.png" alt=""></a><a href="http://" target="_blank" rel="noopener noreferrer"> <img class=" rounded-lg aspect-square h-[24px]" src="../assets/tiktok.png" alt=""></a><a href="http://" target="_blank" rel="noopener noreferrer"> <img class=" rounded-lg aspect-square h-[24px]" src="../assets/x.png" alt=""></a></div>
+          </div>
+        </div>
+        <div class="maxlg:pb-20 maxlg:text-xs maxmd:flex-col maxmd:gap-4 flex justify-between items-center contain  py-5 text-base text-white">
+          <p>© 2024 <a class=" " href=""> Hotelsxml </a><span> / All Rights Reserved.</span></p>
+          <div class="cent h-[45px]"> <img class=" rounded-lg w-full h-[45px]" src="../assets/newpayment.png" alt=""></div>
+        </div>
+      </div>
+    </footer><script src="../swiper.js" ></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js" defer=""></script>
+  </body>
+</html>

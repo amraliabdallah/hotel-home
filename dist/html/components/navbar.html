@@ -1,0 +1,25 @@
+
+<header class=" w-full fixed top-0  text-white text-lg  bg-no-repeat bg-cover bg-center z-50 bg-transparent" id="target">
+  <div class="  w-full ">
+    <div class="  flex justify-between items-center contain   py-2  gap-[3%]" x-data="{sideBar:true,isMobile: window.innerWidth &lt; 1024 }" x-init="sideBar = (window.innerWidth &gt; 1024)">
+      <div class="col-span-1  "> 
+        <div class="  flex justify-center h-[86px] maxxl:h-[64] maxlg:h-[34px] w-max"><img class="  h-[86px] maxxl:h-[64] maxlg:h-[34px]" src="../assets/logo.png" alt=""/></div>
+      </div>
+      <div class="maxlg:fixed rtl:right-0 ltr:left-0 maxlg:top-0 maxlg:min-w-[280px] maxlg:pt-[60px] lg:flex items-center maxlg:bg-secondary maxlg:px-[16px] maxlg:h-screen maxlg:min-h-screen maxlg:text-white gap-[3%]" @click.away="isMobile? sideBar=false :''" x-show="sideBar">
+        <nav class="flex justify-between   gap-7 maxlg:flex-col maxlg:items-center min-w-max"><a href="http://" target="_blank" rel="noopener noreferrer"> 
+            <h5>Home</h5></a><a href="http://" target="_blank" rel="noopener noreferrer"> 
+            <h5>About Us</h5></a><a href="http://" target="_blank" rel="noopener noreferrer"> 
+            <h5>Services  </h5></a><a href="http://" target="_blank" rel="noopener noreferrer"> 
+            <h5>Technology </h5></a><a href="http://" target="_blank" rel="noopener noreferrer"> 
+            <h5>  Contact Us</h5></a></nav>
+        <div class="flex maxlg:flex-col justify-center items-center maxlg:w-full w-max gap-6 py-4 text-lg maxlg:mt-[40px]">
+          <button class="border-red-500 border rounded-full p-2 w-[91px] h-[33px] cent" type="button"> LogIn</button>
+          <button class="bg-red-500 border-red-500 border rounded-full p-2 w-[147px] h-[33px] cent" type="button"> Register B2B</button>
+        </div>
+      </div>
+      <div class=" lg:hidden flex justify-center w-max gap-6 py-4 text-lg ">
+        <button class="border-white border rounded-lg p-2  cent" type="button" x-on:click="sideBar=true"><i class="fa-solid fa-bars text-white"></i></button>
+      </div>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,37 @@
+
+<header class="shadow-md sticky top-0 maxlg:hidden z-50">
+  <div class=" bg-primary text-white min-h-10 md:cent z-[1000] " x-data="{open1:false,open2:false}" @mouseover.away="open1=false;open2=false">
+    <div class="container md:flex justify-between items-center ">
+      <div class=" py-5 md:py-0 cent text-sm gap-4 min-w-[245px]">
+        <div class="cent gap-2 py-2 hover:text-black relative" @mouseover="open1=true;open2=false"><span class="cursor-pointer" x-text="lang"> </span><i class="fa-solid fa-sort-down text-xs mb-1"></i>
+          <div class="absolute w-32 leading-8 p-4 ltr:left-0 rtl:right-0 text-zinc-500 top-[38px] border  z-50 bg-white  hidden" :class="{'!block':open1}" x-show="open1">
+            <div>
+              <button @click="setToRTL()">Arabic</button>
+            </div>
+            <div>
+              <button @click="setToLTR()">English</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="py-1  min-w-[460px] relative">
+        <form class=" text-sm bg-white text-secondary border  rounded-md w-full flex" action="submit">
+          <input class=" py-2  border-none ltr:rounded-l-md grow rtl:rounded-r-md px-2 outline-[#FE6601] outline-0.5 " type="text" name="search" placeholder="Search for products..."/>
+          <button class="py-2 px-2 rtl:rounded-l-md ltr:rounded-r-md ltr:border-l rtl:border-r font-semibold " type="submit">
+             <i class="fa-solid fa-magnifying-glass text-secondary"></i></button>
+        </form>
+        <ul class="absolute bg-white text-[#333] w-full inset-x-0 p-[10px] rounded-md text-[13px]" style="box-shadow: 0 5px 7px rgba(0,0,0,.2);display:none"><a href="https://dev-system.vitamingy-eg.com/product/43">
+            <li class="p-1 hover:text-primary">Comvita</li></a><a href="https://dev-system.vitamingy-eg.com/product/212">
+            <li class="p-1 hover:text-primary">Jarrow Formulas </li></a><a href="https://dev-system.vitamingy-eg.com/product/235">
+            <li class="p-1 hover:text-primary">MegaFood </li></a><a href="https://dev-system.vitamingy-eg.com/product/533">
+            <li class="p-1 hover:text-primary">Wholesome Wellness</li></a><a href="https://dev-system.vitamingy-eg.com/product/73">
+            <li class="p-1 hover:text-primary">Dr. Berg </li></a></ul>
+      </div>
+      <div class=" cent h-[48px] bg-secondary ">
+        <div class=" h-full px-3 cent min-w-[245px] ">
+          <div class="cursor-pointer cent gap-4 hover:text-primary "><span> <img onerror="this.onerror=null;this.src='../assets/logo.jpg';" src="../assets/phone-call-1-svgrepo-com.svg" alt=""/></span><a class="font-semibold text-xl  " href="tel:000000000000">(+800) 1234 56781</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
