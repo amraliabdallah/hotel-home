@@ -58,6 +58,24 @@ body {
   background-repeat: no-repeat;
   background-image: url('./assets/building.svg');
 }
+.world-icon{
+  width:43.17px;
+  height:40.29px;
+  background-repeat: no-repeat;
+  background-image: url('./assets/world.svg');
+}
+.site-icon{
+  width: 36px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-image: url('./assets/build-location.svg');
+}
+.people-icon{
+  width: 35px;
+  height: 31px;
+  background-repeat: no-repeat;
+  background-image: url('./assets/people-icon.svg');
+}
 .building-icon{
   width: 40px;
   height: 45px;
@@ -70,6 +88,50 @@ body {
   background-repeat: no-repeat;
   background-image: url('./assets/bed.svg');
 }
+.booking-icon{
+  width: 46px;
+  aspect-ratio: 1;
+  background-repeat: no-repeat;
+  background-image: url('./assets/booking-icon.svg');
+}
+.hotel-icon{
+  width: 47px;
+  aspect-ratio: 1;
+  background-repeat: no-repeat;
+  background-image: url('./assets/hotel-icon.svg');
+}
+.businessman-icon{
+  width: 53px;
+  aspect-ratio: 1;
+  background-repeat: no-repeat;
+  background-image: url('./assets/businessman-icon.svg');
+}
+.star-icon{
+  width: 52px;
+  aspect-ratio: 1;
+  background-repeat: no-repeat;
+  background-image: url('./assets/star-icon.svg');
+}
+.plan-icon{
+  width: 53px;
+  aspect-ratio: 1;
+  background-repeat: no-repeat;
+  background-image: url('./assets/plan-icon.svg');
+  @apply rotate-[-45px]
+}
+.headphone-icon{
+  width: 41px;
+  aspect-ratio: 1;
+  background-repeat: no-repeat;
+  background-image: url('./assets/headphone-icon.svg');
+}
+.credit-card-icon{
+  width: 51px;
+  aspect-ratio: 1;
+  background-repeat: no-repeat;
+  background-image: url('./assets/credit-card-icon.svg');
+}
+
 .credit-icon{
   width: 60px;
   height: 54px;
@@ -93,5 +155,40 @@ body {
   aspect-ratio: 1;
   background-repeat: no-repeat;
   background-image: url('./assets/log.svg');
+  @apply maxmd:w-[30px]
+}
+.booking-tec{
+  width: 42px;
+  aspect-ratio: 1;
+  background-repeat: no-repeat;
+  background-image: url('./assets/booking-tec.svg');
+  @apply maxmd:w-[30px]
+}
+.profile{
+  width: 45px;
+  aspect-ratio: 1;
+  background-repeat: no-repeat;
+  background-image: url('./assets/profile.svg');
+  @apply maxmd:w-[30px]
+}
+.api{
+  width: 42px;
+  aspect-ratio: 1;
+  background-repeat: no-repeat;
+  background-image: url('./assets/api.svg');
+  @apply maxmd:w-[30px]
+}
+.tecnology-icon{
+  width: 48px;
+  aspect-ratio: 1;
+  background-repeat: no-repeat;
+  background-image: url('./assets/tecnology-icon.svg');
+  @apply maxmd:w-[30px]
+}
+.system-integration{
+  width: 48px;
+  aspect-ratio: 1;
+  background-repeat: no-repeat;
+  background-image: url('./assets/system-integration.svg');
   @apply maxmd:w-[30px]
 }

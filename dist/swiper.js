@@ -36,6 +36,43 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 document.addEventListener("DOMContentLoaded", function () {
+  var swiper = new Swiper(".mySwiper2", {
+    // loop: true,
+    // If we need pagination
+    spaceBetween: 35,
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    autoplay: {
+      delay: 900,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      300: {
+        spaceBetween: 16,
+        slidesPerView:2 ,
+      },
+      370: {
+        spaceBetween: 16,
+        slidesPerView:3 ,
+      },
+      690: {
+        slidesPerView: 4,
+      },
+      1020: {
+        slidesPerView: 5,
+      },
+      1300: {
+        slidesPerView: 6,
+      },
+    },
+  });
+});
+document.addEventListener("DOMContentLoaded", function () {
   var mainSwiper = new Swiper(".mainSwiper", {
 
     // If we need pagination
