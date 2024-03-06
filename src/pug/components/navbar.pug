@@ -18,9 +18,33 @@ header(class=" w-full fixed top-0  text-white text-lg  bg-no-repeat bg-cover bg-
 						h5() Technology 
 					a(href="http://", target="_blank", rel="noopener noreferrer") 
 						h5()   Contact Us
-				div( class="flex maxlg:flex-col justify-center items-center maxlg:w-full w-max gap-6 py-4 text-lg maxlg:mt-[40px]")
-					
-					button(type="button" class="border-red-500 border rounded-full p-2 w-[91px] h-[33px] cent")  LogIn
+				div( class="relative flex maxlg:flex-col justify-center items-center maxlg:w-full w-max gap-6 py-4 text-lg maxlg:mt-[40px]" x-data="{login:false}")
+					div(class="w-[91px] h-[33px]")
+						button(type="button" class="border-red-500 border rounded-full p-2 w-[91px] h-[33px] cent" x-on:click="login=true")  LogIn
+						div(x-show="login" :class="{'!flex':login}" class="hidden fixed inset-0 maxlg:flex justify-center items-center z-[150]  " )
+							div(x-show="login" :class="{'!block':login}" class="hidden fixed inset-0 bg-black/20  z-[100]  " x-on:click="login=false")
+							div(x-show="login" :class="{'!block':login}" class="hidden absolute top-20 right-10 maxlg:static  z-[150]  bg-[#CECECEED] rounded-2xl w-[360px] maxlg:w-[90%] maxlg: text-[#202B45]" )
+								form(action="" class="p-10")
+									h3(class="text-[24px] font-bold mb-3") SIGN IN
+									hr(class="border-[#202B45]")
+									label(for="website-admin", class="block my-2 text-sm font-medium ") Email
+									div(class="flex")
+										span(class="inline-flex items-center px-3 text-sm  bg-gray-200 border rounded-e-0 border-gray-300 rounded-s-md ")
+											i(class="fa-solid fa-envelope")
+										input#website-admin(type="email", class="rounded-none rounded-e-lg bg-gray-50 border  outline-none block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5  ", placeholder="@gmail.com")
+
+									label(for="website-admin", class="block my-3 text-sm font-medium ") password
+									div(class="flex")
+										span(class="inline-flex items-center px-3 text-sm  bg-gray-200 border rounded-e-0 border-gray-300 rounded-s-md ")
+											svg(class="w-4 h-4 ", aria-hidden="true", xmlns="http://www.w3.org/2000/svg", fill="currentColor", viewBox="0 0 20 20")
+												path(d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm0 5a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm0 13a8.949 8.949 0 0 1-4.951-1.488A3.987 3.987 0 0 1 9 13h2a3.987 3.987 0 0 1 3.951 3.512A8.949 8.949 0 0 1 10 18Z")
+										input#website-admin(type="password", class="rounded-none rounded-e-lg bg-gray-50 border  outline-none block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5  ", placeholder="****")
+									div(class="mt-[20px]") 
+										a(class="underline " href="#") forget password?
+									button(type="button" class="bg-[#202B45] text-white mx-auto rounded-full mt-[20px] p-2 w-[91px] h-[33px] cent" x-on:click="login=true")  LogIn
+						
+
+
 					button(type="button" class="bg-red-500 border-red-500 border rounded-full p-2 w-[147px] h-[33px] cent")  Register B2B
 			div( class=" lg:hidden flex justify-center w-max gap-6 py-4 text-lg ")
 				
