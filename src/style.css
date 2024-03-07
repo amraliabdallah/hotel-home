@@ -192,3 +192,25 @@ body {
   background-image: url('./assets/system-integration.svg');
   @apply maxmd:w-[30px]
 }
+
+
+
+
+.animated-marker {
+  position: absolute;
+
+  
+  /* background-color: #f00;/ Red for markers */
+  /* Map marker shape (triangle on top of rectangle) */
+  color: #13599a;
+  border-radius: 5px 5px 0 0; /* Rounded top corners */
+  transition: all 1s ease-in-out; /* Smooth transition for animation */
+  opacity: 0;
+
+}
+
+.animated-marker.active {
+  /* Optional styling for active marker (e.g., brighter color) */
+  /* background-color: #c00; */
+  opacity: 1;
+}

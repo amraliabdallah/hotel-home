@@ -3,7 +3,7 @@ doctype html
 html( dir="ltr" lang="en" )
    include ./components/head
 
-   body(class="text-[#393939] ")
+   body(class="text-[#393939] overflow-x-hidden ")
 
       include ./components/navbar
       section(class="w-full  lg:aspect-[2/1]" )
@@ -44,6 +44,10 @@ html( dir="ltr" lang="en" )
                                     | 24/7 Support
                                  span(class="absolute top-[25%] maxsm:top-20 right-[-40px] inline-flex items-center justify-center  px-8 maxsm:px-3 py-1 maxsm:py-[1px] text-sm maxsm:text-[10px] font-bold  text-white bg-[#FF735A] rounded-full w-auto  focus:outline-none focus:ring-2 focus:ring-offset-2 ")
                                     | modern Filters
+                                 span(class="absolute   bottom-[10%] right-[-45%] maxsm:right-[-10px] inline-flex items-center justify-center w-full px-2 py-1 text-sm  maxsm:text-[8px]  maxsm:text-third text-white font-black" )
+                                    | API Integrations
+                                 span(class="absolute bottom-[25%] maxsm:bottom-20 right-[-50%]  inline-flex items-center justify-center w-full px-2 py-1 text-sm  maxsm:text-[8px] text-white  font-black" )
+                                    | More Contracts
                   
                div(class="swiper-slide !h-full")
                   div(class="bg-no-repeat bg-cover bg-center " style="background-image: url('../assets/hero-bac.jpg');")
@@ -73,10 +77,10 @@ html( dir="ltr" lang="en" )
                               div(class="  mx-[50px] maxsm:mx-0  flex items-center mt-14 w-full")
                                  a(href="#", class="maxsm:mx-auto inline-flex items-center justify-center px-8 maxsm:px-3 py-3 text-base font-bold  text-white bg-fifth rounded-full  hover:opacity-70 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-fifth")
                                     | GET STARTED
-                           div(class="w-full flex items-center justify-end py-[5%] maxlg:px-[5%] maxlg:hidden")
-                              div(class="relative w-[63%]  rounded-full"   )
-                                 img(src="../assets/all.png", class="w-full aspect-square rounded-full" alt="")
-                  
+
+                           div(class="w-full flex items-center py-[5%] maxlg:px-[5%] maxlg:hidden")
+                              div(class="relative w-full aspect-[1/.64] rounded-xl"  )
+                                 img(src="../assets/all.jpg", class="w-full h-full rounded-xl" alt="")  
 
             div(class="swiper-pagination")
          div(class="w-full h-5 bg-third")
@@ -98,6 +102,7 @@ html( dir="ltr" lang="en" )
                      
                      div(class="border-[3.26px] border-white flex items-end justify-center rounded-full bg-[#2D5898] !min-w-[50px] !aspect-square mx-2 absolute top-[30%] left-[-40px]")
                         div(class="building-icon")
+                        
                      div(class="  p-[10%] text-[21px] font-medium ") 
                         | More 
                         span(class="text-primary font-bold") 1 million 
@@ -131,104 +136,160 @@ html( dir="ltr" lang="en" )
                         span(class="text-[33.57px] "  ) +
                         span(class="text-[33.57px] num" data-goal="110") 0
                         p(class="text-primary ") suppliers & Dmc
-                        
+            div(class="py-[55px]")      
+               div(x-data="{}", x-init=`$nextTick(() => {let ul = $refs.logos;ul.insertAdjacentHTML('afterend', ul.outerHTML);ul.nextSibling.setAttribute('aria-hidden', 'true');})`, class="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-328px),transparent_100%)] pt-[80px]")
+                  ul(x-ref="logos", class="flex gap-[20px] items-center justify-center md:justify-start [&amp;_li]:mx-8  [&amp;_img]:max-w-none animate-infinite-scroll")
+                     li(class="w-[140px] aspect-video cent")
+                        img(src="../assets/IMG-20240306-WA0006.jpg", alt="")
+                     li(class="w-[140px] aspect-video cent")
+                        img(src="../assets/IMG-20240303-WA0001.jpg", alt="")
+                     li(class="w-[140px] aspect-video cent")
+                        img(src="../assets/IMG-20240303-WA0002.jpg", alt="")
+                     li(class="w-[140px] aspect-video cent")
+                        img(src="../assets/IMG-20240303-WA0003.jpg", alt="")
+                     li(class="w-[140px] aspect-video cent")
+                        img(src="../assets/IMG-20240303-WA0004.jpg", alt="")
+                     li(class="w-[140px] aspect-video cent")
+                        img(src="../assets/IMG-20240303-WA0005.jpg", alt="")
+                     li(class="w-[140px] aspect-video cent")
+                        img(src="../assets/IMG-20240303-WA0006.jpg", alt="")
+                     li(class="w-[140px] aspect-video cent")
+                        img(src="../assets/IMG-20240303-WA0007.jpg", alt="")
+                     li(class="w-[140px] aspect-video cent")
+                        img(src="../assets/IMG-20240303-WA0008.jpg", alt="")
+                     li(class="w-[140px] aspect-video cent")
+                        img(src="../assets/IMG-20240303-WA0009.jpg", alt="")
+                     li(class="w-[140px] aspect-video cent")
+                        img(src="../assets/IMG-20240303-WA0010.jpg", alt="")
+                     li(class="w-[140px] aspect-video cent")
+                        img(src="../assets/IMG-20240303-WA0011.jpg", alt="")
 
-            div(class="pt-32")     
-               div(class=" font-bold swiper  mySwiper pt-10")
-                  div(class="swiper-wrapper") 
+               div(x-data="{}", x-init=`$nextTick(() => {let ul = $refs.logos;ul.insertAdjacentHTML('afterend', ul.outerHTML);ul.nextSibling.setAttribute('aria-hidden', 'true');})`, class="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_328px,_black_calc(100%-328px),transparent_100%)] ")
+                  ul(x-ref="logos", class="flex gap-[20px] items-center justify-center md:justify-start [&amp;_li]:mx-8  [&amp;_img]:max-w-none animate-infinite-scroll")
+
+                     li(class="w-[140px] aspect-video cent")
+                        img(src="../assets/IMG-20240303-WA0012.jpg", alt="")
+                     li(class="w-[140px] aspect-video cent")
+                        img(src="../assets/IMG-20240306-WA0013.jpg", alt="")
+                     li(class="w-[140px] aspect-video cent")
+                        img(src="../assets/IMG-20240303-WA0014.jpg", alt="")
+                     li(class="w-[140px] aspect-video cent")
+                        img(src="../assets/IMG-20240303-WA0015.jpg", alt="")
+                     li(class="w-[140px] aspect-video cent")
+                        img(src="../assets/IMG-20240303-WA0016.jpg", alt="")
+                     li(class="w-[140px] aspect-video cent")
+                        img(src="../assets/IMG-20240303-WA0017.jpg", alt="")
+                     li(class="w-[140px] aspect-video cent")
+                        img(src="../assets/IMG-20240303-WA0018.jpg", alt="")
+                     li(class="w-[140px] aspect-video cent")
+                        img(src="../assets/IMG-20240303-WA0019.jpg", alt="")
+                     li(class="w-[140px] aspect-video cent")
+                        img(src="../assets/IMG-20240303-WA0020.jpg", alt="")
+                     li(class="w-[140px] aspect-video cent")
+                        img(src="../assets/IMG-20240303-WA0021.jpg", alt="")
+                     li(class="w-[140px] aspect-video cent")
+                        img(src="../assets/IMG-20240303-WA0022.jpg", alt="")
+                     li(class="w-[140px] aspect-video cent")
+                        img(src="../assets/IMG-20240303-WA0023.jpg", alt="")
+
+
+
+            //- div(class="pt-32")     
+            //-    div(class=" font-bold swiper  mySwiper pt-10")
+            //-       div(class="swiper-wrapper") 
                      
 
                      
-                     div(class="swiper-slide aspect-video bg-white  !h-auto")
-                        div(class="cent w-full h-full")
-                           img(src="../assets/IMG-20240303-WA0001.jpg" class="w-fit ", alt="")
+            //-          div(class="swiper-slide aspect-video bg-white  !h-auto")
+            //-             div(class="cent w-full h-full")
+            //-                img(src="../assets/IMG-20240303-WA0001.jpg" class="w-fit ", alt="")
                      
-                     div(class="swiper-slide aspect-video bg-white  !h-auto")
-                        div(class="cent w-full h-full")
-                           img(src="../assets/IMG-20240303-WA0002.jpg" class="w-fit ", alt="")
+            //-          div(class="swiper-slide aspect-video bg-white  !h-auto")
+            //-             div(class="cent w-full h-full")
+            //-                img(src="../assets/IMG-20240303-WA0002.jpg" class="w-fit ", alt="")
                      
-                     div(class="swiper-slide aspect-video bg-white  !h-auto")
-                        div(class="cent w-full h-full")
-                           img(src="../assets/IMG-20240303-WA0003.jpg" class="w-fit ", alt="")
+            //-          div(class="swiper-slide aspect-video bg-white  !h-auto")
+            //-             div(class="cent w-full h-full")
+            //-                img(src="../assets/IMG-20240303-WA0003.jpg" class="w-fit ", alt="")
                      
-                     div(class="swiper-slide aspect-video bg-white  !h-auto")
-                        div(class="cent w-full h-full")
-                           img(src="../assets/IMG-20240303-WA0004.jpg" class="w-fit ", alt="")
+            //-          div(class="swiper-slide aspect-video bg-white  !h-auto")
+            //-             div(class="cent w-full h-full")
+            //-                img(src="../assets/IMG-20240303-WA0004.jpg" class="w-fit ", alt="")
                      
-                     div(class="swiper-slide aspect-video bg-white  !h-auto")
-                        div(class="cent w-full h-full")
-                           img(src="../assets/IMG-20240303-WA0005.jpg" class="w-fit ", alt="")
+            //-          div(class="swiper-slide aspect-video bg-white  !h-auto")
+            //-             div(class="cent w-full h-full")
+            //-                img(src="../assets/IMG-20240303-WA0005.jpg" class="w-fit ", alt="")
                      
-                     div(class="swiper-slide aspect-video bg-white  !h-auto")
-                        div(class="cent w-full h-full")
-                           img(src="../assets/IMG-20240303-WA0006.jpg" class="w-fit ", alt="")
+            //-          div(class="swiper-slide aspect-video bg-white  !h-auto")
+            //-             div(class="cent w-full h-full")
+            //-                img(src="../assets/IMG-20240303-WA0006.jpg" class="w-fit ", alt="")
                      
-                     div(class="swiper-slide aspect-video bg-white  !h-auto")
-                        div(class="cent w-full h-full")
-                           img(src="../assets/IMG-20240303-WA0007.jpg" class="w-fit ", alt="")
+            //-          div(class="swiper-slide aspect-video bg-white  !h-auto")
+            //-             div(class="cent w-full h-full")
+            //-                img(src="../assets/IMG-20240303-WA0007.jpg" class="w-fit ", alt="")
                      
-                     div(class="swiper-slide aspect-video bg-white  !h-auto")
-                        div(class="cent w-full h-full")
-                           img(src="../assets/IMG-20240303-WA0008.jpg" class="w-fit ", alt="")
+            //-          div(class="swiper-slide aspect-video bg-white  !h-auto")
+            //-             div(class="cent w-full h-full")
+            //-                img(src="../assets/IMG-20240303-WA0008.jpg" class="w-fit ", alt="")
                      
-                     div(class="swiper-slide aspect-video bg-white  !h-auto")
-                        div(class="cent w-full h-full")
-                           img(src="../assets/IMG-20240303-WA0010.jpg" class="w-fit ", alt="")
+            //-          div(class="swiper-slide aspect-video bg-white  !h-auto")
+            //-             div(class="cent w-full h-full")
+            //-                img(src="../assets/IMG-20240303-WA0010.jpg" class="w-fit ", alt="")
                      
-                     div(class="swiper-slide aspect-video bg-white  !h-auto")
-                        div(class="cent w-full h-full")
-                           img(src="../assets/IMG-20240303-WA0011.jpg" class="w-fit ", alt="")
+            //-          div(class="swiper-slide aspect-video bg-white  !h-auto")
+            //-             div(class="cent w-full h-full")
+            //-                img(src="../assets/IMG-20240303-WA0011.jpg" class="w-fit ", alt="")
                      
 
 
        
-            div(class="pt-10")     
-               div(class=" font-bold swiper  mySwiper pt-10")
-                  div(class="swiper-wrapper") 
-                     div(class="swiper-slide aspect-video bg-white  !h-auto")
-                        div(class="cent w-full h-full")
-                           img(src="../assets/IMG-20240303-WA0012.jpg" class="w-fit ", alt="")
+            //- div(class="pt-10")     
+            //-    div(class=" font-bold swiper  mySwiper pt-10")
+            //-       div(class="swiper-wrapper") 
+            //-          div(class="swiper-slide aspect-video bg-white  !h-auto")
+            //-             div(class="cent w-full h-full")
+            //-                img(src="../assets/IMG-20240303-WA0012.jpg" class="w-fit ", alt="")
                      
-                     div(class="swiper-slide aspect-video bg-white  !h-auto")
-                        div(class="cent w-full h-full")
-                           img(src="../assets/IMG-20240303-WA0013.jpg" class="w-fit ", alt="")
+            //-          div(class="swiper-slide aspect-video bg-white  !h-auto")
+            //-             div(class="cent w-full h-full")
+            //-                img(src="../assets/IMG-20240303-WA0013.jpg" class="w-fit ", alt="")
                      
 
-                     div(class="swiper-slide aspect-video bg-white  !h-auto")
-                        div(class="cent w-full h-full")
-                           img(src="../assets/IMG-20240303-WA0015.jpg" class="w-fit ", alt="")
+            //-          div(class="swiper-slide aspect-video bg-white  !h-auto")
+            //-             div(class="cent w-full h-full")
+            //-                img(src="../assets/IMG-20240303-WA0015.jpg" class="w-fit ", alt="")
                      
-                     div(class="swiper-slide aspect-video bg-white  !h-auto")
-                        div(class="cent w-full h-full")
-                           img(src="../assets/IMG-20240303-WA0016.jpg" class="w-fit ", alt="")
+            //-          div(class="swiper-slide aspect-video bg-white  !h-auto")
+            //-             div(class="cent w-full h-full")
+            //-                img(src="../assets/IMG-20240303-WA0016.jpg" class="w-fit ", alt="")
                      
-                     div(class="swiper-slide aspect-video bg-white  !h-auto")
-                        div(class="cent w-full h-full")
-                           img(src="../assets/IMG-20240303-WA0017.jpg" class="w-fit ", alt="")
+            //-          div(class="swiper-slide aspect-video bg-white  !h-auto")
+            //-             div(class="cent w-full h-full")
+            //-                img(src="../assets/IMG-20240303-WA0017.jpg" class="w-fit ", alt="")
                      
-                     div(class="swiper-slide aspect-video bg-white  !h-auto")
-                        div(class="cent w-full h-full")
-                           img(src="../assets/IMG-20240303-WA0018.jpg" class="w-fit ", alt="")
+            //-          div(class="swiper-slide aspect-video bg-white  !h-auto")
+            //-             div(class="cent w-full h-full")
+            //-                img(src="../assets/IMG-20240303-WA0018.jpg" class="w-fit ", alt="")
                      
-                     div(class="swiper-slide aspect-video bg-white  !h-auto")
-                        div(class="cent w-full h-full")
-                           img(src="../assets/IMG-20240303-WA0019.jpg" class="w-fit ", alt="")
+            //-          div(class="swiper-slide aspect-video bg-white  !h-auto")
+            //-             div(class="cent w-full h-full")
+            //-                img(src="../assets/IMG-20240303-WA0019.jpg" class="w-fit ", alt="")
                      
-                     div(class="swiper-slide aspect-video bg-white  !h-auto")
-                        div(class="cent w-full h-full")
-                           img(src="../assets/IMG-20240303-WA0020.jpg" class="w-fit ", alt="")
+            //-          div(class="swiper-slide aspect-video bg-white  !h-auto")
+            //-             div(class="cent w-full h-full")
+            //-                img(src="../assets/IMG-20240303-WA0020.jpg" class="w-fit ", alt="")
                      
-                     div(class="swiper-slide aspect-video bg-white  !h-auto")
-                        div(class="cent w-full h-full")
-                           img(src="../assets/IMG-20240303-WA0021.jpg" class="w-fit ", alt="")
+            //-          div(class="swiper-slide aspect-video bg-white  !h-auto")
+            //-             div(class="cent w-full h-full")
+            //-                img(src="../assets/IMG-20240303-WA0021.jpg" class="w-fit ", alt="")
                      
-                     div(class="swiper-slide aspect-video bg-white  !h-auto")
-                        div(class="cent w-full h-full")
-                           img(src="../assets/IMG-20240303-WA0022.jpg" class="w-fit ", alt="")
+            //-          div(class="swiper-slide aspect-video bg-white  !h-auto")
+            //-             div(class="cent w-full h-full")
+            //-                img(src="../assets/IMG-20240303-WA0022.jpg" class="w-fit ", alt="")
                      
-                     div(class="swiper-slide aspect-video bg-white  !h-auto")
-                        div(class="cent w-full h-full")
-                           img(src="../assets/IMG-20240303-WA0023.jpg" class="w-fit ", alt="")
+            //-          div(class="swiper-slide aspect-video bg-white  !h-auto")
+            //-             div(class="cent w-full h-full")
+            //-                img(src="../assets/IMG-20240303-WA0023.jpg" class="w-fit ", alt="")
 
       section(class="  py-[5%]  maxlg:py-20 bg-white w-full")
          div(class=" w-full contain ")
@@ -240,53 +301,62 @@ html( dir="ltr" lang="en" )
                   
             div(class="grid gap-[5%] gap-y-8 grid-cols-4 maxlg:grid-cols-2 maxsm:grid-cols-1 font-bold  mt-10")
 
-               div(class="hover:shadow-inner text-[#393939] rounded-2xl hover:text-white hover:bg-[#3E63CE] p-5 relative transition-colors duration-300 delay-200  ease")
-                  span(class="absolute inset-0 w-full h-full duration-300 delay-300 bg-primary opacity-0 group-hover:opacity-100")
-                  div(class="bed-icon")
+               div(class="group hover:shadow-inner text-[#393939] rounded-2xl hover:text-white hover:bg-[#3E63CE] p-5 relative transition-colors duration-300 delay-200  ease")
+                  
+                  //- div(class="bed-icon")
+                  <i class="fa-solid fa-bed text-5xl"></i>
                   div(class="   my-1 uppercase  text-[18px] font-medium" ) Hotel Selection
-                  hr(class="border-[#C23647] my-2 w-[80%]")
+                  hr(class="border-[#C23647] group-hover:border-white my-2 w-[80%]")
                   div(class="  text-[14px] font-medium ") Browse through our selection of hotels and choose the one that suits your preferences. 
-               div(class="hover:shadow-inner text-[#393939] rounded-2xl hover:text-white hover:bg-[#3E63CE] p-5 relative transition-colors duration-300 delay-200  ease")
-                  span(class="absolute inset-0 w-full h-full duration-300 delay-300 bg-primary opacity-0 group-hover:opacity-100")
-                  div(class="booking-icon")
+               div(class="group hover:shadow-inner text-[#393939] rounded-2xl hover:text-white hover:bg-[#3E63CE] p-5 relative transition-colors duration-300 delay-200  ease")
+                  
+                  //- div(class="booking-icon")
+                  <i class="fa-regular fa-calendar-days text-5xl"></i>
                   div(class="   my-1 uppercase  text-[18px] font-medium" ) Booking Reservations
-                  hr(class="border-[#C23647] my-2 w-[80%]")
+                  hr(class="border-[#C23647] group-hover:border-white my-2 w-[80%]")
                   div(class="  text-[14px] font-medium ") Effortlessly make reservations for your chosen hotel and secure your stay. 
-               div(class="hover:shadow-inner text-[#393939] rounded-2xl hover:text-white hover:bg-[#3E63CE] p-5 relative transition-colors duration-300 delay-200  ease")
-                  span(class="absolute inset-0 w-full h-full duration-300 delay-300 bg-primary opacity-0 group-hover:opacity-100")
-                  div(class="hotel-icon")
+               div(class="group hover:shadow-inner text-[#393939] rounded-2xl hover:text-white hover:bg-[#3E63CE] p-5 relative transition-colors duration-300 delay-200  ease")
+                  
+                  //- div(class="hotel-icon")
+                  <i class="fa-solid fa-hotel text-5xl"></i>
                   div(class="   my-1 uppercase  text-[18px] font-medium" ) Hotel Details
-                  hr(class="border-[#C23647] my-2 w-[80%]")
+                  hr(class="border-[#C23647] group-hover:border-white my-2 w-[80%]")
                   div(class="  text-[14px] font-medium ") Get access to hotel guides and essential info about your choice on one page. 
-               div(class="hover:shadow-inner text-[#393939] rounded-2xl hover:text-white hover:bg-[#3E63CE] p-5 relative transition-colors duration-300 delay-200  ease")
-                  span(class="absolute inset-0 w-full h-full duration-300 delay-300 bg-primary opacity-0 group-hover:opacity-100")
-                  div(class="credit-card-icon")
+               div(class="group hover:shadow-inner text-[#393939] rounded-2xl hover:text-white hover:bg-[#3E63CE] p-5 relative transition-colors duration-300 delay-200  ease")
+                  
+                  //- div(class="credit-card-icon")
+                  <i class="fa-regular fa-credit-card text-5xl"></i>
                   div(class="   my-1 uppercase  text-[18px] font-medium" ) Payment Options
-                  hr(class="border-[#C23647] my-2 w-[80%]")
+                  hr(class="border-[#C23647] group-hover:border-white my-2 w-[80%]")
                   div(class="  text-[14px] font-medium ") Choose from various secure payment methods to complete your booking. 
-               div(class="hover:shadow-inner text-[#393939] rounded-2xl hover:text-white hover:bg-[#3E63CE] p-5 relative transition-colors duration-300 delay-200  ease")
-                  span(class="absolute inset-0 w-full h-full duration-300 delay-300 bg-primary opacity-0 group-hover:opacity-100")
-                  div(class="businessman-icon")
+               div(class="group hover:shadow-inner text-[#393939] rounded-2xl hover:text-white hover:bg-[#3E63CE] p-5 relative transition-colors duration-300 delay-200  ease")
+                  
+                  //- div(class="businessman-icon")
+                  <i class="fa-solid fa-user-tie text-5xl"></i>
                   div(class="   my-1 uppercase  text-[18px] font-medium" ) We are with you
-                  hr(class="border-[#C23647] my-2 w-[80%]")
+                  hr(class="border-[#C23647] group-hover:border-white my-2 w-[80%]")
                   div(class="  text-[14px] font-medium ") A personal account manager who carefully follows up on your bookings and requests. 
-               div(class="hover:shadow-inner text-[#393939] rounded-2xl hover:text-white hover:bg-[#3E63CE] p-5 relative transition-colors duration-300 delay-200  ease")
-                  span(class="absolute inset-0 w-full h-full duration-300 delay-300 bg-primary opacity-0 group-hover:opacity-100")
-                  div(class="star-icon")
-                  div(class="   my-1 uppercase  text-[18px] font-medium" ) Hotel Selection
-                  hr(class="border-[#C23647] my-2 w-[80%]")
+               div(class="group hover:shadow-inner text-[#393939] rounded-2xl hover:text-white hover:bg-[#3E63CE] p-5 relative transition-colors duration-300 delay-200  ease")
+                  
+                  //- div(class="star-icon")
+                  <i class="fa-regular fa-star text-5xl"></i>
+                  div(class="   my-1 uppercase  text-[18px] font-medium" ) More features
+                  hr(class="border-[#C23647] group-hover:border-white my-2 w-[80%]")
                   div(class="  text-[14px] font-medium ") No prepayment, get your reports and awards. best prices Incl All and more features in our platform 
-               div(class="hover:shadow-inner text-[#393939] rounded-2xl hover:text-white hover:bg-[#3E63CE] p-5 relative transition-colors duration-300 delay-200  ease")
-                  span(class="absolute inset-0 w-full h-full duration-300 delay-300 bg-primary opacity-0 group-hover:opacity-100")
-                  div(class="plan-icon")
+               div(class="group hover:shadow-inner text-[#393939] rounded-2xl hover:text-white hover:bg-[#3E63CE] p-5 relative transition-colors duration-300 delay-200  ease")
+                  
+                  //- div(class="plan-icon")
+                  div(class="rotate-[-45deg] w-fit")
+                     <i class="fa-solid fa-plane text-5xl "></i>
                   div(class="   my-1 uppercase  text-[18px] font-medium" ) Holiday Design
-                  hr(class="border-[#C23647] my-2 w-[80%]")
+                  hr(class="border-[#C23647] group-hover:border-white my-2 w-[80%]")
                   div(class="  text-[14px] font-medium ") Use the wide range of travel services to combine the dream journey. Holiday Packages are available through the contact team
-               div(class="hover:shadow-inner text-[#393939] rounded-2xl hover:text-white hover:bg-[#3E63CE] p-5 relative transition-colors duration-300 delay-200  ease")
-                  span(class="absolute inset-0 w-full h-full duration-300 delay-300 bg-primary opacity-0 group-hover:opacity-100")
-                  div(class="headphone-icon")
+               div(class="group hover:shadow-inner text-[#393939] rounded-2xl hover:text-white hover:bg-[#3E63CE] p-5 relative transition-colors duration-300 delay-200  ease")
+                  
+                  //- div(class="headphone-icon")
+                  <i class="fa-solid fa-headphones text-5xl "></i>
                   div(class="   my-1 uppercase  text-[18px] font-medium" ) Customer Support
-                  hr(class="border-[#C23647] my-2 w-[80%]")
+                  hr(class="border-[#C23647] group-hover:border-white my-2 w-[80%]")
                   div(class="  text-[14px] font-medium ") Contact our 24/7 customer support for assistance with your booking.
 
     
@@ -376,7 +446,25 @@ html( dir="ltr" lang="en" )
                hr(class="  w-full border-2 border-[#393939]") 
       
 
-      section(class="bg-no-repeat bg-cover bg-center w-full aspect-[1.718] relative" style="background-image: url('../assets/map.jpg');")
+      section(class="map bg-no-repeat bg-cover bg-center w-full aspect-[1.718] relative" style="background-image: url('../assets/map.jpg');")
+         div(class="animated-marker")
+            i(class="fa-solid fa-location-dot maxsm:text-xl text-3xl")
+         div(class="animated-marker")
+            i(class="fa-solid fa-location-dot maxsm:text-xl text-3xl")
+         div(class="animated-marker")
+            i(class="fa-solid fa-location-dot maxsm:text-xl text-3xl")
+         div(class="animated-marker")
+            i(class="fa-solid fa-location-dot maxsm:text-xl text-3xl")
+         div(class="animated-marker")
+            i(class="fa-solid fa-location-dot maxsm:text-xl text-3xl")
+         div(class="animated-marker")
+            i(class="fa-solid fa-location-dot maxsm:text-xl text-3xl")
+         div(class="animated-marker")
+            i(class="fa-solid fa-location-dot maxsm:text-xl text-3xl")
+         div(class="animated-marker")
+            i(class="fa-solid fa-location-dot maxsm:text-xl text-3xl")
+         div(class="animated-marker")
+            i(class="fa-solid fa-location-dot maxsm:text-xl text-3xl")
          div(class="absolute flex flex-col maxmd:text-[6px] leading-tight font-bold text-base justify-center items-center top-[9%] maxsm:top-[8%] right-[39%]") 
             span Europe
 
@@ -407,113 +495,223 @@ html( dir="ltr" lang="en" )
          div(class="   translate-y-[-140px] maxlg:translate-y-[0] flex justify-center items-end h-full w-full")
             button( type="button" class="maxsm:mx-auto inline-flex items-center justify-center px-8 maxsm:px-1 py-3 maxsm:py-1 maxlg:mb-2 text-base maxsm:text-[10px] font-bold  text-white bg-[#EF7601] rounded-full  hover:opacity-70 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-fifth")
                | OUR TOP DESTINATIONS
-      div(class="contain-80 flex items-end maxlg:mt-20 w-full h-full Statistics")
-         div(class="rounded-[30px] flex gap-[30px] p-[30px] w-full  bg-[#194C9AB2] translate-y-[-110px] maxlg:translate-y-[0]   relative" x-data="{country:false}")
-            div(class="  w-full  ")
-               div(class=" w-full swiper  mySwiper2 ")
-                  div(class="swiper-wrapper") 
+      div(class="contain-80 maxlg:!px-0 flex items-end  w-full h-full Statistics")
+         div(class="rounded-[30px] maxlg:rounded-sm flex gap-[30px] p-[30px] w-full  bg-[#194C9AB2] maxlg:bg-[#5487C6] translate-y-[-110px] maxlg:translate-y-[0]   relative" x-data="{country:false}")
+            div(x-data="{}", x-init=`$nextTick(() => {let ul = $refs.logos;ul.insertAdjacentHTML('afterend', ul.outerHTML);ul.nextSibling.setAttribute('aria-hidden', 'true');})`, class="w-full inline-flex flex-nowrap overflow-hidden maxlg:[mask-image:_linear-gradient(to_right,transparent_0,_black_18px,_black_calc(100%-18px),transparent_100%)] [mask-image:_linear-gradient(to_right,transparent_0,_black_0px,_black_calc(100%-0px),transparent_100%)] ")
+               ul(x-ref="logos", class="flex  items-center justify-center md:justify-start [&amp;_li]:mx-8  [&amp;_img]:max-w-none animate-infinite-scroll")
 
 
-                     div(class="swiper-slide border-2 border-white relative bg-[#DFEBFE] rounded-[25px]")
+
+
+                  li(class="min-w-max border-2 border-white relative bg-[#DFEBFE] ")
+                     
+
+                     div(class=" text-center py-[10px] px-[20px] text-[20px] maxlg:text-base maxsm:text-xs font-medium cards") 
+                        p(class="min-w-max text-[#2F549A] font-bold")  Uk
                         
+                        span(class="text-[27.57px] maxlg:text-base maxsm:text-xs "  ) 200
+                        span(class="text-[27.57px] maxlg:text-base maxsm:text-xs"  ) +
 
-                        div(class=" text-center p-[10%] maxmd:p-[5%] text-[20px] maxlg:text-base maxsm:text-xs font-medium cards") 
-                           p(class="text-[#2F549A] font-bold")  Uk
-                           span(class="text-[27.57px] maxlg:text-base maxsm:text-xs"  ) +
-                           span(class="text-[27.57px] maxlg:text-base maxsm:text-xs num"  data-goal="3200") 0
+      
+                  li(class="min-w-max border-2 border-white relative bg-[#DFEBFE] ")
+                     
 
-       
-                     div(class="swiper-slide border-2 border-white relative bg-[#DFEBFE] rounded-[25px]")
-                        
+                     div(class=" text-center py-[10px] px-[20px] text-[20px] maxlg:text-base maxsm:text-xs font-medium cards") 
+                        p(class="min-w-max text-[#2F549A] font-bold")  Dubai
+                        span(class="text-[27.57px] maxlg:text-base maxsm:text-xs "  ) 200
+                        span(class="text-[27.57px] maxlg:text-base maxsm:text-xs"  ) +
 
-                        div(class=" text-center p-[10%] maxmd:p-[5%] text-[20px] maxlg:text-base maxsm:text-xs font-medium cards") 
-                           p(class="text-[#2F549A] font-bold")  Dubai
-                           span(class="text-[27.57px] maxlg:text-base maxsm:text-xs"  ) +
-                           span(class="text-[27.57px] maxlg:text-base maxsm:text-xs num"  data-goal="3200") 0
+      
+                  li(class="min-w-max border-2 border-white relative bg-[#DFEBFE] ")
+                     
 
-       
-                     div(class="swiper-slide border-2 border-white relative bg-[#DFEBFE] rounded-[25px]")
-                        
+                     div(class=" text-center py-[10px] px-[20px] text-[20px] maxlg:text-base maxsm:text-xs font-medium cards") 
+                        p(class="min-w-max text-[#2F549A] font-bold")  Turkey
+                        span(class="text-[27.57px] maxlg:text-base maxsm:text-xs "  ) 200
+                        span(class="text-[27.57px] maxlg:text-base maxsm:text-xs"  ) +
 
-                        div(class=" text-center p-[10%] maxmd:p-[5%] text-[20px] maxlg:text-base maxsm:text-xs font-medium cards") 
-                           p(class="text-[#2F549A] font-bold")  Turkey
-                           span(class="text-[27.57px] maxlg:text-base maxsm:text-xs"  ) +
-                           span(class="text-[27.57px] maxlg:text-base maxsm:text-xs num"  data-goal="3200") 0
+      
+                  li(class="min-w-max border-2 border-white relative bg-[#DFEBFE] ")
+                     
 
-       
-                     div(class="swiper-slide border-2 border-white relative bg-[#DFEBFE] rounded-[25px]")
-                        
+                     div(class=" text-center py-[10px] px-[20px] text-[20px] maxlg:text-base maxsm:text-xs font-medium cards") 
+                        p(class="min-w-max text-[#2F549A] font-bold")  Thailand
+                        span(class="text-[27.57px] maxlg:text-base maxsm:text-xs "  ) 200
+                        span(class="text-[27.57px] maxlg:text-base maxsm:text-xs"  ) +
 
-                        div(class=" text-center p-[10%] maxmd:p-[5%] text-[20px] maxlg:text-base maxsm:text-xs font-medium cards") 
-                           p(class="text-[#2F549A] font-bold")  Thailand
-                           span(class="text-[27.57px] maxlg:text-base maxsm:text-xs"  ) +
-                           span(class="text-[27.57px] maxlg:text-base maxsm:text-xs num"  data-goal="3200") 0
+      
+                  li(class="min-w-max border-2 border-white relative bg-[#DFEBFE] ")
+                     
 
-       
-                     div(class="swiper-slide border-2 border-white relative bg-[#DFEBFE] rounded-[25px]")
-                        
+                     div(class=" text-center py-[10px] px-[20px] text-[20px] maxlg:text-base maxsm:text-xs font-medium cards") 
+                        p(class="min-w-max text-[#2F549A] font-bold")  United stated
+                        span(class="text-[27.57px] maxlg:text-base maxsm:text-xs "  ) 200
+                        span(class="text-[27.57px] maxlg:text-base maxsm:text-xs"  ) +
 
-                        div(class=" text-center p-[10%] maxmd:p-[5%] text-[20px] maxlg:text-base maxsm:text-xs font-medium cards") 
-                           p(class="text-[#2F549A] font-bold")  United stated
-                           span(class="text-[27.57px] maxlg:text-base maxsm:text-xs"  ) +
-                           span(class="text-[27.57px] maxlg:text-base maxsm:text-xs num"  data-goal="3200") 0
+      
+                  li(class="min-w-max border-2 border-white relative bg-[#DFEBFE] ")
+                     
 
-       
-                     div(class="swiper-slide border-2 border-white relative bg-[#DFEBFE] rounded-[25px]")
-                        
+                     div(class=" text-center py-[10px] px-[20px] text-[20px] maxlg:text-base maxsm:text-xs font-medium cards") 
+                        p(class="min-w-max text-[#2F549A] font-bold")  Italy
+                        span(class="text-[27.57px] maxlg:text-base maxsm:text-xs "  ) 200
+                        span(class="text-[27.57px] maxlg:text-base maxsm:text-xs"  ) +
 
-                        div(class=" text-center p-[10%] maxmd:p-[5%] text-[20px] maxlg:text-base maxsm:text-xs font-medium cards") 
-                           p(class="text-[#2F549A] font-bold")  Italy
-                           span(class="text-[27.57px] maxlg:text-base maxsm:text-xs"  ) +
-                           span(class="text-[27.57px] maxlg:text-base maxsm:text-xs num"  data-goal="3200") 0
+      
+                  li(class="min-w-max border-2 border-white relative bg-[#DFEBFE] ")
+                     
 
-       
-                     div(class="swiper-slide border-2 border-white relative bg-[#DFEBFE] rounded-[25px]")
-                        
+                     div(class=" text-center py-[10px] px-[20px] text-[20px] maxlg:text-base maxsm:text-xs font-medium cards") 
+                        p(class="min-w-max text-[#2F549A] font-bold")  Malaysia
+                        span(class="text-[27.57px] maxlg:text-base maxsm:text-xs "  ) 200
+                        span(class="text-[27.57px] maxlg:text-base maxsm:text-xs"  ) +
+                  li(class="min-w-max border-2 border-white relative bg-[#DFEBFE] ")
+                     
 
-                        div(class=" text-center p-[10%] maxmd:p-[5%] text-[20px] maxlg:text-base maxsm:text-xs font-medium cards") 
-                           p(class="text-[#2F549A] font-bold")  Malaysia
-                           span(class="text-[27.57px] maxlg:text-base maxsm:text-xs"  ) +
-                           span(class="text-[27.57px] maxlg:text-base maxsm:text-xs num"  data-goal="3200") 0
-                     div(class="swiper-slide border-2 border-white relative bg-[#DFEBFE] rounded-[25px]")
-                        
+                     div(class=" text-center py-[10px] px-[20px] text-[20px] maxlg:text-base maxsm:text-xs font-medium cards") 
+                        p(class="min-w-max text-[#2F549A] font-bold")  Egypt
+                        span(class="text-[27.57px] maxlg:text-base maxsm:text-xs "  ) 200
+                        span(class="text-[27.57px] maxlg:text-base maxsm:text-xs"  ) +
+                  li(class="min-w-max border-2 border-white relative bg-[#DFEBFE] ")
+                     
 
-                        div(class=" text-center p-[10%] maxmd:p-[5%] text-[20px] maxlg:text-base maxsm:text-xs font-medium cards") 
-                           p(class="text-[#2F549A] font-bold")  Egypt
-                           span(class="text-[27.57px] maxlg:text-base maxsm:text-xs"  ) +
-                           span(class="text-[27.57px] maxlg:text-base maxsm:text-xs num"  data-goal="3200") 0
-                     div(class="swiper-slide border-2 border-white relative bg-[#DFEBFE] rounded-[25px]")
-                        
+                     div(class=" text-center py-[10px] px-[20px] text-[20px] maxlg:text-base maxsm:text-xs font-medium cards") 
+                        p(class="min-w-max text-[#2F549A] font-bold")  Spain
+                        span(class="text-[27.57px] maxlg:text-base maxsm:text-xs "  ) 200
+                        span(class="text-[27.57px] maxlg:text-base maxsm:text-xs"  ) +
+                  li(class="min-w-max border-2 border-white relative bg-[#DFEBFE] ")
+                     
 
-                        div(class=" text-center p-[10%] maxmd:p-[5%] text-[20px] maxlg:text-base maxsm:text-xs font-medium cards") 
-                           p(class="text-[#2F549A] font-bold")  Spain
-                           span(class="text-[27.57px] maxlg:text-base maxsm:text-xs"  ) +
-                           span(class="text-[27.57px] maxlg:text-base maxsm:text-xs num"  data-goal="3200") 0
-                     div(class="swiper-slide border-2 border-white relative bg-[#DFEBFE] rounded-[25px]")
-                        
+                     div(class=" text-center py-[10px] px-[20px] text-[20px] maxlg:text-base maxsm:text-xs font-medium cards") 
+                        p(class="min-w-max text-[#2F549A] font-bold")  France
+                        span(class="text-[27.57px] maxlg:text-base maxsm:text-xs "  ) 200
+                        span(class="text-[27.57px] maxlg:text-base maxsm:text-xs"  ) +
+                  li(class="min-w-max border-2 border-white relative bg-[#DFEBFE] ")
+                     
 
-                        div(class=" text-center p-[10%] maxmd:p-[5%] text-[20px] maxlg:text-base maxsm:text-xs font-medium cards") 
-                           p(class="text-[#2F549A] font-bold")  France
-                           span(class="text-[27.57px] maxlg:text-base maxsm:text-xs"  ) +
-                           span(class="text-[27.57px] maxlg:text-base maxsm:text-xs num"  data-goal="3100") 0
-                     div(class="swiper-slide border-2 border-white relative bg-[#DFEBFE] rounded-[25px]")
-                        
+                     div(class=" text-center py-[10px] px-[20px] text-[20px] maxlg:text-base maxsm:text-xs font-medium cards") 
+                        p(class="min-w-max text-[#2F549A] font-bold")  Saudi Arab
+                        span(class="text-[27.57px] maxlg:text-base maxsm:text-xs "  ) 200
+                        span(class="text-[27.57px] maxlg:text-base maxsm:text-xs"  ) +
+                  li(class="min-w-max border-2 border-white relative bg-[#DFEBFE] ")
+                     
 
-                        div(class=" text-center p-[10%] maxmd:p-[5%] text-[20px] maxlg:text-base maxsm:text-xs font-medium cards") 
-                           p(class="text-[#2F549A] font-bold")  Saudi Arab
-                           span(class="text-[27.57px] maxlg:text-base maxsm:text-xs"  ) +
-                           span(class="text-[27.57px] maxlg:text-base maxsm:text-xs num"  data-goal="650") 0
-                     div(class="swiper-slide border-2 border-white relative bg-[#DFEBFE] rounded-[25px]")
-                        
+                     div(class=" text-center py-[10px] px-[20px] text-[20px] maxlg:text-base maxsm:text-xs font-medium cards") 
+                        p(class="min-w-max text-[#2F549A] font-bold")  Maldive
+                        span(class="text-[27.57px] maxlg:text-base maxsm:text-xs "  ) 200
+                        span(class="text-[27.57px] maxlg:text-base maxsm:text-xs"  ) +
 
-                        div(class=" text-center p-[10%] maxmd:p-[5%] text-[20px] maxlg:text-base maxsm:text-xs font-medium cards") 
-                           p(class="text-[#2F549A] font-bold")  Maldive
-                           span(class="text-[27.57px] maxlg:text-base maxsm:text-xs"  ) +
-                           span(class="text-[27.57px] maxlg:text-base maxsm:text-xs num"  data-goal="175") 0
-
-       
+      
             //- div(class="flex items-center h-[116px]")
             //-    i(class="fa-solid  text-[40px] text-white" @click="country=!country" :class="{'fa-angle-right':!country,'fa-angle-down':country}") 
+               
+      //- div(class="contain-80 flex items-end maxlg:mt-20 w-full h-full Statistics")
+      //-    div(class="rounded-[30px] flex gap-[30px] p-[30px] w-full  bg-[#194C9AB2] translate-y-[-110px] maxlg:translate-y-[0]   relative" x-data="{country:false}")
+      //-       div(class="  w-full  ")
+      //-          div(class=" w-full swiper  mySwiper2 ")
+      //-             div(class="swiper-wrapper") 
+
+
+      //-                li(class="min-w-max border-2 border-white relative bg-[#DFEBFE] ")
+                        
+
+      //-                   div(class=" text-center py-[10px] px-[20px] text-[20px] maxlg:text-base maxsm:text-xs font-medium cards") 
+      //-                      p(class="min-w-max text-[#2F549A] font-bold")  Uk
+      //-                      span(class="text-[27.57px] maxlg:text-base maxsm:text-xs"  ) +
+      //-                      span(class="text-[27.57px] maxlg:text-base maxsm:text-xs "  ) 200
+
+       
+      //-                li(class="min-w-max border-2 border-white relative bg-[#DFEBFE] ")
+                        
+
+      //-                   div(class=" text-center py-[10px] px-[20px] text-[20px] maxlg:text-base maxsm:text-xs font-medium cards") 
+      //-                      p(class="min-w-max text-[#2F549A] font-bold")  Dubai
+      //-                      span(class="text-[27.57px] maxlg:text-base maxsm:text-xs"  ) +
+      //-                      span(class="text-[27.57px] maxlg:text-base maxsm:text-xs "  ) 200
+
+       
+      //-                li(class="min-w-max border-2 border-white relative bg-[#DFEBFE] ")
+                        
+
+      //-                   div(class=" text-center py-[10px] px-[20px] text-[20px] maxlg:text-base maxsm:text-xs font-medium cards") 
+      //-                      p(class="min-w-max text-[#2F549A] font-bold")  Turkey
+      //-                      span(class="text-[27.57px] maxlg:text-base maxsm:text-xs"  ) +
+      //-                      span(class="text-[27.57px] maxlg:text-base maxsm:text-xs "  ) 200
+
+       
+      //-                li(class="min-w-max border-2 border-white relative bg-[#DFEBFE] ")
+                        
+
+      //-                   div(class=" text-center py-[10px] px-[20px] text-[20px] maxlg:text-base maxsm:text-xs font-medium cards") 
+      //-                      p(class="min-w-max text-[#2F549A] font-bold")  Thailand
+      //-                      span(class="text-[27.57px] maxlg:text-base maxsm:text-xs"  ) +
+      //-                      span(class="text-[27.57px] maxlg:text-base maxsm:text-xs "  ) 200
+
+       
+      //-                li(class="min-w-max border-2 border-white relative bg-[#DFEBFE] ")
+                        
+
+      //-                   div(class=" text-center py-[10px] px-[20px] text-[20px] maxlg:text-base maxsm:text-xs font-medium cards") 
+      //-                      p(class="min-w-max text-[#2F549A] font-bold")  United stated
+      //-                      span(class="text-[27.57px] maxlg:text-base maxsm:text-xs"  ) +
+      //-                      span(class="text-[27.57px] maxlg:text-base maxsm:text-xs "  ) 200
+
+       
+      //-                li(class="min-w-max border-2 border-white relative bg-[#DFEBFE] ")
+                        
+
+      //-                   div(class=" text-center py-[10px] px-[20px] text-[20px] maxlg:text-base maxsm:text-xs font-medium cards") 
+      //-                      p(class="min-w-max text-[#2F549A] font-bold")  Italy
+      //-                      span(class="text-[27.57px] maxlg:text-base maxsm:text-xs"  ) +
+      //-                      span(class="text-[27.57px] maxlg:text-base maxsm:text-xs "  ) 200
+
+       
+      //-                li(class="min-w-max border-2 border-white relative bg-[#DFEBFE] ")
+                        
+
+      //-                   div(class=" text-center py-[10px] px-[20px] text-[20px] maxlg:text-base maxsm:text-xs font-medium cards") 
+      //-                      p(class="min-w-max text-[#2F549A] font-bold")  Malaysia
+      //-                      span(class="text-[27.57px] maxlg:text-base maxsm:text-xs"  ) +
+      //-                      span(class="text-[27.57px] maxlg:text-base maxsm:text-xs "  ) 200
+      //-                li(class="min-w-max border-2 border-white relative bg-[#DFEBFE] ")
+                        
+
+      //-                   div(class=" text-center py-[10px] px-[20px] text-[20px] maxlg:text-base maxsm:text-xs font-medium cards") 
+      //-                      p(class="min-w-max text-[#2F549A] font-bold")  Egypt
+      //-                      span(class="text-[27.57px] maxlg:text-base maxsm:text-xs"  ) +
+      //-                      span(class="text-[27.57px] maxlg:text-base maxsm:text-xs "  ) 200
+      //-                li(class="min-w-max border-2 border-white relative bg-[#DFEBFE] ")
+                        
+
+      //-                   div(class=" text-center py-[10px] px-[20px] text-[20px] maxlg:text-base maxsm:text-xs font-medium cards") 
+      //-                      p(class="min-w-max text-[#2F549A] font-bold")  Spain
+      //-                      span(class="text-[27.57px] maxlg:text-base maxsm:text-xs"  ) +
+      //-                      span(class="text-[27.57px] maxlg:text-base maxsm:text-xs "  ) 200
+      //-                li(class="min-w-max border-2 border-white relative bg-[#DFEBFE] ")
+                        
+
+      //-                   div(class=" text-center py-[10px] px-[20px] text-[20px] maxlg:text-base maxsm:text-xs font-medium cards") 
+      //-                      p(class="min-w-max text-[#2F549A] font-bold")  France
+      //-                      span(class="text-[27.57px] maxlg:text-base maxsm:text-xs"  ) +
+      //-                      span(class="text-[27.57px] maxlg:text-base maxsm:text-xs   ") 700
+      //-                li(class="min-w-max border-2 border-white relative bg-[#DFEBFE] ")
+                        
+
+      //-                   div(class=" text-center py-[10px] px-[20px] text-[20px] maxlg:text-base maxsm:text-xs font-medium cards") 
+      //-                      p(class="min-w-max text-[#2F549A] font-bold")  Saudi Arab
+      //-                      span(class="text-[27.57px] maxlg:text-base maxsm:text-xs"  ) +
+      //-                      span(class="text-[27.57px] maxlg:text-base maxsm:text-xs " ) 200
+      //-                li(class="min-w-max border-2 border-white relative bg-[#DFEBFE] ")
+                        
+
+      //-                   div(class=" text-center py-[10px] px-[20px] text-[20px] maxlg:text-base maxsm:text-xs font-medium cards") 
+      //-                      p(class="min-w-max text-[#2F549A] font-bold")  Maldive
+      //-                      span(class="text-[27.57px] maxlg:text-base maxsm:text-xs"  ) +
+      //-                      span(class="text-[27.57px] maxlg:text-base maxsm:text-xs " ) 600
+
+       
+      //-       //- div(class="flex items-center h-[116px]")
+      //-       //-    i(class="fa-solid  text-[40px] text-white" @click="country=!country" :class="{'fa-angle-right':!country,'fa-angle-down':country}") 
                
 
                      

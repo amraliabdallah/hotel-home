@@ -3,6 +3,15 @@ module.exports = {
   content: [ "dist/**/*.html" ],
   theme: {
     extend: {
+      animation: {
+        'infinite-scroll': 'infinite-scroll 20s linear infinite',
+      },
+      keyframes: {
+        'infinite-scroll': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-100%)' },
+        }
+      },
       colors: {
         primary: "#2D69A2",
         secondary:"#202B45",

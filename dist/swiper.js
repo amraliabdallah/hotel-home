@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var swiper = new Swiper(".mySwiper2", {
     // loop: true,
     // If we need pagination
-    spaceBetween: 35,
+
     pagination: {
       el: ".swiper-pagination",
     },
@@ -48,16 +48,16 @@ document.addEventListener("DOMContentLoaded", function () {
       prevEl: ".swiper-button-prev",
     },
     autoplay: {
-      delay: 900,
+      delay: 3000,
       disableOnInteraction: false,
     },
     breakpoints: {
       300: {
-        spaceBetween: 16,
+
         slidesPerView:2 ,
       },
       370: {
-        spaceBetween: 16,
+
         slidesPerView:3 ,
       },
       690: {
@@ -74,7 +74,10 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 document.addEventListener("DOMContentLoaded", function () {
   var mainSwiper = new Swiper(".mainSwiper", {
-
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
     // If we need pagination
     swiperPerPage:1,
     pagination: {
@@ -100,7 +103,7 @@ function startCount(el) {
     if (el.textContent == goal) {
       clearInterval(count);
     }
-  }, 100 / goal);
+  }, 10000/ goal);
 }
 if(StatisticsSection != null) {
   window.onscroll = function () {
@@ -109,7 +112,7 @@ if(StatisticsSection != null) {
           setTimeout(() => {
             nums.forEach((num) => startCount(num));
             
-          }, 500);
+          }, 1);
       }
       started = true;
     }
@@ -129,3 +132,42 @@ window.addEventListener('scroll', function() {
     targetDiv.classList.add('bg-transparent');
   }
 });
+
+
+const container = document.querySelector('.map');
+const markers = document.querySelectorAll('.animated-marker');
+
+const positions = [
+    { left: '16%', top: '28%' },  // Adjust positions as desired
+    { left: '50%', top: '26%' },
+    { left: '45%', top: '18%' },
+    { left: '32%', top: '63%' },
+    { left: '71%', top: '43%' },
+    { left: '62%', top: '38%' },
+    { left: '55%', top: '35%' },
+    { left: '58%', top: '35%' },
+    { left: '44%', top: '33%' },
+    { left: '50%', top: '38%' },
+
+
+];
+
+function animateMarkers(duration = 500) {
+    markers.forEach((marker, index) => {
+        marker.style.left = positions[index].left;
+        marker.style.top = positions[index].top;
+
+        // Simulate random activation for each marker (optional)
+        if (Math.random() > 0.5) {
+            marker.classList.add('active');
+        } else {
+            marker.classList.remove('active');
+        }
+    });
+
+    setTimeout(() => {
+        animateMarkers(duration); // Recursively call for continuous animation
+    }, duration);
+}
+
+animateMarkers(); // Start the animation
