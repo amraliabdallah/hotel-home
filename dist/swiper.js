@@ -118,19 +118,42 @@ if(StatisticsSection != null) {
     }
   };
 }
+var targetDiv = document.getElementById('target');
+var headerTail = document.getElementById('headerTail');
 
+if( !window.location.pathname.endsWith('/dist/html/index.html') && !window.location.pathname.endsWith('/dist/html/')){
+
+  console.log(window.location.pathname=='/dist/html/register.html')
+  targetDiv.classList.add('bg-secondary');
+  targetDiv.classList.remove('bg-transparent');
+  targetDiv.classList.add('sticky');
+  targetDiv.classList.remove('fixed');
+  headerTail.classList.remove('hidden');
+}
 
 window.addEventListener('scroll', function() {
   var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
   var targetDiv = document.getElementById('target');
-  
-  if (scrollTop !== 0) {
+  if(window.location.pathname.endsWith('/dist/html/index.html') || window.location.pathname.endsWith('/dist/html/')){
+    if(targetDiv.classList.contains('sticky')){
+      targetDiv.classList.remove('sticky');
+      targetDiv.classList.add('fixed');
+    }
+
+    console.log('hai')
+    if (scrollTop !== 0) {
+      targetDiv.classList.add('bg-secondary');
+      targetDiv.classList.remove('bg-transparent');
+    } else {
+      targetDiv.classList.remove('bg-secondary');
+      targetDiv.classList.add('bg-transparent');
+    }
+  }else{
+    console.log(window.location.pathname=='/dist/html/register.html')
     targetDiv.classList.add('bg-secondary');
     targetDiv.classList.remove('bg-transparent');
-  } else {
-    targetDiv.classList.remove('bg-secondary');
-    targetDiv.classList.add('bg-transparent');
   }
+
 });
 
 
@@ -148,6 +171,8 @@ const positions = [
     { left: '58%', top: '35%' },
     { left: '44%', top: '33%' },
     { left: '50%', top: '38%' },
+    { left: '80%', top: '48%' },
+    { left: '80%', top: '58%' },
 
 
 ];

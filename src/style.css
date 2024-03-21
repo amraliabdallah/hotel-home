@@ -189,13 +189,19 @@ body {
   width: 48px;
   aspect-ratio: 1;
   background-repeat: no-repeat;
-  background-image: url('./assets/system-integration.svg');
-  @apply maxmd:w-[30px]
+  background-image: url('../dist/assets/system-integration.svg');
+
 }
 
 
 
+.check-success{
+  width: 57px;
+  aspect-ratio: 1;
+  background-repeat: no-repeat;
+  background-image: url('./assets/check-success.svg');
 
+}
 .animated-marker {
   position: absolute;
 
@@ -213,4 +219,19 @@ body {
   /* Optional styling for active marker (e.g., brighter color) */
   /* background-color: #c00; */
   opacity: 1;
+}
+.active-tab{
+  background: #FFCA41;
+}
+.finished-tab{
+  background: #AAE3B3;
+}
+.triangle {
+  top: 0; 
+  bottom: 0;
+  right: 0;
+  position:absolute;
+  aspect-ratio: 1/1;
+  height: 100%;
+  background: linear-gradient(to bottom left, #fff 0%, #fff 50%, transparent 50%, transparent 100%);
 }

@@ -7,11 +7,11 @@ html( dir="ltr" lang="en" )
 
       include ./components/navbar
       section(class="w-full  lg:aspect-[2/1]" )
-         div(class="swiper mainSwiper h-full w-full")
-            div(class="swiper-wrapper h-full w-full")
+         div(class="w-full h-full swiper mainSwiper")
+            div(class="w-full h-full swiper-wrapper")
 
                div(class="swiper-slide !h-full")
-                  div(class="bg-no-repeat bg-cover bg-center h-full" style="background-image: url('../assets/hero-bac.jpg');")
+                  div(class="h-full bg-center bg-no-repeat bg-cover" style="background-image: url('../assets/hero-bac.jpg');")
                      div(class="w-full  bg-[#071A37E5]")
                         div(class="w-full flex maxlg:flex-col maxlg:gap-[30px] justify-between contain py-[10%] maxlg:py-20 ")
                            div(class="w-full ")
@@ -20,26 +20,26 @@ html( dir="ltr" lang="en" )
                               h2(class="text-fourth font-medium text-[34px] maxsm:text-[24px] mt-8") B2B Hotels online network 
                               h2(class="text-white font-medium max-w-[471px] text-xl maxsm:text-base mt-5") Special price, instant confirmation of bookings, and 24/7 support to stay comfortable with us!
                               div(class="  mx-[50px] maxsm:mx-0  flex items-center mt-14 w-full")
-                                 a(href="#", class="maxsm:mx-auto inline-flex items-center justify-center px-8 maxsm:px-3 py-3 text-base font-bold  text-white bg-fifth rounded-full  hover:opacity-70 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-fifth")
+                                 a(href="#", class="inline-flex items-center justify-center px-8 py-3 text-base font-bold text-white rounded-full maxsm:mx-auto maxsm:px-3 bg-fifth hover:opacity-70 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-fifth")
                                     | GET STARTED
                            div(class="w-full flex items-center py-[5%] maxlg:px-[5%] maxlg:hidden")
                               div(class="w-[40%] translate-y-[-5%] z-[10]")
                                  div(class="relative w-[100%] !translate-x-[20%] z-[10] aspect-square  rounded-full" )
                                     div(class="relative w-[100%]  z-[10] aspect-square  rounded-full border-[3px] border-white"  data-aos-duration="1000" data-aos="zoom-in" )
-                                       img(src="../assets/tec.jpg", class="w-full aspect-square rounded-full" alt="" )
+                                       img(src="../assets/tec.jpg", class="w-full rounded-full aspect-square" alt="" )
                                        span(class="absolute top-[10%] left-[-20%] inline-flex items-center justify-center px-8 maxsm:px-3  py-1 maxsm:py-[1px]  text-sm maxsm:text-[10px] font-bold   text-white bg-[#3C20C8] rounded-full md:w-auto  focus:outline-none focus:ring-2 focus:ring-offset-2 ")
                                           | Special Rates
                                        span(class="absolute top-[30%] maxsm:top-[35%] left-[-35%] inline-flex items-center justify-center px-8 maxsm:px-3  py-1 maxsm:py-[1px] text-sm maxsm:text-[10px] font-bold   bg-[#EDD754] rounded-full md:w-auto  focus:outline-none focus:ring-2 focus:ring-offset-2 ")
                                           | Easy to Use
                                  div(class="relative w-[58%] !translate-x-[140%] translate-y-[-45%] z-[20] aspect-square rounded-full" )
                                     div(class="relative w-full ] aspect-square border-[3px] border-white rounded-full" data-aos-duration="1000" data-aos="fade-up")
-                                       img(src="../assets/tec.jpg", class="w-full aspect-square rounded-full" alt="" )
+                                       img(src="../assets/tec.jpg", class="w-full rounded-full aspect-square" alt="" )
                                        span(class="absolute   bottom-[25%] left-[-50%] inline-flex items-center justify-center w-full px-2 py-1 text-sm  maxsm:text-[8px]  maxsm:text-third text-white font-black" )
                                           | Tax Include
                                        span(class="absolute bottom-[10%] left-[-40%]  inline-flex items-center justify-center w-full px-2 py-1 text-sm  maxsm:text-[8px] text-white  font-black" )
                                           | Search Tools
                               div(class="relative w-[60%] aspect-square border-[3px] border-white rounded-full" data-aos-duration="1000"   data-aos="fade-left")
-                                 img(src="../assets/tec.jpg", class="w-full aspect-square rounded-full" alt="")
+                                 img(src="../assets/tec.jpg", class="w-full rounded-full aspect-square" alt="")
                                  span(class="absolute top-10 right-0 maxsm:right-[-10px] inline-flex items-center justify-center  px-8 maxsm:px-3  maxsm:py-[1px] py-1  text-sm maxsm:text-[10px] font-bold   text-[#3C20C8] bg-white rounded-full md:w-auto  focus:outline-none focus:ring-2 focus:ring-offset-2 ")
                                     | 24/7 Support
                                  span(class="absolute top-[25%] maxsm:top-20 right-[-40px] inline-flex items-center justify-center  px-8 maxsm:px-3 py-1 maxsm:py-[1px] text-sm maxsm:text-[10px] font-bold  text-white bg-[#FF735A] rounded-full w-auto  focus:outline-none focus:ring-2 focus:ring-offset-2 ")
@@ -50,7 +50,7 @@ html( dir="ltr" lang="en" )
                                     | More Contracts
                   
                div(class="swiper-slide !h-full")
-                  div(class="bg-no-repeat bg-cover bg-center " style="background-image: url('../assets/hero-bac.jpg');")
+                  div(class="bg-center bg-no-repeat bg-cover " style="background-image: url('../assets/hero-bac.jpg');")
                      div(class="w-full  bg-[#071A37E5]")
                         div(class="w-full flex maxlg:flex-col maxlg:gap-[30px] justify-between contain py-[8%] maxlg:py-20 ")
                            div(class="w-full ")
@@ -59,14 +59,14 @@ html( dir="ltr" lang="en" )
 
                               h2(class="text-white font-medium max-w-[471px] text-xl maxsm:text-base mt-[63px]") Our partners are present everywhere to serve you, more than 2000+ destinations, and 50+ partners in tourism services with one click.
                               div(class="  mx-[50px] maxsm:mx-0  flex items-center mt-14 w-full")
-                                 a(href="#", class="maxsm:mx-auto inline-flex items-center justify-center px-8 maxsm:px-3 py-3 text-base font-bold  text-white bg-fifth rounded-full  hover:opacity-70 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-fifth")
+                                 a(href="#", class="inline-flex items-center justify-center px-8 py-3 text-base font-bold text-white rounded-full maxsm:mx-auto maxsm:px-3 bg-fifth hover:opacity-70 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-fifth")
                                     | GET STARTED
                            div(class="w-full flex items-center py-[5%] maxlg:px-[5%] maxlg:hidden")
                               div(class="relative w-full aspect-[1/.64] rounded-xl"  )
                                  img(src="../assets/partner.png", class="w-full h-full rounded-xl" alt="")
                   
                div(class="swiper-slide !h-full")
-                  div(class="bg-no-repeat bg-cover bg-center " style="background-image: url('../assets/hero-bac.jpg');")
+                  div(class="bg-center bg-no-repeat bg-cover " style="background-image: url('../assets/hero-bac.jpg');")
                      div(class="w-full  bg-[#071A37E5]")
                         div(class="w-full flex maxlg:flex-col maxlg:gap-[30px] justify-between contain py-[8%] maxlg:py-20 ")
                            div(class="w-full ")
@@ -75,7 +75,7 @@ html( dir="ltr" lang="en" )
 
                               h2(class="text-white font-medium max-w-[471px] text-xl maxsm:text-base mt-[63px]") Modern and sophisticated system, Extensive database with lots of hotels around the world. and Secure login and reliable system
                               div(class="  mx-[50px] maxsm:mx-0  flex items-center mt-14 w-full")
-                                 a(href="#", class="maxsm:mx-auto inline-flex items-center justify-center px-8 maxsm:px-3 py-3 text-base font-bold  text-white bg-fifth rounded-full  hover:opacity-70 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-fifth")
+                                 a(href="#", class="inline-flex items-center justify-center px-8 py-3 text-base font-bold text-white rounded-full maxsm:mx-auto maxsm:px-3 bg-fifth hover:opacity-70 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-fifth")
                                     | GET STARTED
 
                            div(class="w-full flex items-center py-[5%] maxlg:px-[5%] maxlg:hidden")
@@ -86,10 +86,10 @@ html( dir="ltr" lang="en" )
          div(class="w-full h-5 bg-third")
 
 
-      section(class="  py-[8%]  maxlg:py-20 bg-white w-full Statistics")
-         div(class=" w-full contain-80  ")
-            div(class=" text-center")
-               h3(class="font-bold text-5xl  uppercase" ) Our Hotel 
+      section(class="  pt-[8%] pb-[1%]  maxlg:py-20 bg-white w-full Statistics")
+         div(class="w-full contain-80")
+            div(class="text-center ")
+               h3(class="text-5xl font-bold uppercase" ) Our Hotel 
                   span(class="text-primary") NETWORK
                .my-6.text-xl
                   p A hotel booking network designed for travel agents and hotel suppliers, to enable our partners to book rooms by Hotelsxml.com
@@ -105,9 +105,9 @@ html( dir="ltr" lang="en" )
                         
                      div(class="  p-[10%] text-[21px] font-medium ") 
                         | More 
-                        span(class="text-primary font-bold") 1 million 
+                        span(class="font-bold text-primary") 1 million 
                         br
-                        span(class="text-primary font-bold")  Hotels
+                        span(class="font-bold text-primary")  Hotels
                         |  ,Resort
                         <br/> and Apartments
                   div(class="border-2 border-white relative bg-[#DFEBFE] rounded-[25px] ml-10 ")
@@ -137,7 +137,7 @@ html( dir="ltr" lang="en" )
                         span(class="text-[33.57px] num" data-goal="110") 0
                         p(class="text-primary ") suppliers & Dmc
             div(class="py-[55px]")      
-               div(x-data="{}", x-init=`$nextTick(() => {let ul = $refs.logos;ul.insertAdjacentHTML('afterend', ul.outerHTML);ul.nextSibling.setAttribute('aria-hidden', 'true');})`, class="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-328px),transparent_100%)] pt-[80px]")
+               div(x-data="{}", x-init=`$nextTick(() => {let ul = $refs.logos;ul.insertAdjacentHTML('afterend', ul.outerHTML);ul.nextSibling.setAttribute('aria-hidden', 'true');})`, class="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_20px,_black_calc(100%-20px),transparent_100%)] pt-[80px]")
                   ul(x-ref="logos", class="flex gap-[20px] items-center justify-center md:justify-start [&amp;_li]:mx-8  [&amp;_img]:max-w-none animate-infinite-scroll")
                      li(class="w-[140px] aspect-video cent")
                         img(src="../assets/IMG-20240306-WA0006.jpg", alt="")
@@ -164,7 +164,7 @@ html( dir="ltr" lang="en" )
                      li(class="w-[140px] aspect-video cent")
                         img(src="../assets/IMG-20240303-WA0011.jpg", alt="")
 
-               div(x-data="{}", x-init=`$nextTick(() => {let ul = $refs.logos;ul.insertAdjacentHTML('afterend', ul.outerHTML);ul.nextSibling.setAttribute('aria-hidden', 'true');})`, class="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_328px,_black_calc(100%-328px),transparent_100%)] ")
+               div(x-data="{}", x-init=`$nextTick(() => {let ul = $refs.logos;ul.insertAdjacentHTML('afterend', ul.outerHTML);ul.nextSibling.setAttribute('aria-hidden', 'true');})`, class="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_20px,_black_calc(100%-20px),transparent_100%)] ")
                   ul(x-ref="logos", class="flex gap-[20px] items-center justify-center md:justify-start [&amp;_li]:mx-8  [&amp;_img]:max-w-none animate-infinite-scroll")
 
                      li(class="w-[140px] aspect-video cent")
@@ -194,108 +194,12 @@ html( dir="ltr" lang="en" )
 
 
 
-            //- div(class="pt-32")     
-            //-    div(class=" font-bold swiper  mySwiper pt-10")
-            //-       div(class="swiper-wrapper") 
-                     
-
-                     
-            //-          div(class="swiper-slide aspect-video bg-white  !h-auto")
-            //-             div(class="cent w-full h-full")
-            //-                img(src="../assets/IMG-20240303-WA0001.jpg" class="w-fit ", alt="")
-                     
-            //-          div(class="swiper-slide aspect-video bg-white  !h-auto")
-            //-             div(class="cent w-full h-full")
-            //-                img(src="../assets/IMG-20240303-WA0002.jpg" class="w-fit ", alt="")
-                     
-            //-          div(class="swiper-slide aspect-video bg-white  !h-auto")
-            //-             div(class="cent w-full h-full")
-            //-                img(src="../assets/IMG-20240303-WA0003.jpg" class="w-fit ", alt="")
-                     
-            //-          div(class="swiper-slide aspect-video bg-white  !h-auto")
-            //-             div(class="cent w-full h-full")
-            //-                img(src="../assets/IMG-20240303-WA0004.jpg" class="w-fit ", alt="")
-                     
-            //-          div(class="swiper-slide aspect-video bg-white  !h-auto")
-            //-             div(class="cent w-full h-full")
-            //-                img(src="../assets/IMG-20240303-WA0005.jpg" class="w-fit ", alt="")
-                     
-            //-          div(class="swiper-slide aspect-video bg-white  !h-auto")
-            //-             div(class="cent w-full h-full")
-            //-                img(src="../assets/IMG-20240303-WA0006.jpg" class="w-fit ", alt="")
-                     
-            //-          div(class="swiper-slide aspect-video bg-white  !h-auto")
-            //-             div(class="cent w-full h-full")
-            //-                img(src="../assets/IMG-20240303-WA0007.jpg" class="w-fit ", alt="")
-                     
-            //-          div(class="swiper-slide aspect-video bg-white  !h-auto")
-            //-             div(class="cent w-full h-full")
-            //-                img(src="../assets/IMG-20240303-WA0008.jpg" class="w-fit ", alt="")
-                     
-            //-          div(class="swiper-slide aspect-video bg-white  !h-auto")
-            //-             div(class="cent w-full h-full")
-            //-                img(src="../assets/IMG-20240303-WA0010.jpg" class="w-fit ", alt="")
-                     
-            //-          div(class="swiper-slide aspect-video bg-white  !h-auto")
-            //-             div(class="cent w-full h-full")
-            //-                img(src="../assets/IMG-20240303-WA0011.jpg" class="w-fit ", alt="")
-                     
-
-
-       
-            //- div(class="pt-10")     
-            //-    div(class=" font-bold swiper  mySwiper pt-10")
-            //-       div(class="swiper-wrapper") 
-            //-          div(class="swiper-slide aspect-video bg-white  !h-auto")
-            //-             div(class="cent w-full h-full")
-            //-                img(src="../assets/IMG-20240303-WA0012.jpg" class="w-fit ", alt="")
-                     
-            //-          div(class="swiper-slide aspect-video bg-white  !h-auto")
-            //-             div(class="cent w-full h-full")
-            //-                img(src="../assets/IMG-20240303-WA0013.jpg" class="w-fit ", alt="")
-                     
-
-            //-          div(class="swiper-slide aspect-video bg-white  !h-auto")
-            //-             div(class="cent w-full h-full")
-            //-                img(src="../assets/IMG-20240303-WA0015.jpg" class="w-fit ", alt="")
-                     
-            //-          div(class="swiper-slide aspect-video bg-white  !h-auto")
-            //-             div(class="cent w-full h-full")
-            //-                img(src="../assets/IMG-20240303-WA0016.jpg" class="w-fit ", alt="")
-                     
-            //-          div(class="swiper-slide aspect-video bg-white  !h-auto")
-            //-             div(class="cent w-full h-full")
-            //-                img(src="../assets/IMG-20240303-WA0017.jpg" class="w-fit ", alt="")
-                     
-            //-          div(class="swiper-slide aspect-video bg-white  !h-auto")
-            //-             div(class="cent w-full h-full")
-            //-                img(src="../assets/IMG-20240303-WA0018.jpg" class="w-fit ", alt="")
-                     
-            //-          div(class="swiper-slide aspect-video bg-white  !h-auto")
-            //-             div(class="cent w-full h-full")
-            //-                img(src="../assets/IMG-20240303-WA0019.jpg" class="w-fit ", alt="")
-                     
-            //-          div(class="swiper-slide aspect-video bg-white  !h-auto")
-            //-             div(class="cent w-full h-full")
-            //-                img(src="../assets/IMG-20240303-WA0020.jpg" class="w-fit ", alt="")
-                     
-            //-          div(class="swiper-slide aspect-video bg-white  !h-auto")
-            //-             div(class="cent w-full h-full")
-            //-                img(src="../assets/IMG-20240303-WA0021.jpg" class="w-fit ", alt="")
-                     
-            //-          div(class="swiper-slide aspect-video bg-white  !h-auto")
-            //-             div(class="cent w-full h-full")
-            //-                img(src="../assets/IMG-20240303-WA0022.jpg" class="w-fit ", alt="")
-                     
-            //-          div(class="swiper-slide aspect-video bg-white  !h-auto")
-            //-             div(class="cent w-full h-full")
-            //-                img(src="../assets/IMG-20240303-WA0023.jpg" class="w-fit ", alt="")
 
       section(class="  py-[5%]  maxlg:py-20 bg-white w-full")
-         div(class=" w-full contain ")
-            div(class="cent gap-4 my-3 text-3xl maxlg:flex-col" )
-               h3(class="font-bold text-5xl text-primary uppercase" data-aos-duration="1000" data-aos="fade-right") Our Services
-               div(class="  maxlg:hidden") |
+         div(class="w-full contain")
+            div(class="gap-4 my-3 text-3xl cent maxlg:flex-col" )
+               h3(class="text-5xl font-bold uppercase text-primary" data-aos-duration="1000" data-aos="fade-right") Our Services
+               div(class=" maxlg:hidden") |
                p(data-aos-duration="1000" data-aos="fade-left") HOTEL BOOKING SERVICES
                  
                   
@@ -304,42 +208,42 @@ html( dir="ltr" lang="en" )
                div(class="group hover:shadow-inner text-[#393939] rounded-2xl hover:text-white hover:bg-[#3E63CE] p-5 relative transition-colors duration-300 delay-200  ease")
                   
                   //- div(class="bed-icon")
-                  <i class="fa-solid fa-bed text-5xl"></i>
+                  <i class="text-3xl fa-solid fa-bed"></i>
                   div(class="   my-1 uppercase  text-[18px] font-medium" ) Hotel Selection
                   hr(class="border-[#C23647] group-hover:border-white my-2 w-[80%]")
                   div(class="  text-[14px] font-medium ") Browse through our selection of hotels and choose the one that suits your preferences. 
                div(class="group hover:shadow-inner text-[#393939] rounded-2xl hover:text-white hover:bg-[#3E63CE] p-5 relative transition-colors duration-300 delay-200  ease")
                   
                   //- div(class="booking-icon")
-                  <i class="fa-regular fa-calendar-days text-5xl"></i>
+                  <i class="text-3xl fa-regular fa-calendar-days"></i>
                   div(class="   my-1 uppercase  text-[18px] font-medium" ) Booking Reservations
                   hr(class="border-[#C23647] group-hover:border-white my-2 w-[80%]")
                   div(class="  text-[14px] font-medium ") Effortlessly make reservations for your chosen hotel and secure your stay. 
                div(class="group hover:shadow-inner text-[#393939] rounded-2xl hover:text-white hover:bg-[#3E63CE] p-5 relative transition-colors duration-300 delay-200  ease")
                   
                   //- div(class="hotel-icon")
-                  <i class="fa-solid fa-hotel text-5xl"></i>
+                  <i class="text-3xl fa-solid fa-hotel"></i>
                   div(class="   my-1 uppercase  text-[18px] font-medium" ) Hotel Details
                   hr(class="border-[#C23647] group-hover:border-white my-2 w-[80%]")
                   div(class="  text-[14px] font-medium ") Get access to hotel guides and essential info about your choice on one page. 
                div(class="group hover:shadow-inner text-[#393939] rounded-2xl hover:text-white hover:bg-[#3E63CE] p-5 relative transition-colors duration-300 delay-200  ease")
                   
                   //- div(class="credit-card-icon")
-                  <i class="fa-regular fa-credit-card text-5xl"></i>
+                  <i class="text-3xl fa-regular fa-credit-card"></i>
                   div(class="   my-1 uppercase  text-[18px] font-medium" ) Payment Options
                   hr(class="border-[#C23647] group-hover:border-white my-2 w-[80%]")
                   div(class="  text-[14px] font-medium ") Choose from various secure payment methods to complete your booking. 
                div(class="group hover:shadow-inner text-[#393939] rounded-2xl hover:text-white hover:bg-[#3E63CE] p-5 relative transition-colors duration-300 delay-200  ease")
                   
                   //- div(class="businessman-icon")
-                  <i class="fa-solid fa-user-tie text-5xl"></i>
+                  <i class="text-3xl fa-solid fa-user-tie"></i>
                   div(class="   my-1 uppercase  text-[18px] font-medium" ) We are with you
                   hr(class="border-[#C23647] group-hover:border-white my-2 w-[80%]")
                   div(class="  text-[14px] font-medium ") A personal account manager who carefully follows up on your bookings and requests. 
                div(class="group hover:shadow-inner text-[#393939] rounded-2xl hover:text-white hover:bg-[#3E63CE] p-5 relative transition-colors duration-300 delay-200  ease")
                   
                   //- div(class="star-icon")
-                  <i class="fa-regular fa-star text-5xl"></i>
+                  <i class="text-3xl fa-regular fa-star"></i>
                   div(class="   my-1 uppercase  text-[18px] font-medium" ) More features
                   hr(class="border-[#C23647] group-hover:border-white my-2 w-[80%]")
                   div(class="  text-[14px] font-medium ") No prepayment, get your reports and awards. best prices Incl All and more features in our platform 
@@ -347,25 +251,25 @@ html( dir="ltr" lang="en" )
                   
                   //- div(class="plan-icon")
                   div(class="rotate-[-45deg] w-fit")
-                     <i class="fa-solid fa-plane text-5xl "></i>
+                     <i class="text-3xl fa-solid fa-plane "></i>
                   div(class="   my-1 uppercase  text-[18px] font-medium" ) Holiday Design
                   hr(class="border-[#C23647] group-hover:border-white my-2 w-[80%]")
                   div(class="  text-[14px] font-medium ") Use the wide range of travel services to combine the dream journey. Holiday Packages are available through the contact team
                div(class="group hover:shadow-inner text-[#393939] rounded-2xl hover:text-white hover:bg-[#3E63CE] p-5 relative transition-colors duration-300 delay-200  ease")
                   
                   //- div(class="headphone-icon")
-                  <i class="fa-solid fa-headphones text-5xl "></i>
+                  <i class="text-3xl fa-solid fa-headphones "></i>
                   div(class="   my-1 uppercase  text-[18px] font-medium" ) Customer Support
                   hr(class="border-[#C23647] group-hover:border-white my-2 w-[80%]")
                   div(class="  text-[14px] font-medium ") Contact our 24/7 customer support for assistance with your booking.
 
     
 
-      section(class="    text-white  w-full bg-no-repeat bg-cover bg-center " style="background-image: url('../assets/tec.jpg');")
+      section(class="w-full text-white bg-center bg-no-repeat bg-cover " style="background-image: url('../assets/tec.jpg');")
          div(class="py-[5%] maxlg:py-20 w-full  bg-secondary/90 ")
             div(class=" w-full  px-[5%]")
 
-               div(class="flex justify-between maxlg:flex-col gap-4")
+               div(class="flex justify-between gap-4 maxlg:flex-col")
                   div(class="w-full")
                      h4(class="font-bold text-2xl text-[#D2A124] uppercase" data-aos-duration="1000" data-aos="fade-right") Explore Our
                      h3(class="font-bold text-[80px] maxlg:text-[60px] maxsm:text-[40px] text-white uppercase" data-aos-duration="1000" data-aos="fade-right") Technology
@@ -409,9 +313,9 @@ html( dir="ltr" lang="en" )
 
          
       section(class="  py-[5%]  maxlg:py-20 bg-white w-full")
-         div(class=" w-full contain -80 ")
-            div(class=" text-center")
-               h3(class="font-bold text-5xl text-primary uppercase" ) booking process 
+         div(class="w-full contain -80")
+            div(class="text-center ")
+               h3(class="text-5xl font-bold uppercase text-primary" ) booking process 
                .cent.gap-4.my-3.text-3xl
                   hr(class="  w-[80px] border border-[#393939]") 
                   p 3 Simple Steps
@@ -448,23 +352,29 @@ html( dir="ltr" lang="en" )
 
       section(class="map bg-no-repeat bg-cover bg-center w-full aspect-[1.718] relative" style="background-image: url('../assets/map.jpg');")
          div(class="animated-marker")
-            i(class="fa-solid fa-location-dot maxsm:text-xl text-3xl")
+            i(class="text-3xl fa-solid fa-location-dot maxsm:text-xl")
          div(class="animated-marker")
-            i(class="fa-solid fa-location-dot maxsm:text-xl text-3xl")
+            i(class="text-3xl fa-solid fa-location-dot maxsm:text-xl")
          div(class="animated-marker")
-            i(class="fa-solid fa-location-dot maxsm:text-xl text-3xl")
+            i(class="text-3xl fa-solid fa-location-dot maxsm:text-xl")
          div(class="animated-marker")
-            i(class="fa-solid fa-location-dot maxsm:text-xl text-3xl")
+            i(class="text-3xl fa-solid fa-location-dot maxsm:text-xl")
          div(class="animated-marker")
-            i(class="fa-solid fa-location-dot maxsm:text-xl text-3xl")
+            i(class="text-3xl fa-solid fa-location-dot maxsm:text-xl")
          div(class="animated-marker")
-            i(class="fa-solid fa-location-dot maxsm:text-xl text-3xl")
+            i(class="text-3xl fa-solid fa-location-dot maxsm:text-xl")
          div(class="animated-marker")
-            i(class="fa-solid fa-location-dot maxsm:text-xl text-3xl")
+            i(class="text-3xl fa-solid fa-location-dot maxsm:text-xl")
          div(class="animated-marker")
-            i(class="fa-solid fa-location-dot maxsm:text-xl text-3xl")
+            i(class="text-3xl fa-solid fa-location-dot maxsm:text-xl")
          div(class="animated-marker")
-            i(class="fa-solid fa-location-dot maxsm:text-xl text-3xl")
+            i(class="text-3xl fa-solid fa-location-dot maxsm:text-xl")
+         div(class="animated-marker")
+            i(class="text-3xl fa-solid fa-location-dot maxsm:text-xl")
+         div(class="animated-marker")
+            i(class="text-3xl fa-solid fa-location-dot maxsm:text-xl")
+         div(class="animated-marker")
+            i(class="text-3xl fa-solid fa-location-dot maxsm:text-xl")
          div(class="absolute flex flex-col maxmd:text-[6px] leading-tight font-bold text-base justify-center items-center top-[9%] maxsm:top-[8%] right-[39%]") 
             span Europe
 
@@ -493,8 +403,8 @@ html( dir="ltr" lang="en" )
             span(class="lg:mt-1") Cities
 
          div(class="   translate-y-[-140px] maxlg:translate-y-[0] flex justify-center items-end h-full w-full")
-            button( type="button" class="maxsm:mx-auto inline-flex items-center justify-center px-8 maxsm:px-1 py-3 maxsm:py-1 maxlg:mb-2 text-base maxsm:text-[10px] font-bold  text-white bg-[#EF7601] rounded-full  hover:opacity-70 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-fifth")
-               | OUR TOP DESTINATIONS
+            button( type="button" class="uppercase maxsm:mx-auto inline-flex items-center justify-center px-8 maxsm:px-1 py-3 maxsm:py-1 maxlg:mb-2 text-lg maxsm:text-[10px] font-bold  text-white bg-[#EF7601] rounded-full  hover:opacity-70 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-fifth")
+               | OUR TOP DESTINATIONS hotel keys
       div(class="contain-80 maxlg:!px-0 flex items-end  w-full h-full Statistics")
          div(class="rounded-[30px] maxlg:rounded-sm flex gap-[30px] p-[30px] w-full  bg-[#194C9AB2] maxlg:bg-[#5487C6] translate-y-[-110px] maxlg:translate-y-[0]   relative" x-data="{country:false}")
             div(x-data="{}", x-init=`$nextTick(() => {let ul = $refs.logos;ul.insertAdjacentHTML('afterend', ul.outerHTML);ul.nextSibling.setAttribute('aria-hidden', 'true');})`, class="w-full inline-flex flex-nowrap overflow-hidden maxlg:[mask-image:_linear-gradient(to_right,transparent_0,_black_18px,_black_calc(100%-18px),transparent_100%)] [mask-image:_linear-gradient(to_right,transparent_0,_black_0px,_black_calc(100%-0px),transparent_100%)] ")
@@ -605,120 +515,11 @@ html( dir="ltr" lang="en" )
             //- div(class="flex items-center h-[116px]")
             //-    i(class="fa-solid  text-[40px] text-white" @click="country=!country" :class="{'fa-angle-right':!country,'fa-angle-down':country}") 
                
-      //- div(class="contain-80 flex items-end maxlg:mt-20 w-full h-full Statistics")
-      //-    div(class="rounded-[30px] flex gap-[30px] p-[30px] w-full  bg-[#194C9AB2] translate-y-[-110px] maxlg:translate-y-[0]   relative" x-data="{country:false}")
-      //-       div(class="  w-full  ")
-      //-          div(class=" w-full swiper  mySwiper2 ")
-      //-             div(class="swiper-wrapper") 
 
-
-      //-                li(class="min-w-max border-2 border-white relative bg-[#DFEBFE] ")
-                        
-
-      //-                   div(class=" text-center py-[10px] px-[20px] text-[20px] maxlg:text-base maxsm:text-xs font-medium cards") 
-      //-                      p(class="min-w-max text-[#2F549A] font-bold")  Uk
-      //-                      span(class="text-[27.57px] maxlg:text-base maxsm:text-xs"  ) +
-      //-                      span(class="text-[27.57px] maxlg:text-base maxsm:text-xs "  ) 200
-
-       
-      //-                li(class="min-w-max border-2 border-white relative bg-[#DFEBFE] ")
-                        
-
-      //-                   div(class=" text-center py-[10px] px-[20px] text-[20px] maxlg:text-base maxsm:text-xs font-medium cards") 
-      //-                      p(class="min-w-max text-[#2F549A] font-bold")  Dubai
-      //-                      span(class="text-[27.57px] maxlg:text-base maxsm:text-xs"  ) +
-      //-                      span(class="text-[27.57px] maxlg:text-base maxsm:text-xs "  ) 200
-
-       
-      //-                li(class="min-w-max border-2 border-white relative bg-[#DFEBFE] ")
-                        
-
-      //-                   div(class=" text-center py-[10px] px-[20px] text-[20px] maxlg:text-base maxsm:text-xs font-medium cards") 
-      //-                      p(class="min-w-max text-[#2F549A] font-bold")  Turkey
-      //-                      span(class="text-[27.57px] maxlg:text-base maxsm:text-xs"  ) +
-      //-                      span(class="text-[27.57px] maxlg:text-base maxsm:text-xs "  ) 200
-
-       
-      //-                li(class="min-w-max border-2 border-white relative bg-[#DFEBFE] ")
-                        
-
-      //-                   div(class=" text-center py-[10px] px-[20px] text-[20px] maxlg:text-base maxsm:text-xs font-medium cards") 
-      //-                      p(class="min-w-max text-[#2F549A] font-bold")  Thailand
-      //-                      span(class="text-[27.57px] maxlg:text-base maxsm:text-xs"  ) +
-      //-                      span(class="text-[27.57px] maxlg:text-base maxsm:text-xs "  ) 200
-
-       
-      //-                li(class="min-w-max border-2 border-white relative bg-[#DFEBFE] ")
-                        
-
-      //-                   div(class=" text-center py-[10px] px-[20px] text-[20px] maxlg:text-base maxsm:text-xs font-medium cards") 
-      //-                      p(class="min-w-max text-[#2F549A] font-bold")  United stated
-      //-                      span(class="text-[27.57px] maxlg:text-base maxsm:text-xs"  ) +
-      //-                      span(class="text-[27.57px] maxlg:text-base maxsm:text-xs "  ) 200
-
-       
-      //-                li(class="min-w-max border-2 border-white relative bg-[#DFEBFE] ")
-                        
-
-      //-                   div(class=" text-center py-[10px] px-[20px] text-[20px] maxlg:text-base maxsm:text-xs font-medium cards") 
-      //-                      p(class="min-w-max text-[#2F549A] font-bold")  Italy
-      //-                      span(class="text-[27.57px] maxlg:text-base maxsm:text-xs"  ) +
-      //-                      span(class="text-[27.57px] maxlg:text-base maxsm:text-xs "  ) 200
-
-       
-      //-                li(class="min-w-max border-2 border-white relative bg-[#DFEBFE] ")
-                        
-
-      //-                   div(class=" text-center py-[10px] px-[20px] text-[20px] maxlg:text-base maxsm:text-xs font-medium cards") 
-      //-                      p(class="min-w-max text-[#2F549A] font-bold")  Malaysia
-      //-                      span(class="text-[27.57px] maxlg:text-base maxsm:text-xs"  ) +
-      //-                      span(class="text-[27.57px] maxlg:text-base maxsm:text-xs "  ) 200
-      //-                li(class="min-w-max border-2 border-white relative bg-[#DFEBFE] ")
-                        
-
-      //-                   div(class=" text-center py-[10px] px-[20px] text-[20px] maxlg:text-base maxsm:text-xs font-medium cards") 
-      //-                      p(class="min-w-max text-[#2F549A] font-bold")  Egypt
-      //-                      span(class="text-[27.57px] maxlg:text-base maxsm:text-xs"  ) +
-      //-                      span(class="text-[27.57px] maxlg:text-base maxsm:text-xs "  ) 200
-      //-                li(class="min-w-max border-2 border-white relative bg-[#DFEBFE] ")
-                        
-
-      //-                   div(class=" text-center py-[10px] px-[20px] text-[20px] maxlg:text-base maxsm:text-xs font-medium cards") 
-      //-                      p(class="min-w-max text-[#2F549A] font-bold")  Spain
-      //-                      span(class="text-[27.57px] maxlg:text-base maxsm:text-xs"  ) +
-      //-                      span(class="text-[27.57px] maxlg:text-base maxsm:text-xs "  ) 200
-      //-                li(class="min-w-max border-2 border-white relative bg-[#DFEBFE] ")
-                        
-
-      //-                   div(class=" text-center py-[10px] px-[20px] text-[20px] maxlg:text-base maxsm:text-xs font-medium cards") 
-      //-                      p(class="min-w-max text-[#2F549A] font-bold")  France
-      //-                      span(class="text-[27.57px] maxlg:text-base maxsm:text-xs"  ) +
-      //-                      span(class="text-[27.57px] maxlg:text-base maxsm:text-xs   ") 700
-      //-                li(class="min-w-max border-2 border-white relative bg-[#DFEBFE] ")
-                        
-
-      //-                   div(class=" text-center py-[10px] px-[20px] text-[20px] maxlg:text-base maxsm:text-xs font-medium cards") 
-      //-                      p(class="min-w-max text-[#2F549A] font-bold")  Saudi Arab
-      //-                      span(class="text-[27.57px] maxlg:text-base maxsm:text-xs"  ) +
-      //-                      span(class="text-[27.57px] maxlg:text-base maxsm:text-xs " ) 200
-      //-                li(class="min-w-max border-2 border-white relative bg-[#DFEBFE] ")
-                        
-
-      //-                   div(class=" text-center py-[10px] px-[20px] text-[20px] maxlg:text-base maxsm:text-xs font-medium cards") 
-      //-                      p(class="min-w-max text-[#2F549A] font-bold")  Maldive
-      //-                      span(class="text-[27.57px] maxlg:text-base maxsm:text-xs"  ) +
-      //-                      span(class="text-[27.57px] maxlg:text-base maxsm:text-xs " ) 600
-
-       
-      //-       //- div(class="flex items-center h-[116px]")
-      //-       //-    i(class="fa-solid  text-[40px] text-white" @click="country=!country" :class="{'fa-angle-right':!country,'fa-angle-down':country}") 
-               
-
-                     
 
          
-      section(class="w-full bg-white contain  py-10")
-         img(class="rounded-3xl w-full" src="../assets/Screenshot 2024-03-07 001439.png")
+      section(class="w-full bg-white contain")
+         img(class="w-full rounded-3xl" src="../assets/info.svg")
       include ./components/footer
       //- include ./components/scripts
 

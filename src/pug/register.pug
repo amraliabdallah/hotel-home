@@ -1,0 +1,141 @@
+
+doctype html
+html( dir="ltr" lang="en" )
+   include ./components/head
+
+   body(class="text-[#393939] overflow-x-hidden ")
+      include ./components/navbar
+      section(class="mx-auto w-[90%]  lg:w-[950px]  py-[5%]" x-data="{tab:'tab_1',successPop:false}") 
+        h2(class="text-primary text-[28px] font-bold text-center mb-3") Register here as an Agent
+        hr(class="mb-8  border-[#43A553] w-[85%] mx-auto")
+        div(class="grid grid-cols-3") 
+            div(class="text-lg  font-medium text-black  bg-[#EAEAEA] relative rounded-tr-[80px] p-2  maxlg:text-xs maxsm:text-[10px] maxvarysmvarysm:p-[2px]" :class="{'active-tab' :tab=='tab_1','finished-tab' :tab=='tab_2' || tab=='tab_3' }")  
+                span(class="maxlg:hidden") Step 1: 
+                | Personal information
+                div(class="triangle")
+            div(class=" text-lg font-medium text-black bg-[#EAEAEA] p-2 relative rounded-tr-[80px] maxlg:text-xs maxsm:text-[10px] maxvarysmvarysm:p-[2px]" :class="{'active-tab' :tab=='tab_2','finished-tab' : tab=='tab_3'}" ) 
+                span(class="maxlg:hidden") Step 2: 
+                | Company Details   
+                div(class="triangle")
+            div(class="text-lg font-medium text-black bg-[#EAEAEA] p-2 relative rounded-tr-[80px] maxlg:text-xs maxsm:text-[10px] maxvarysmvarysm:p-[2px]" :class="{'active-tab' :tab=='tab_3'}") 
+                span(class="maxlg:hidden") Step 3:
+                | User Login
+                div(class="triangle")
+        div(class="h-[10px] bg-[#EAEAEA] mt-2 mb-[30px] relative" )
+            div(class="absolute inset-y-0 bg-[#43A553]" :class="{'w-[33%] ':tab=='tab_2','w-[66%] ':tab=='tab_3'}") 
+        div(class="rounded-[33px] px-6 pt-10 pb-6 bg-[#EAEAEA]" :class="{'lg:w-[672px] mx-auto': tab=='tab_3'}" ) 
+            div(class="flex maxlg:flex-col" x-show="tab=='tab_1'") 
+                div(class="w-full rtl:pl-[3%] ltr:pr-[3%] lg:border-r-[.7px]  border-black") 
+                    h2(class="text-black text-[22px]  font-bold  mb-8 maxlg:mb-4 maxlg:text-lg") Personal Agent Information
+                    div 
+                        label(for="personal-admin", class="block mb-2 text-lg font-normal ") Person Name     
+                        input#personal-admin(type="text", class="rounded-[7px]  bg-white   outline-none block flex-1 min-w-0 w-full text-sm  p-2.5  ", placeholder="first name and surname")
+                    div(class="mt-6")
+                        label(for="personal-email", class="block mb-2 text-lg font-normal ") Email Address     
+                        input#personal-email(type="email", class="rounded-[7px]  bg-white   outline-none block flex-1 min-w-0 w-full text-sm  p-2.5 ", placeholder="Your Email")
+                    div(class="mt-6")
+                        label(for="personal-phone", class="block mb-2 text-lg font-normal ") Phone Number     
+                        input#personal-phone(type="number", class="rounded-[7px]  bg-white   outline-none block flex-1 min-w-0 w-full text-sm  p-2.5 ", placeholder="Your Phone")
+                div(class="w-full rtl:pr-[3%] ltr:pl-[3%] maxlg:mt-5") 
+                    h2(class="text-black text-[22px] font-bold  mb-8 maxlg:mb-4 maxlg:text-lg") Management Contact
+                    div 
+                        label(for="Management-admin", class="block mb-2 text-lg font-normal ") Person Name     
+                        input#Management-admin(type="text", class="rounded-[7px]  bg-white   outline-none block flex-1 min-w-0 w-full text-sm  p-2.5  ", placeholder="first name and surname")
+                    div(class="mt-6")
+                        label(for="Management-email", class="block mb-2 text-lg font-normal ") Email Address     
+                        input#Management-email(type="email", class="rounded-[7px]  bg-white   outline-none block flex-1 min-w-0 w-full text-sm  p-2.5 ", placeholder="Your Email")
+                    div(class="mt-6")
+                        label(for="Management-phone", class="block mb-2 text-lg font-normal ") Phone Number     
+                        input#Management-phone(type="number", class="rounded-[7px]  bg-white   outline-none block flex-1 min-w-0 w-full text-sm  p-2.5 ", placeholder="Your Phone")
+            div(class="grid grid-cols-3 maxlg:grid-cols-1 gap-[5%] maxlg:gap-5" x-show="tab=='tab_2'") 
+                div(class="w-full ") 
+                    
+                    div 
+                        label(for="company-admin", class="block mb-2 text-lg font-normal ") Company Name    
+                        input#company-admin(type="text", class="rounded-[7px]  bg-white   outline-none block flex-1 min-w-0 w-full text-sm  p-2.5  ", placeholder="Company Name")
+                    div(class="pt-6")
+                        label(for="address", class="block mb-2 text-lg font-normal ") Address    
+                        input#address(type="text", class="rounded-[7px]  bg-white   outline-none block flex-1 min-w-0 w-full text-sm  p-2.5 ", placeholder="Address")
+                    div(class="pt-6")
+                        label(for="Payment", class="block mb-2 text-lg font-normal ") Payment of Currency    
+                        //- input#Payment(type="number", class="rounded-[7px]  bg-white   outline-none block flex-1 min-w-0 w-full text-sm  p-2.5 ", placeholder="Your Phone")
+                        select#Payment(name="" class="rounded-[7px]  bg-white   outline-none block flex-1 min-w-0 w-full text-sm  p-2.5 ") 
+                            option(selected hidden )  Payment of Currency  
+                            option( )  USD
+                div(class="w-full ") 
+                    
+                    div 
+                        label(for="Management-admin", class="block mb-2 text-lg font-normal ") Company Reg. No.     
+                        input#Management-admin(type="number", class="rounded-[7px]  bg-white   outline-none block flex-1 min-w-0 w-full text-sm  p-2.5  ", placeholder="Company Reg. No. ")
+                    div(class="pt-6")
+                        label(for="Management-email", class="block mb-2 text-lg font-normal ") City     
+                        input#Management-email(type="text", class="rounded-[7px]  bg-white   outline-none block flex-1 min-w-0 w-full text-sm  p-2.5 ", placeholder=" City ")
+                    div(class="pt-6")
+                        label(for="Management-phone", class="block mb-2 text-lg font-normal ") Pincode     
+                        input#Management-phone(type="number", class="rounded-[7px]  bg-white   outline-none block flex-1 min-w-0 w-full text-sm  p-2.5 ", placeholder="Pincode")
+                div(class="w-full ") 
+                    
+                    div 
+                        label(for="Management-admin", class="block mb-2 text-lg font-normal ") Nature of Business    
+                        select#Payment(name="" class="rounded-[7px]  bg-white   outline-none block flex-1 min-w-0 w-full text-sm  p-2.5 ") 
+                            option(selected hidden )  Nature of Business  
+                            option( )  Nature of Business
+                            option( )  Nature of Business
+                    div(class="pt-6")
+                        label(for="Management-email", class="block mb-2 text-lg font-normal ") Country     
+                        //- input#Management-email(type="email", class="rounded-[7px]  bg-white   outline-none block flex-1 min-w-0 w-full text-sm  p-2.5 ", placeholder="Your Email")
+                        select#Payment(name="" class="rounded-[7px]  bg-white   outline-none block flex-1 min-w-0 w-full text-sm  p-2.5 ") 
+                            option(selected hidden )  Country  
+                            option( )  country 01
+                            option( )  country 02
+                        
+                    div(class="pt-6")
+                        label(for="Management-phone", class="block mb-2 text-lg font-normal ") Website     
+                        input#Management-phone(type="text", class="rounded-[7px]  bg-white   outline-none block flex-1 min-w-0 w-full text-sm  p-2.5 ", placeholder="Website")
+            div(class="flex justify-center" x-show="tab=='tab_3'") 
+                div(class="w-full max-w-[470px]") 
+                    
+                    div 
+                        label(for="company-admin", class="block mb-2 text-lg font-normal ") Username    
+                        input#company-admin(type="text", class="rounded-[7px]  bg-white   outline-none block flex-1 min-w-0 w-full text-sm  p-2.5  ", placeholder="Company Name")
+                    div(class="pt-6")
+                        label(for="password", class="block mb-2 text-lg font-normal ") password   
+                        input#password(type="text", class="rounded-[7px]  bg-white   outline-none block flex-1 min-w-0 w-full text-sm  p-2.5 ", placeholder="Address")
+                    div(class="pt-6")
+                        label(for="confirm-password", class="block mb-2 text-lg font-normal ") Confirm Password   
+                        input#confirm-password(type="text", class="rounded-[7px]  bg-white   outline-none block flex-1 min-w-0 w-full text-sm  p-2.5 ", placeholder="Address")
+
+
+                        
+            div(class="block")
+                div.flex.justify-center.gap-8.pt-12 
+                    button(x-show="tab=='tab_3' || tab=='tab_2'" x-on:click="tab=='tab_3' ? tab='tab_2':tab='tab_1'" class="rounded-full text-white text-[28.59px] bg-[#787878] w-[184px] flex items-center justify-center gap-2 font-bold") 
+                        i(class="text-lg fa-solid fa-angle-left")
+                        span prev
+                        
+                    button(x-show="tab=='tab_1' || tab=='tab_2'" x-on:click="tab=='tab_1' ? tab='tab_2': tab='tab_3'" class="rounded-full text-white text-[28.59px] bg-[#32BA7C] w-[184px] flex items-center justify-center gap-2 font-bold") 
+                        span Next
+                        i(class="text-lg fa-solid fa-angle-right") 
+                    button(x-show="tab=='tab_3' " x-on:click="successPop = true"  class="rounded-full text-white text-[28.59px] bg-[#32BA7C] w-[184px] flex items-center justify-center gap-2 font-bold") 
+                        span finish
+                    
+        div(class="fixed z-[5555] inset-0  bg-black/30 hidden" :class="{'cent !flex':successPop }" x-show="successPop")
+            
+            div(class=" py-[25px] cent flex-col bg-[#32BA7C] rounded-[12.58px] w-[422.55px]" x-show="successPop" x-on:click.away="successPop=false")
+                div(class=" text-center flex items-center flex-col rounded-[26.41px] w-[363px] px-[16px] bg-white  gap-6 maxmd:gap-4 pb-10 pt-5" )
+                    div(class="check-success")
+                    div(class="text-2xl font-bold text-green-500 ") Congratulation ! 
+                    div(class="text-[13.41px]") Your Registration completed, please <br> check your E-mail to verify your account
+                div
+                    div(class="p-4 text-sm font-medium text-center text-white ") 
+                        | go to 
+                        a(href="./" class="text-blue-600 underline") homePage
+
+
+                
+
+      include ./components/footer
+
+
+
+

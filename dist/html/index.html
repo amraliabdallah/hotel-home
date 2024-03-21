@@ -11,14 +11,14 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" ></script>
   </head>
   <body class="text-[#393939] overflow-x-hidden ">
-    <header class=" w-full fixed top-0  text-white text-lg  bg-no-repeat bg-cover bg-center z-50 bg-transparent" id="target">
-      <div class="  w-full ">
+    <header class="fixed top-0 z-50 w-full text-lg text-white bg-transparent bg-center bg-no-repeat bg-cover " id="target">
+      <div class="relative w-full">
         <div class="  flex justify-between items-center contain   py-2  gap-[3%]" x-data="{sideBar:true,isMobile: window.innerWidth &lt; 1024 }" x-init="sideBar = (window.innerWidth &gt; 1024)">
-          <div class="col-span-1  "> 
+          <div class="col-span-1 "> 
             <div class="  flex justify-center h-[86px] maxxl:h-[64] maxlg:h-[34px] w-max"><img class="  h-[86px] maxxl:h-[64] maxlg:h-[34px]" src="../assets/logo.png" alt=""></div>
           </div>
           <div class="maxlg:fixed rtl:right-0 ltr:left-0 maxlg:top-0 maxlg:min-w-[280px] maxlg:pt-[60px] lg:flex items-center maxlg:bg-secondary maxlg:px-[16px] maxlg:h-screen maxlg:min-h-screen maxlg:text-white gap-[3%]" @click.away="isMobile? sideBar=false :''" x-show="sideBar">
-            <nav class="flex justify-between   gap-7 maxlg:flex-col maxlg:items-center min-w-max"><a href="http://" target="_blank" rel="noopener noreferrer"> 
+            <nav class="flex justify-between gap-7 maxlg:flex-col maxlg:items-center min-w-max"><a href="/" target="_blank" rel="noopener noreferrer"> 
                 <h5>Home</h5></a><a href="http://" target="_blank" rel="noopener noreferrer"> 
                 <h5>About Us</h5></a><a href="http://" target="_blank" rel="noopener noreferrer"> 
                 <h5>Services  </h5></a><a href="http://" target="_blank" rel="noopener noreferrer"> 
@@ -34,11 +34,11 @@
                       <h3 class="text-[24px] font-bold mb-3">SIGN IN</h3>
                       <hr class="border-[#202B45]">
                       <label class="block my-2 text-sm font-medium " for="website-admin">Email</label>
-                      <div class="flex"><span class="inline-flex items-center px-3 text-sm  bg-gray-200 border rounded-e-0 border-gray-300 rounded-s-md "><i class="fa-solid fa-envelope"></i></span>
+                      <div class="flex"><span class="inline-flex items-center px-3 text-sm bg-gray-200 border border-gray-300 rounded-e-0 rounded-s-md "><i class="fa-solid fa-envelope"></i></span>
                         <input class="rounded-none rounded-e-lg bg-gray-50 border  outline-none block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5  " id="website-admin" type="email" placeholder="@gmail.com">
                       </div>
                       <label class="block my-3 text-sm font-medium " for="website-admin">password</label>
-                      <div class="flex"><span class="inline-flex items-center px-3 text-sm  bg-gray-200 border rounded-e-0 border-gray-300 rounded-s-md ">
+                      <div class="flex"><span class="inline-flex items-center px-3 text-sm bg-gray-200 border border-gray-300 rounded-e-0 rounded-s-md ">
                           <svg class="w-4 h-4 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm0 5a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm0 13a8.949 8.949 0 0 1-4.951-1.488A3.987 3.987 0 0 1 9 13h2a3.987 3.987 0 0 1 3.951 3.512A8.949 8.949 0 0 1 10 18Z"></path>
                           </svg></span>
@@ -49,21 +49,22 @@
                     </form>
                   </div>
                 </div>
-              </div>
-              <button class="bg-red-500 border-red-500 border rounded-full p-2 w-[147px] h-[33px] cent" type="button"> Register B2B</button>
+              </div><a href="./register.html"> 
+                <button class="bg-red-500 border-red-500 border rounded-full p-2 w-[147px] h-[33px] cent" type="button"> Register B2B</button></a>
             </div>
           </div>
-          <div class=" lg:hidden flex justify-center w-max gap-6 py-4 text-lg ">
-            <button class="border-white border rounded-lg p-2  cent" type="button" x-on:click="sideBar=true"><i class="fa-solid fa-bars text-white"></i></button>
+          <div class="flex justify-center gap-6 py-4 text-lg lg:hidden w-max">
+            <button class="p-2 border border-white rounded-lg cent" type="button" x-on:click="sideBar=true"><i class="text-white fa-solid fa-bars"></i></button>
           </div>
         </div>
+        <div class="h-[5px] bg-[#86B3F7] w-full hidden" id="headerTail"></div>
       </div>
     </header>
     <section class="w-full  lg:aspect-[2/1]">
-      <div class="swiper mainSwiper h-full w-full">
-        <div class="swiper-wrapper h-full w-full">
+      <div class="w-full h-full swiper mainSwiper">
+        <div class="w-full h-full swiper-wrapper">
           <div class="swiper-slide !h-full">
-            <div class="bg-no-repeat bg-cover bg-center h-full" style="background-image: url('../assets/hero-bac.jpg');">
+            <div class="h-full bg-center bg-no-repeat bg-cover" style="background-image: url('../assets/hero-bac.jpg');">
               <div class="w-full  bg-[#071A37E5]">
                 <div class="w-full flex maxlg:flex-col maxlg:gap-[30px] justify-between contain py-[10%] maxlg:py-20 ">
                   <div class="w-full ">
@@ -71,32 +72,32 @@
                     <h2 class="text-third font-bold text-[52px] maxsm:text-[30px]">To Hotelsxml.com</h2>
                     <h2 class="text-fourth font-medium text-[34px] maxsm:text-[24px] mt-8">B2B Hotels online network </h2>
                     <h2 class="text-white font-medium max-w-[471px] text-xl maxsm:text-base mt-5">Special price, instant confirmation of bookings, and 24/7 support to stay comfortable with us!</h2>
-                    <div class="  mx-[50px] maxsm:mx-0  flex items-center mt-14 w-full"><a class="maxsm:mx-auto inline-flex items-center justify-center px-8 maxsm:px-3 py-3 text-base font-bold  text-white bg-fifth rounded-full  hover:opacity-70 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-fifth" href="#">GET STARTED</a></div>
+                    <div class="  mx-[50px] maxsm:mx-0  flex items-center mt-14 w-full"><a class="inline-flex items-center justify-center px-8 py-3 text-base font-bold text-white rounded-full maxsm:mx-auto maxsm:px-3 bg-fifth hover:opacity-70 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-fifth" href="#">GET STARTED</a></div>
                   </div>
                   <div class="w-full flex items-center py-[5%] maxlg:px-[5%] maxlg:hidden">
                     <div class="w-[40%] translate-y-[-5%] z-[10]">
                       <div class="relative w-[100%] !translate-x-[20%] z-[10] aspect-square  rounded-full">
-                        <div class="relative w-[100%]  z-[10] aspect-square  rounded-full border-[3px] border-white" data-aos-duration="1000" data-aos="zoom-in"><img class="w-full aspect-square rounded-full" src="../assets/tec.jpg" alt=""><span class="absolute top-[10%] left-[-20%] inline-flex items-center justify-center px-8 maxsm:px-3  py-1 maxsm:py-[1px]  text-sm maxsm:text-[10px] font-bold   text-white bg-[#3C20C8] rounded-full md:w-auto  focus:outline-none focus:ring-2 focus:ring-offset-2 ">Special Rates</span><span class="absolute top-[30%] maxsm:top-[35%] left-[-35%] inline-flex items-center justify-center px-8 maxsm:px-3  py-1 maxsm:py-[1px] text-sm maxsm:text-[10px] font-bold   bg-[#EDD754] rounded-full md:w-auto  focus:outline-none focus:ring-2 focus:ring-offset-2 ">Easy to Use</span></div>
+                        <div class="relative w-[100%]  z-[10] aspect-square  rounded-full border-[3px] border-white" data-aos-duration="1000" data-aos="zoom-in"><img class="w-full rounded-full aspect-square" src="../assets/tec.jpg" alt=""><span class="absolute top-[10%] left-[-20%] inline-flex items-center justify-center px-8 maxsm:px-3  py-1 maxsm:py-[1px]  text-sm maxsm:text-[10px] font-bold   text-white bg-[#3C20C8] rounded-full md:w-auto  focus:outline-none focus:ring-2 focus:ring-offset-2 ">Special Rates</span><span class="absolute top-[30%] maxsm:top-[35%] left-[-35%] inline-flex items-center justify-center px-8 maxsm:px-3  py-1 maxsm:py-[1px] text-sm maxsm:text-[10px] font-bold   bg-[#EDD754] rounded-full md:w-auto  focus:outline-none focus:ring-2 focus:ring-offset-2 ">Easy to Use</span></div>
                       </div>
                       <div class="relative w-[58%] !translate-x-[140%] translate-y-[-45%] z-[20] aspect-square rounded-full">
-                        <div class="relative w-full ] aspect-square border-[3px] border-white rounded-full" data-aos-duration="1000" data-aos="fade-up"><img class="w-full aspect-square rounded-full" src="../assets/tec.jpg" alt=""><span class="absolute   bottom-[25%] left-[-50%] inline-flex items-center justify-center w-full px-2 py-1 text-sm  maxsm:text-[8px]  maxsm:text-third text-white font-black">Tax Include</span><span class="absolute bottom-[10%] left-[-40%]  inline-flex items-center justify-center w-full px-2 py-1 text-sm  maxsm:text-[8px] text-white  font-black">Search Tools</span></div>
+                        <div class="relative w-full ] aspect-square border-[3px] border-white rounded-full" data-aos-duration="1000" data-aos="fade-up"><img class="w-full rounded-full aspect-square" src="../assets/tec.jpg" alt=""><span class="absolute   bottom-[25%] left-[-50%] inline-flex items-center justify-center w-full px-2 py-1 text-sm  maxsm:text-[8px]  maxsm:text-third text-white font-black">Tax Include</span><span class="absolute bottom-[10%] left-[-40%]  inline-flex items-center justify-center w-full px-2 py-1 text-sm  maxsm:text-[8px] text-white  font-black">Search Tools</span></div>
                       </div>
                     </div>
-                    <div class="relative w-[60%] aspect-square border-[3px] border-white rounded-full" data-aos-duration="1000" data-aos="fade-left"><img class="w-full aspect-square rounded-full" src="../assets/tec.jpg" alt=""><span class="absolute top-10 right-0 maxsm:right-[-10px] inline-flex items-center justify-center  px-8 maxsm:px-3  maxsm:py-[1px] py-1  text-sm maxsm:text-[10px] font-bold   text-[#3C20C8] bg-white rounded-full md:w-auto  focus:outline-none focus:ring-2 focus:ring-offset-2 ">24/7 Support</span><span class="absolute top-[25%] maxsm:top-20 right-[-40px] inline-flex items-center justify-center  px-8 maxsm:px-3 py-1 maxsm:py-[1px] text-sm maxsm:text-[10px] font-bold  text-white bg-[#FF735A] rounded-full w-auto  focus:outline-none focus:ring-2 focus:ring-offset-2 ">modern Filters</span><span class="absolute   bottom-[10%] right-[-45%] maxsm:right-[-10px] inline-flex items-center justify-center w-full px-2 py-1 text-sm  maxsm:text-[8px]  maxsm:text-third text-white font-black">API Integrations</span><span class="absolute bottom-[25%] maxsm:bottom-20 right-[-50%]  inline-flex items-center justify-center w-full px-2 py-1 text-sm  maxsm:text-[8px] text-white  font-black">More Contracts</span></div>
+                    <div class="relative w-[60%] aspect-square border-[3px] border-white rounded-full" data-aos-duration="1000" data-aos="fade-left"><img class="w-full rounded-full aspect-square" src="../assets/tec.jpg" alt=""><span class="absolute top-10 right-0 maxsm:right-[-10px] inline-flex items-center justify-center  px-8 maxsm:px-3  maxsm:py-[1px] py-1  text-sm maxsm:text-[10px] font-bold   text-[#3C20C8] bg-white rounded-full md:w-auto  focus:outline-none focus:ring-2 focus:ring-offset-2 ">24/7 Support</span><span class="absolute top-[25%] maxsm:top-20 right-[-40px] inline-flex items-center justify-center  px-8 maxsm:px-3 py-1 maxsm:py-[1px] text-sm maxsm:text-[10px] font-bold  text-white bg-[#FF735A] rounded-full w-auto  focus:outline-none focus:ring-2 focus:ring-offset-2 ">modern Filters</span><span class="absolute   bottom-[10%] right-[-45%] maxsm:right-[-10px] inline-flex items-center justify-center w-full px-2 py-1 text-sm  maxsm:text-[8px]  maxsm:text-third text-white font-black">API Integrations</span><span class="absolute bottom-[25%] maxsm:bottom-20 right-[-50%]  inline-flex items-center justify-center w-full px-2 py-1 text-sm  maxsm:text-[8px] text-white  font-black">More Contracts</span></div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="swiper-slide !h-full">
-            <div class="bg-no-repeat bg-cover bg-center " style="background-image: url('../assets/hero-bac.jpg');">
+            <div class="bg-center bg-no-repeat bg-cover " style="background-image: url('../assets/hero-bac.jpg');">
               <div class="w-full  bg-[#071A37E5]">
                 <div class="w-full flex maxlg:flex-col maxlg:gap-[30px] justify-between contain py-[8%] maxlg:py-20 ">
                   <div class="w-full ">
                     <h2 class="kristi-regular text-third text-[117.2px] maxsm:text-[80px] leading-[146.5px]">welcome</h2>
                     <h2 class="text-third font-bold text-[52px] maxsm:text-[30px] ">To Hotelsxml.com</h2>
                     <h2 class="text-white font-medium max-w-[471px] text-xl maxsm:text-base mt-[63px]">Our partners are present everywhere to serve you, more than 2000+ destinations, and 50+ partners in tourism services with one click.</h2>
-                    <div class="  mx-[50px] maxsm:mx-0  flex items-center mt-14 w-full"><a class="maxsm:mx-auto inline-flex items-center justify-center px-8 maxsm:px-3 py-3 text-base font-bold  text-white bg-fifth rounded-full  hover:opacity-70 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-fifth" href="#">GET STARTED</a></div>
+                    <div class="  mx-[50px] maxsm:mx-0  flex items-center mt-14 w-full"><a class="inline-flex items-center justify-center px-8 py-3 text-base font-bold text-white rounded-full maxsm:mx-auto maxsm:px-3 bg-fifth hover:opacity-70 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-fifth" href="#">GET STARTED</a></div>
                   </div>
                   <div class="w-full flex items-center py-[5%] maxlg:px-[5%] maxlg:hidden">
                     <div class="relative w-full aspect-[1/.64] rounded-xl"><img class="w-full h-full rounded-xl" src="../assets/partner.png" alt=""></div>
@@ -106,14 +107,14 @@
             </div>
           </div>
           <div class="swiper-slide !h-full">
-            <div class="bg-no-repeat bg-cover bg-center " style="background-image: url('../assets/hero-bac.jpg');">
+            <div class="bg-center bg-no-repeat bg-cover " style="background-image: url('../assets/hero-bac.jpg');">
               <div class="w-full  bg-[#071A37E5]">
                 <div class="w-full flex maxlg:flex-col maxlg:gap-[30px] justify-between contain py-[8%] maxlg:py-20 ">
                   <div class="w-full ">
                     <h2 class="kristi-regular text-third text-[117.2px] maxsm:text-[80px] leading-[146.5px]">welcome</h2>
                     <h2 class="text-third font-bold text-[52px] maxsm:text-[30px]">To Hotelsxml.com</h2>
                     <h2 class="text-white font-medium max-w-[471px] text-xl maxsm:text-base mt-[63px]">Modern and sophisticated system, Extensive database with lots of hotels around the world. and Secure login and reliable system</h2>
-                    <div class="  mx-[50px] maxsm:mx-0  flex items-center mt-14 w-full"><a class="maxsm:mx-auto inline-flex items-center justify-center px-8 maxsm:px-3 py-3 text-base font-bold  text-white bg-fifth rounded-full  hover:opacity-70 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-fifth" href="#">GET STARTED</a></div>
+                    <div class="  mx-[50px] maxsm:mx-0  flex items-center mt-14 w-full"><a class="inline-flex items-center justify-center px-8 py-3 text-base font-bold text-white rounded-full maxsm:mx-auto maxsm:px-3 bg-fifth hover:opacity-70 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-fifth" href="#">GET STARTED</a></div>
                   </div>
                   <div class="w-full flex items-center py-[5%] maxlg:px-[5%] maxlg:hidden">
                     <div class="relative w-full aspect-[1/.64] rounded-xl"><img class="w-full h-full rounded-xl" src="../assets/all.jpg" alt=""></div>
@@ -127,10 +128,10 @@
       </div>
       <div class="w-full h-5 bg-third"></div>
     </section>
-    <section class="  py-[8%]  maxlg:py-20 bg-white w-full Statistics">
-      <div class=" w-full contain-80  ">
-        <div class=" text-center">
-          <h3 class="font-bold text-5xl  uppercase">Our Hotel <span class="text-primary">NETWORK</span></h3>
+    <section class="  pt-[8%] pb-[1%]  maxlg:py-20 bg-white w-full Statistics">
+      <div class="w-full contain-80">
+        <div class="text-center ">
+          <h3 class="text-5xl font-bold uppercase">Our Hotel <span class="text-primary">NETWORK</span></h3>
           <div class="my-6 text-xl">
             <p>A hotel booking network designed for travel agents and hotel suppliers, to enable our partners to book rooms by Hotelsxml.com</p>
             <p>Our vision is to build a business with suppliers, agents, and hotels to provide the best prices and services. And maintain a long-term relationship with them to develop partnerships together.</p>
@@ -142,7 +143,7 @@
               <div class="building-icon"></div>
             </div>
             <div class="  p-[10%] text-[21px] font-medium ">
-               More <span class="text-primary font-bold">1 million </span><br><span class="text-primary font-bold"> Hotels</span> ,Resort<br/> and Apartments</div>
+               More <span class="font-bold text-primary">1 million </span><br><span class="font-bold text-primary"> Hotels</span> ,Resort<br/> and Apartments</div>
           </div>
           <div class="border-2 border-white relative bg-[#DFEBFE] rounded-[25px] ml-10 ">
             <div class="border-[3.26px] border-white flex items-center justify-center rounded-full bg-[#2D5898] !min-w-[50px] !aspect-square mx-2 absolute top-[30%]  left-[-40px]">
@@ -170,7 +171,7 @@
           </div>
         </div>
         <div class="py-[55px]">     
-          <div class="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-328px),transparent_100%)] pt-[80px]" x-data="{}" x-init="$nextTick(() =&gt; {let ul = $refs.logos;ul.insertAdjacentHTML('afterend', ul.outerHTML);ul.nextSibling.setAttribute('aria-hidden', 'true');})">
+          <div class="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_20px,_black_calc(100%-20px),transparent_100%)] pt-[80px]" x-data="{}" x-init="$nextTick(() =&gt; {let ul = $refs.logos;ul.insertAdjacentHTML('afterend', ul.outerHTML);ul.nextSibling.setAttribute('aria-hidden', 'true');})">
             <ul class="flex gap-[20px] items-center justify-center md:justify-start [&amp;amp;_li]:mx-8  [&amp;amp;_img]:max-w-none animate-infinite-scroll" x-ref="logos">
               <li class="w-[140px] aspect-video cent"><img src="../assets/IMG-20240306-WA0006.jpg" alt=""></li>
               <li class="w-[140px] aspect-video cent"><img src="../assets/IMG-20240303-WA0001.jpg" alt=""></li>
@@ -186,7 +187,7 @@
               <li class="w-[140px] aspect-video cent"><img src="../assets/IMG-20240303-WA0011.jpg" alt=""></li>
             </ul>
           </div>
-          <div class="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_328px,_black_calc(100%-328px),transparent_100%)] " x-data="{}" x-init="$nextTick(() =&gt; {let ul = $refs.logos;ul.insertAdjacentHTML('afterend', ul.outerHTML);ul.nextSibling.setAttribute('aria-hidden', 'true');})">
+          <div class="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_20px,_black_calc(100%-20px),transparent_100%)] " x-data="{}" x-init="$nextTick(() =&gt; {let ul = $refs.logos;ul.insertAdjacentHTML('afterend', ul.outerHTML);ul.nextSibling.setAttribute('aria-hidden', 'true');})">
             <ul class="flex gap-[20px] items-center justify-center md:justify-start [&amp;amp;_li]:mx-8  [&amp;amp;_img]:max-w-none animate-infinite-scroll" x-ref="logos">
               <li class="w-[140px] aspect-video cent"><img src="../assets/IMG-20240303-WA0012.jpg" alt=""></li>
               <li class="w-[140px] aspect-video cent"><img src="../assets/IMG-20240306-WA0013.jpg" alt=""></li>
@@ -206,50 +207,50 @@
       </div>
     </section>
     <section class="  py-[5%]  maxlg:py-20 bg-white w-full">
-      <div class=" w-full contain ">
-        <div class="cent gap-4 my-3 text-3xl maxlg:flex-col">
-          <h3 class="font-bold text-5xl text-primary uppercase" data-aos-duration="1000" data-aos="fade-right">Our Services</h3>
-          <div class="  maxlg:hidden">|</div>
+      <div class="w-full contain">
+        <div class="gap-4 my-3 text-3xl cent maxlg:flex-col">
+          <h3 class="text-5xl font-bold uppercase text-primary" data-aos-duration="1000" data-aos="fade-right">Our Services</h3>
+          <div class=" maxlg:hidden">|</div>
           <p data-aos-duration="1000" data-aos="fade-left">HOTEL BOOKING SERVICES</p>
         </div>
         <div class="grid gap-[5%] gap-y-8 grid-cols-4 maxlg:grid-cols-2 maxsm:grid-cols-1 font-bold  mt-10">
-          <div class="group hover:shadow-inner text-[#393939] rounded-2xl hover:text-white hover:bg-[#3E63CE] p-5 relative transition-colors duration-300 delay-200  ease"><i class="fa-solid fa-bed text-5xl"></i>
+          <div class="group hover:shadow-inner text-[#393939] rounded-2xl hover:text-white hover:bg-[#3E63CE] p-5 relative transition-colors duration-300 delay-200  ease"><i class="text-3xl fa-solid fa-bed"></i>
             <div class="   my-1 uppercase  text-[18px] font-medium">Hotel Selection</div>
             <hr class="border-[#C23647] group-hover:border-white my-2 w-[80%]">
             <div class="  text-[14px] font-medium ">Browse through our selection of hotels and choose the one that suits your preferences. </div>
           </div>
-          <div class="group hover:shadow-inner text-[#393939] rounded-2xl hover:text-white hover:bg-[#3E63CE] p-5 relative transition-colors duration-300 delay-200  ease"><i class="fa-regular fa-calendar-days text-5xl"></i>
+          <div class="group hover:shadow-inner text-[#393939] rounded-2xl hover:text-white hover:bg-[#3E63CE] p-5 relative transition-colors duration-300 delay-200  ease"><i class="text-3xl fa-regular fa-calendar-days"></i>
             <div class="   my-1 uppercase  text-[18px] font-medium">Booking Reservations</div>
             <hr class="border-[#C23647] group-hover:border-white my-2 w-[80%]">
             <div class="  text-[14px] font-medium ">Effortlessly make reservations for your chosen hotel and secure your stay. </div>
           </div>
-          <div class="group hover:shadow-inner text-[#393939] rounded-2xl hover:text-white hover:bg-[#3E63CE] p-5 relative transition-colors duration-300 delay-200  ease"><i class="fa-solid fa-hotel text-5xl"></i>
+          <div class="group hover:shadow-inner text-[#393939] rounded-2xl hover:text-white hover:bg-[#3E63CE] p-5 relative transition-colors duration-300 delay-200  ease"><i class="text-3xl fa-solid fa-hotel"></i>
             <div class="   my-1 uppercase  text-[18px] font-medium">Hotel Details</div>
             <hr class="border-[#C23647] group-hover:border-white my-2 w-[80%]">
             <div class="  text-[14px] font-medium ">Get access to hotel guides and essential info about your choice on one page. </div>
           </div>
-          <div class="group hover:shadow-inner text-[#393939] rounded-2xl hover:text-white hover:bg-[#3E63CE] p-5 relative transition-colors duration-300 delay-200  ease"><i class="fa-regular fa-credit-card text-5xl"></i>
+          <div class="group hover:shadow-inner text-[#393939] rounded-2xl hover:text-white hover:bg-[#3E63CE] p-5 relative transition-colors duration-300 delay-200  ease"><i class="text-3xl fa-regular fa-credit-card"></i>
             <div class="   my-1 uppercase  text-[18px] font-medium">Payment Options</div>
             <hr class="border-[#C23647] group-hover:border-white my-2 w-[80%]">
             <div class="  text-[14px] font-medium ">Choose from various secure payment methods to complete your booking. </div>
           </div>
-          <div class="group hover:shadow-inner text-[#393939] rounded-2xl hover:text-white hover:bg-[#3E63CE] p-5 relative transition-colors duration-300 delay-200  ease"><i class="fa-solid fa-user-tie text-5xl"></i>
+          <div class="group hover:shadow-inner text-[#393939] rounded-2xl hover:text-white hover:bg-[#3E63CE] p-5 relative transition-colors duration-300 delay-200  ease"><i class="text-3xl fa-solid fa-user-tie"></i>
             <div class="   my-1 uppercase  text-[18px] font-medium">We are with you</div>
             <hr class="border-[#C23647] group-hover:border-white my-2 w-[80%]">
             <div class="  text-[14px] font-medium ">A personal account manager who carefully follows up on your bookings and requests. </div>
           </div>
-          <div class="group hover:shadow-inner text-[#393939] rounded-2xl hover:text-white hover:bg-[#3E63CE] p-5 relative transition-colors duration-300 delay-200  ease"><i class="fa-regular fa-star text-5xl"></i>
+          <div class="group hover:shadow-inner text-[#393939] rounded-2xl hover:text-white hover:bg-[#3E63CE] p-5 relative transition-colors duration-300 delay-200  ease"><i class="text-3xl fa-regular fa-star"></i>
             <div class="   my-1 uppercase  text-[18px] font-medium">More features</div>
             <hr class="border-[#C23647] group-hover:border-white my-2 w-[80%]">
             <div class="  text-[14px] font-medium ">No prepayment, get your reports and awards. best prices Incl All and more features in our platform </div>
           </div>
           <div class="group hover:shadow-inner text-[#393939] rounded-2xl hover:text-white hover:bg-[#3E63CE] p-5 relative transition-colors duration-300 delay-200  ease">
-            <div class="rotate-[-45deg] w-fit"><i class="fa-solid fa-plane text-5xl "></i></div>
+            <div class="rotate-[-45deg] w-fit"><i class="text-3xl fa-solid fa-plane "></i></div>
             <div class="   my-1 uppercase  text-[18px] font-medium">Holiday Design</div>
             <hr class="border-[#C23647] group-hover:border-white my-2 w-[80%]">
             <div class="  text-[14px] font-medium ">Use the wide range of travel services to combine the dream journey. Holiday Packages are available through the contact team</div>
           </div>
-          <div class="group hover:shadow-inner text-[#393939] rounded-2xl hover:text-white hover:bg-[#3E63CE] p-5 relative transition-colors duration-300 delay-200  ease"><i class="fa-solid fa-headphones text-5xl "></i>
+          <div class="group hover:shadow-inner text-[#393939] rounded-2xl hover:text-white hover:bg-[#3E63CE] p-5 relative transition-colors duration-300 delay-200  ease"><i class="text-3xl fa-solid fa-headphones "></i>
             <div class="   my-1 uppercase  text-[18px] font-medium">Customer Support</div>
             <hr class="border-[#C23647] group-hover:border-white my-2 w-[80%]">
             <div class="  text-[14px] font-medium ">Contact our 24/7 customer support for assistance with your booking.</div>
@@ -257,10 +258,10 @@
         </div>
       </div>
     </section>
-    <section class="    text-white  w-full bg-no-repeat bg-cover bg-center " style="background-image: url('../assets/tec.jpg');">
+    <section class="w-full text-white bg-center bg-no-repeat bg-cover " style="background-image: url('../assets/tec.jpg');">
       <div class="py-[5%] maxlg:py-20 w-full  bg-secondary/90 ">
         <div class=" w-full  px-[5%]">
-          <div class="flex justify-between maxlg:flex-col gap-4">
+          <div class="flex justify-between gap-4 maxlg:flex-col">
             <div class="w-full">
               <h4 class="font-bold text-2xl text-[#D2A124] uppercase" data-aos-duration="1000" data-aos="fade-right">Explore Our</h4>
               <h3 class="font-bold text-[80px] maxlg:text-[60px] maxsm:text-[40px] text-white uppercase" data-aos-duration="1000" data-aos="fade-right">Technology</h3>
@@ -312,9 +313,9 @@
       </div>
     </section>
     <section class="  py-[5%]  maxlg:py-20 bg-white w-full">
-      <div class=" w-full contain -80 ">
-        <div class=" text-center">
-          <h3 class="font-bold text-5xl text-primary uppercase">booking process </h3>
+      <div class="w-full contain -80">
+        <div class="text-center ">
+          <h3 class="text-5xl font-bold uppercase text-primary">booking process </h3>
           <div class="cent gap-4 my-3 text-3xl">
             <hr class="  w-[80px] border border-[#393939]">
             <p>3 Simple Steps</p>
@@ -355,21 +356,24 @@
       </div>
     </section>
     <section class="map bg-no-repeat bg-cover bg-center w-full aspect-[1.718] relative" style="background-image: url('../assets/map.jpg');">
-      <div class="animated-marker"><i class="fa-solid fa-location-dot maxsm:text-xl text-3xl"></i></div>
-      <div class="animated-marker"><i class="fa-solid fa-location-dot maxsm:text-xl text-3xl"></i></div>
-      <div class="animated-marker"><i class="fa-solid fa-location-dot maxsm:text-xl text-3xl"></i></div>
-      <div class="animated-marker"><i class="fa-solid fa-location-dot maxsm:text-xl text-3xl"></i></div>
-      <div class="animated-marker"><i class="fa-solid fa-location-dot maxsm:text-xl text-3xl"></i></div>
-      <div class="animated-marker"><i class="fa-solid fa-location-dot maxsm:text-xl text-3xl"></i></div>
-      <div class="animated-marker"><i class="fa-solid fa-location-dot maxsm:text-xl text-3xl"></i></div>
-      <div class="animated-marker"><i class="fa-solid fa-location-dot maxsm:text-xl text-3xl"></i></div>
-      <div class="animated-marker"><i class="fa-solid fa-location-dot maxsm:text-xl text-3xl"></i></div>
+      <div class="animated-marker"><i class="text-3xl fa-solid fa-location-dot maxsm:text-xl"></i></div>
+      <div class="animated-marker"><i class="text-3xl fa-solid fa-location-dot maxsm:text-xl"></i></div>
+      <div class="animated-marker"><i class="text-3xl fa-solid fa-location-dot maxsm:text-xl"></i></div>
+      <div class="animated-marker"><i class="text-3xl fa-solid fa-location-dot maxsm:text-xl"></i></div>
+      <div class="animated-marker"><i class="text-3xl fa-solid fa-location-dot maxsm:text-xl"></i></div>
+      <div class="animated-marker"><i class="text-3xl fa-solid fa-location-dot maxsm:text-xl"></i></div>
+      <div class="animated-marker"><i class="text-3xl fa-solid fa-location-dot maxsm:text-xl"></i></div>
+      <div class="animated-marker"><i class="text-3xl fa-solid fa-location-dot maxsm:text-xl"></i></div>
+      <div class="animated-marker"><i class="text-3xl fa-solid fa-location-dot maxsm:text-xl"></i></div>
+      <div class="animated-marker"><i class="text-3xl fa-solid fa-location-dot maxsm:text-xl"></i></div>
+      <div class="animated-marker"><i class="text-3xl fa-solid fa-location-dot maxsm:text-xl"></i></div>
+      <div class="animated-marker"><i class="text-3xl fa-solid fa-location-dot maxsm:text-xl"></i></div>
       <div class="absolute flex flex-col maxmd:text-[6px] leading-tight font-bold text-base justify-center items-center top-[9%] maxsm:top-[8%] right-[39%]"> <span>Europe</span><span>500+</span><span>Cities</span></div>
       <div class=" absolute flex flex-col maxmd:text-[6px] leading-tight font-bold text-base justify-center items-center top-[31%] maxsm:top-[30%] right-[62%]"> <span>Africa </span><span class="lg:mt-1">200+</span><span class="lg:mt-1">Cities</span></div>
       <div class="absolute flex flex-col maxmd:text-[6px] leading-tight font-bold text-base justify-center items-center top-[48%] maxsm:top-[47%] right-[62%]"> <span>LATAM</span><span class="lg:mt-1">750+</span><span class="lg:mt-1">Cities</span></div>
       <div class="absolute flex flex-col maxmd:text-[6px] leading-tight font-bold text-base justify-center items-center top-[60%] maxsm:top-[61%] right-[24%]"> <span>Middle east <br>& Asia</span><span class="lg:mt-1">1250+</span><span class="lg:mt-1">Cities</span></div>
       <div class="   translate-y-[-140px] maxlg:translate-y-[0] flex justify-center items-end h-full w-full">
-        <button class="maxsm:mx-auto inline-flex items-center justify-center px-8 maxsm:px-1 py-3 maxsm:py-1 maxlg:mb-2 text-base maxsm:text-[10px] font-bold  text-white bg-[#EF7601] rounded-full  hover:opacity-70 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-fifth" type="button">OUR TOP DESTINATIONS</button>
+        <button class="uppercase maxsm:mx-auto inline-flex items-center justify-center px-8 maxsm:px-1 py-3 maxsm:py-1 maxlg:mb-2 text-lg maxsm:text-[10px] font-bold  text-white bg-[#EF7601] rounded-full  hover:opacity-70 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-fifth" type="button">OUR TOP DESTINATIONS hotel keys</button>
       </div>
     </section>
     <div class="contain-80 maxlg:!px-0 flex items-end  w-full h-full Statistics">
@@ -440,7 +444,7 @@
         </div>
       </div>
     </div>
-    <section class="w-full bg-white contain  py-10"><img class="rounded-3xl w-full" src="../assets/Screenshot 2024-03-07 001439.png"></section>
+    <section class="w-full bg-white contain"><img class="w-full rounded-3xl" src="../assets/info.svg"></section>
     <footer class=" text-white text-lg z-10 bg-no-repeat bg-cover bg-center " style="background-image: url('../assets/footer-image.jpeg');">
       <div class="  w-full bg-[#202B45]/90">
         <div class="  grid grid-cols-1 contain   py-5 gap-2 ">

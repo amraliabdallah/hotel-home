@@ -1,14 +1,15 @@
-header(class=" w-full fixed top-0  text-white text-lg  bg-no-repeat bg-cover bg-center z-50 bg-transparent" id="target" )
-	div(class="  w-full ")
+header(class="fixed top-0 z-50 w-full text-lg text-white bg-transparent bg-center bg-no-repeat bg-cover " id="target" )
+	div(class="relative w-full")
+		 
 		div(class="  flex justify-between items-center contain   py-2  gap-[3%]" x-data="{sideBar:true,isMobile: window.innerWidth < 1024 }" x-init="sideBar = (window.innerWidth > 1024)")
-			div(class="col-span-1  " ) 
+			div(class="col-span-1 " ) 
 				//- h2.fontprim.text-5xl.font-medium.mt-6 Biolife
 				div(class="  flex justify-center h-[86px] maxxl:h-[64] maxlg:h-[34px] w-max")
 					img(  src="../assets/logo.png", alt="" class="  h-[86px] maxxl:h-[64] maxlg:h-[34px]")
 			div( @click.away="isMobile? sideBar=false :''" x-show="sideBar" class="maxlg:fixed rtl:right-0 ltr:left-0 maxlg:top-0 maxlg:min-w-[280px] maxlg:pt-[60px] lg:flex items-center maxlg:bg-secondary maxlg:px-[16px] maxlg:h-screen maxlg:min-h-screen maxlg:text-white gap-[3%]")
-				nav( class="flex justify-between   gap-7 maxlg:flex-col maxlg:items-center min-w-max")
+				nav( class="flex justify-between gap-7 maxlg:flex-col maxlg:items-center min-w-max")
 
-					a(href="http://", target="_blank", rel="noopener noreferrer") 
+					a(href="/", target="_blank", rel="noopener noreferrer") 
 						h5() Home
 					a(href="http://", target="_blank", rel="noopener noreferrer") 
 						h5() About Us
@@ -29,13 +30,13 @@ header(class=" w-full fixed top-0  text-white text-lg  bg-no-repeat bg-cover bg-
 									hr(class="border-[#202B45]")
 									label(for="website-admin", class="block my-2 text-sm font-medium ") Email
 									div(class="flex")
-										span(class="inline-flex items-center px-3 text-sm  bg-gray-200 border rounded-e-0 border-gray-300 rounded-s-md ")
+										span(class="inline-flex items-center px-3 text-sm bg-gray-200 border border-gray-300 rounded-e-0 rounded-s-md ")
 											i(class="fa-solid fa-envelope")
 										input#website-admin(type="email", class="rounded-none rounded-e-lg bg-gray-50 border  outline-none block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5  ", placeholder="@gmail.com")
 
 									label(for="website-admin", class="block my-3 text-sm font-medium ") password
 									div(class="flex")
-										span(class="inline-flex items-center px-3 text-sm  bg-gray-200 border rounded-e-0 border-gray-300 rounded-s-md ")
+										span(class="inline-flex items-center px-3 text-sm bg-gray-200 border border-gray-300 rounded-e-0 rounded-s-md ")
 											svg(class="w-4 h-4 ", aria-hidden="true", xmlns="http://www.w3.org/2000/svg", fill="currentColor", viewBox="0 0 20 20")
 												path(d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm0 5a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm0 13a8.949 8.949 0 0 1-4.951-1.488A3.987 3.987 0 0 1 9 13h2a3.987 3.987 0 0 1 3.951 3.512A8.949 8.949 0 0 1 10 18Z")
 										input#website-admin(type="password", class="rounded-none rounded-e-lg bg-gray-50 border  outline-none block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5  ", placeholder="****")
@@ -45,8 +46,10 @@ header(class=" w-full fixed top-0  text-white text-lg  bg-no-repeat bg-cover bg-
 						
 
 
-					button(type="button" class="bg-red-500 border-red-500 border rounded-full p-2 w-[147px] h-[33px] cent")  Register B2B
-			div( class=" lg:hidden flex justify-center w-max gap-6 py-4 text-lg ")
+					a(href="./register.html") 
+						button(type="button" class="bg-red-500 border-red-500 border rounded-full p-2 w-[147px] h-[33px] cent")  Register B2B
+			div( class="flex justify-center gap-6 py-4 text-lg lg:hidden w-max")
 				
-				button(type="button" class="border-white border rounded-lg p-2  cent" x-on:click="sideBar=true")
-					i(class="fa-solid fa-bars text-white")
+				button(type="button" class="p-2 border border-white rounded-lg cent" x-on:click="sideBar=true")
+					i(class="text-white fa-solid fa-bars")
+		div(class="h-[5px] bg-[#86B3F7] w-full hidden" id="headerTail")
