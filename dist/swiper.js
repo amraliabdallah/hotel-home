@@ -121,9 +121,8 @@ if(StatisticsSection != null) {
 var targetDiv = document.getElementById('target');
 var headerTail = document.getElementById('headerTail');
 
-if( !window.location.pathname.endsWith('/dist/html/index.html') && !window.location.pathname.endsWith('/dist/html/')){
+if( window.location.pathname.endsWith('/dist/html/register.html') ){
 
-  console.log(window.location.pathname=='/dist/html/register.html')
   targetDiv.classList.add('bg-secondary');
   targetDiv.classList.remove('bg-transparent');
   targetDiv.classList.add('sticky');
@@ -134,7 +133,7 @@ if( !window.location.pathname.endsWith('/dist/html/index.html') && !window.locat
 window.addEventListener('scroll', function() {
   var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
   var targetDiv = document.getElementById('target');
-  if(window.location.pathname.endsWith('/dist/html/index.html') || window.location.pathname.endsWith('/dist/html/')){
+  if(!window.location.pathname.endsWith('/dist/html/register.html')){
     if(targetDiv.classList.contains('sticky')){
       targetDiv.classList.remove('sticky');
       targetDiv.classList.add('fixed');
@@ -149,7 +148,7 @@ window.addEventListener('scroll', function() {
       targetDiv.classList.add('bg-transparent');
     }
   }else{
-    console.log(window.location.pathname=='/dist/html/register.html')
+   
     targetDiv.classList.add('bg-secondary');
     targetDiv.classList.remove('bg-transparent');
   }

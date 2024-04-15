@@ -1,4 +1,4 @@
-header(class="fixed top-0 z-50 w-full text-lg text-white bg-transparent bg-center bg-no-repeat bg-cover " id="target" )
+header(class="fixed top-0 z-[555] w-full text-lg text-white bg-transparent bg-center bg-no-repeat bg-cover " id="target" )
 	div(class="relative w-full")
 		 
 		div(class="  flex justify-between items-center contain   py-2  gap-[3%]" x-data="{sideBar:true,isMobile: window.innerWidth < 1024 }" x-init="sideBar = (window.innerWidth > 1024)")
@@ -6,18 +6,18 @@ header(class="fixed top-0 z-50 w-full text-lg text-white bg-transparent bg-cente
 				//- h2.fontprim.text-5xl.font-medium.mt-6 Biolife
 				div(class="  flex justify-center h-[86px] maxxl:h-[64] maxlg:h-[34px] w-max")
 					img(  src="../assets/logo.png", alt="" class="  h-[86px] maxxl:h-[64] maxlg:h-[34px]")
-			div( @click.away="isMobile? sideBar=false :''" x-show="sideBar" class="maxlg:fixed rtl:right-0 ltr:left-0 maxlg:top-0 maxlg:min-w-[280px] maxlg:pt-[60px] lg:flex items-center maxlg:bg-secondary maxlg:px-[16px] maxlg:h-screen maxlg:min-h-screen maxlg:text-white gap-[3%]")
+			div( @click.away="isMobile? sideBar=false :''" x-show="sideBar" class="z-[555] maxlg:fixed rtl:right-0 ltr:left-0 maxlg:top-0 maxlg:min-w-[280px] maxlg:pt-[60px] lg:flex items-center maxlg:bg-secondary maxlg:px-[16px] maxlg:h-screen maxlg:min-h-screen maxlg:text-white gap-[3%]")
 				nav( class="flex justify-between gap-7 maxlg:flex-col maxlg:items-center min-w-max")
 
 					a(href="/", target="_blank", rel="noopener noreferrer") 
 						h5() Home
-					a(href="http://", target="_blank", rel="noopener noreferrer") 
+					a(href="./about.html", target="_blank", rel="noopener noreferrer") 
 						h5() About Us
 					a(href="http://", target="_blank", rel="noopener noreferrer") 
 						h5() Services  
 					a(href="http://", target="_blank", rel="noopener noreferrer") 
 						h5() Technology 
-					a(href="http://", target="_blank", rel="noopener noreferrer") 
+					a(href="./contact.html", target="_blank", rel="noopener noreferrer") 
 						h5()   Contact Us
 				div( class="relative flex maxlg:flex-col justify-center items-center maxlg:w-full w-max gap-6 py-4 text-lg maxlg:mt-[40px]" x-data="{login:false}")
 					div(class="w-[91px] h-[33px]")

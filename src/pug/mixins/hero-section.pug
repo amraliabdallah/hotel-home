@@ -1,15 +1,28 @@
 
+mixin heroSection (activeIndex)
+    //- section
+    //-     div(class="relative px-2 pt-5 font-bold contain lg:pt-10 text-primary")
+    //-         div(class="flex gap-4 mb-10 capitalize ")
+    //-             h2(class="text-2xl font-bold text-center") #{activeIndex}
+    //-             div(class="h-full text-2xl") |
+    //-             div(class="capitalize cif lg:text-sm")
+    //-                 a(href="./index.html" class=" cif" )
+    //-                     span(class="hover:text-primary cent") Home 
+    //-                 span &nbsp; / &nbsp;
+    //-                 a(href="" class=" cif" )
+    //-                     span  #{activeIndex}
+    //- section
+    //-     div(class="cent flex-col md:h-[150px] h-[200px]  text-white relative")
+    //-         img( onerror="this.onerror=null;this.src='../assets/logo.jpg';" data-src="../assets/doctor.jpg", alt="" class="min-w-full min-h-full ")
+    //-         div(class="absolute ")
+    //-             h2(class="text-4xl font-bold") #{activeIndex} 
+    //-             a(href="..//html/index.html" class=" cent" )
+    //-                 span(class="hover:text-primary cent") Home &nbsp; / &nbsp;
+    //-                 span  #{activeIndex}
 
-
-section
-    div(class="contain   font-bold lg:pt-10 pt-5  px-2 text-primary relative")
-        div(class=" flex mb-10  gap-4 capitalize")
-            h2(class="text-2xl text-center font-bold") #{activeIndex}
-            div(class="h-full text-2xl") |
-            div(class=" cif lg:text-sm capitalize")
-                a(href="./index.html" class=" cif" )
-                    span(class="hover:text-primary cent") Home 
-                span &nbsp; / &nbsp;
-                a(href="" class=" cif" )
-                    span  #{activeIndex}
+    section(class="w-full " )
+        div(class="h-[276px] flex justify-center items-end  realtive  w-full  bg-center bg-no-repeat bg-cover" style="background-image: url('../assets/hero-bac.jpg');")
+            div(class="w-full h-full absolute bg-[#071A37E5] z-10")
+            h2(class="z-20 text-4xl font-bold text-[#86B3F7] uppercase pb-[30px] ") #{activeIndex} 
+        div(class="w-full h-5 bg-third")
 

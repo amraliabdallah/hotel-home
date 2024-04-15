@@ -200,8 +200,35 @@ body {
   aspect-ratio: 1;
   background-repeat: no-repeat;
   background-image: url('./assets/check-success.svg');
-
 }
+  .map-contact{
+    width: 18px;
+    aspect-ratio: 1;
+    background-repeat: no-repeat;
+    background-image: url('./assets/map.svg');
+  
+  }
+  .tel-contact{
+    width: 16px;
+    aspect-ratio: 1;
+    background-repeat: no-repeat;
+    background-image: url('./assets/tel.svg');
+  
+  }
+  .web-contact{
+    width: 17px;
+    aspect-ratio: 1;
+    background-repeat: no-repeat;
+    background-image: url('./assets/web.svg');
+  
+  }
+  .about-img{
+    width: 100%;
+    aspect-ratio: 0.894/1;
+    background-repeat: no-repeat;
+    background-image: url('./assets/about.svg');
+  
+  }
 .animated-marker {
   position: absolute;
 

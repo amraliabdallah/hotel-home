@@ -1,0 +1,64 @@
+include mixins/hero-section.pug 
+
+
+doctype html
+html( dir="ltr" lang="en" )
+   include ./components/head
+
+   body(class="text-[#393939] overflow-x-hidden ")
+      include ./components/navbar
+      +heroSection('Contact Us')
+      section(class="mx-auto w-[90%]  lg:w-[950px]  py-[5%]" ) 
+        h2(class="text-[#5691D3] text-[38.95px] font-bold text-center mb-16") Contact Hotelsxml
+
+
+
+        div(class="flex maxlg:flex-col-reverse  gap-[5%] maxlg:gap-[20px] "  ) 
+            div(class="rounded-[33px] w-full px-6 pt-10 pb-6 bg-[#E5E8EC]"  ) 
+
+                div(class="flex maxlg:flex-col" ) 
+                    form(class="w-full ") 
+
+                        div 
+                            label(for="personal-admin", class="block mb-2 text-lg font-normal ") Name     
+                            input#personal-admin(type="text", class="rounded-[7px]  bg-white   outline-none block flex-1 min-w-0 w-full text-sm  p-2.5  ", placeholder="first name and surname")
+                        div(class="mt-6")
+                            label(for="personal-email", class="block mb-2 text-lg font-normal ") Email     
+                            input#personal-email(type="email", class="rounded-[7px]  bg-white   outline-none block flex-1 min-w-0 w-full text-sm  p-2.5 ", placeholder="Your Email")
+                        div(class="mt-6")
+                            label(for="personal-phone", class="block mb-2 text-lg font-normal ") Message    
+                            textarea(name="", cols="30", rows="7" type="number", class="rounded-[7px]  bg-white   outline-none block flex-1 min-w-0 w-full text-sm  p-2.5 ")
+                        div(class="bg-[#1A8452] rounded-[4.41px] h-[46.6px] font-bold text-xl mt-6 w-[189.17px] cent text-white mx-auto") Send
+            div(class="rounded-[33px] w-full px-6 pt-10 pb-6 border-dashed border-[2px] border-[##BEBEBE] h-fit"  ) 
+                div(class="flex flex-col gap-4" ) 
+                    div(class="flex items-center w-full gap-4 ")
+                        div(class="h-[28px] w-[28px] bg-[#B4C9E1] rounded-full cent")
+                            div(class="map-contact") 
+                        div(class="text-[#737373] underline text-[14px]") 86-90 Paul Street, London, England, EC2A 4NE. UK
+                    div(class="flex items-center w-full gap-4 ")
+                        div(class="h-[28px] w-[28px] bg-[#B4C9E1] rounded-full cent")
+                            div(class="tel-contact") 
+                        a(href="tel:+447450004522" class="text-[#737373] underline text-[14px]") +447450004522
+
+                    div(class="flex items-center w-full gap-4 ")
+                        div(class="h-[28px] w-[28px] bg-[#B4C9E1] rounded-full cent")
+                            div(class="tel-contact") 
+                        a(href="tel:+447450004522" class="text-[#737373] underline text-[14px]") +447450004522
+
+                    div(class="flex items-center w-full gap-4 ")
+                        div(class="h-[28px] w-[28px] bg-[#B4C9E1] rounded-full cent")
+                            div(class="web-contact") 
+                        a( href="mailto:support@hotelsxml.com" class="text-[#737373] underline text-[14px]") support@hotelsxml.com
+
+
+
+
+                       
+
+                
+
+      include ./components/footer
+
+
+
+

@@ -11,18 +11,18 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" ></script>
   </head>
   <body class="text-[#393939] overflow-x-hidden ">
-    <header class="fixed top-0 z-50 w-full text-lg text-white bg-transparent bg-center bg-no-repeat bg-cover " id="target">
+    <header class="fixed top-0 z-[555] w-full text-lg text-white bg-transparent bg-center bg-no-repeat bg-cover " id="target">
       <div class="relative w-full">
         <div class="  flex justify-between items-center contain   py-2  gap-[3%]" x-data="{sideBar:true,isMobile: window.innerWidth &lt; 1024 }" x-init="sideBar = (window.innerWidth &gt; 1024)">
           <div class="col-span-1 "> 
             <div class="  flex justify-center h-[86px] maxxl:h-[64] maxlg:h-[34px] w-max"><img class="  h-[86px] maxxl:h-[64] maxlg:h-[34px]" src="../assets/logo.png" alt=""></div>
           </div>
-          <div class="maxlg:fixed rtl:right-0 ltr:left-0 maxlg:top-0 maxlg:min-w-[280px] maxlg:pt-[60px] lg:flex items-center maxlg:bg-secondary maxlg:px-[16px] maxlg:h-screen maxlg:min-h-screen maxlg:text-white gap-[3%]" @click.away="isMobile? sideBar=false :''" x-show="sideBar">
+          <div class="z-[555] maxlg:fixed rtl:right-0 ltr:left-0 maxlg:top-0 maxlg:min-w-[280px] maxlg:pt-[60px] lg:flex items-center maxlg:bg-secondary maxlg:px-[16px] maxlg:h-screen maxlg:min-h-screen maxlg:text-white gap-[3%]" @click.away="isMobile? sideBar=false :''" x-show="sideBar">
             <nav class="flex justify-between gap-7 maxlg:flex-col maxlg:items-center min-w-max"><a href="/" target="_blank" rel="noopener noreferrer"> 
-                <h5>Home</h5></a><a href="http://" target="_blank" rel="noopener noreferrer"> 
+                <h5>Home</h5></a><a href="./about.html" target="_blank" rel="noopener noreferrer"> 
                 <h5>About Us</h5></a><a href="http://" target="_blank" rel="noopener noreferrer"> 
                 <h5>Services  </h5></a><a href="http://" target="_blank" rel="noopener noreferrer"> 
-                <h5>Technology </h5></a><a href="http://" target="_blank" rel="noopener noreferrer"> 
+                <h5>Technology </h5></a><a href="./contact.html" target="_blank" rel="noopener noreferrer"> 
                 <h5>  Contact Us</h5></a></nav>
             <div class="relative flex maxlg:flex-col justify-center items-center maxlg:w-full w-max gap-6 py-4 text-lg maxlg:mt-[40px]" x-data="{login:false}">
               <div class="w-[91px] h-[33px]">
