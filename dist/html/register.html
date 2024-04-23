@@ -113,8 +113,8 @@
         <div class="grid grid-cols-3 maxlg:grid-cols-1 gap-[5%] maxlg:gap-5" x-show="tab=='tab_2'"> 
           <div class="w-full "> 
             <div> 
-              <label class="block mb-2 text-lg font-normal " for="company-admin">Company Name    </label>
-              <input class="rounded-[7px]  bg-white   outline-none block flex-1 min-w-0 w-full text-sm  p-2.5  " id="company-admin" type="text" placeholder="Company Name">
+              <label class="block mb-2 text-lg font-normal " for="companyadmin">Company Name    </label>
+              <input class="rounded-[7px]  bg-white   outline-none block flex-1 min-w-0 w-full text-sm  p-2.5  " id="companyadmin" type="text" placeholder="Company Name">
             </div>
             <div class="pt-6">
               <label class="block mb-2 text-lg font-normal " for="address">Address    </label>
@@ -130,46 +130,46 @@
           </div>
           <div class="w-full "> 
             <div> 
-              <label class="block mb-2 text-lg font-normal " for="Management-admin">Company Reg. No.     </label>
-              <input class="rounded-[7px]  bg-white   outline-none block flex-1 min-w-0 w-full text-sm  p-2.5  " id="Management-admin" type="number" placeholder="Company Reg. No. ">
+              <label class="block mb-2 text-lg font-normal " for="companyReg">Company Reg. No.     </label>
+              <input class="rounded-[7px]  bg-white   outline-none block flex-1 min-w-0 w-full text-sm  p-2.5  " id="companyReg" type="number" placeholder="Company Reg. No. ">
             </div>
             <div class="pt-6">
-              <label class="block mb-2 text-lg font-normal " for="Management-email">City     </label>
-              <input class="rounded-[7px]  bg-white   outline-none block flex-1 min-w-0 w-full text-sm  p-2.5 " id="Management-email" type="text" placeholder=" City ">
+              <label class="block mb-2 text-lg font-normal " for="City">City     </label>
+              <input class="rounded-[7px]  bg-white   outline-none block flex-1 min-w-0 w-full text-sm  p-2.5 " id="City" type="text" placeholder=" City ">
             </div>
             <div class="pt-6">
-              <label class="block mb-2 text-lg font-normal " for="Management-phone">Pincode     </label>
-              <input class="rounded-[7px]  bg-white   outline-none block flex-1 min-w-0 w-full text-sm  p-2.5 " id="Management-phone" type="number" placeholder="Pincode">
+              <label class="block mb-2 text-lg font-normal " for="Pincode">Pincode     </label>
+              <input class="rounded-[7px]  bg-white   outline-none block flex-1 min-w-0 w-full text-sm  p-2.5 " id="Pincode" type="number" placeholder="Pincode">
             </div>
           </div>
           <div class="w-full "> 
             <div> 
-              <label class="block mb-2 text-lg font-normal " for="Management-admin">Nature of Business    </label>
-              <select class="rounded-[7px]  bg-white   outline-none block flex-1 min-w-0 w-full text-sm  p-2.5 " id="Payment" name=""> 
+              <label class="block mb-2 text-lg font-normal " for="Nature">Nature of Business    </label>
+              <select class="rounded-[7px]  bg-white   outline-none block flex-1 min-w-0 w-full text-sm  p-2.5 " id="Nature" name=""> 
                 <option selected hidden> Nature of Business  </option>
                 <option> Nature of Business</option>
                 <option> Nature of Business</option>
               </select>
             </div>
             <div class="pt-6">
-              <label class="block mb-2 text-lg font-normal " for="Management-email">Country     </label>
-              <select class="rounded-[7px]  bg-white   outline-none block flex-1 min-w-0 w-full text-sm  p-2.5 " id="Payment" name=""> 
+              <label class="block mb-2 text-lg font-normal " for="Country">Country     </label>
+              <select class="rounded-[7px]  bg-white   outline-none block flex-1 min-w-0 w-full text-sm  p-2.5 " id="Country" name=""> 
                 <option selected hidden> Country  </option>
                 <option> country 01</option>
                 <option> country 02</option>
               </select>
             </div>
             <div class="pt-6">
-              <label class="block mb-2 text-lg font-normal " for="Management-phone">Website     </label>
-              <input class="rounded-[7px]  bg-white   outline-none block flex-1 min-w-0 w-full text-sm  p-2.5 " id="Management-phone" type="text" placeholder="Website">
+              <label class="block mb-2 text-lg font-normal " for="Website">Website     </label>
+              <input class="rounded-[7px]  bg-white   outline-none block flex-1 min-w-0 w-full text-sm  p-2.5 " id="Website" type="text" placeholder="Website">
             </div>
           </div>
         </div>
         <div class="flex justify-center" x-show="tab=='tab_3'"> 
           <div class="w-full max-w-[470px]"> 
             <div> 
-              <label class="block mb-2 text-lg font-normal " for="company-admin">Username    </label>
-              <input class="rounded-[7px]  bg-white   outline-none block flex-1 min-w-0 w-full text-sm  p-2.5  " id="company-admin" type="text" placeholder="Company Name">
+              <label class="block mb-2 text-lg font-normal " for="Username">Username    </label>
+              <input class="rounded-[7px]  bg-white   outline-none block flex-1 min-w-0 w-full text-sm  p-2.5  " id="Username" type="text" placeholder="Company Name">
             </div>
             <div class="pt-6">
               <label class="block mb-2 text-lg font-normal " for="password">password   </label>
@@ -184,7 +184,7 @@
         <div class="block">
           <div class="flex justify-center gap-8 pt-12"> 
             <button class="rounded-full text-white text-[28.59px] bg-[#787878] w-[184px] flex items-center justify-center gap-2 font-bold" x-show="tab=='tab_3' || tab=='tab_2'" x-on:click="tab=='tab_3' ? tab='tab_2':tab='tab_1'"> <i class="text-lg fa-solid fa-angle-left"></i><span>prev</span></button>
-            <button class="rounded-full text-white text-[28.59px] bg-[#32BA7C] w-[184px] flex items-center justify-center gap-2 font-bold" x-show="tab=='tab_1' || tab=='tab_2'" x-on:click="tab=='tab_1' ? tab='tab_2': tab='tab_3'"> <span>Next</span><i class="text-lg fa-solid fa-angle-right"> </i></button>
+            <button class="rounded-full text-white text-[28.59px] bg-[#32BA7C] w-[184px] flex items-center justify-center gap-2 font-bold" x-show="tab=='tab_1' || tab=='tab_2'" x-on:click="if (validateInputs('next', tab)) { tab = (tab === 'tab_1') ? 'tab_2' : 'tab_3'; }"> <span>Next</span><i class="text-lg fa-solid fa-angle-right"> </i></button>
             <button class="rounded-full text-white text-[28.59px] bg-[#32BA7C] w-[184px] flex items-center justify-center gap-2 font-bold" x-show="tab=='tab_3' " x-on:click="successPop = true"> <span>finish</span></button>
           </div>
         </div>
@@ -202,6 +202,60 @@
           </div>
         </div>
       </div>
+      <script>
+        function validateInputs(action,tab) {
+            // Check if inputs are filled based on the current tab
+            console.log(tab);
+            if (tab === 'tab_1') {
+                // Check inputs in tab 1
+                const personalName = document.getElementById('personal-admin').value;
+                const personalEmail = document.getElementById('personal-email').value;
+                const personalPhone = document.getElementById('personal-phone').value;            
+                const ManagementName = document.getElementById('Management-admin').value;
+                const ManagementEmail = document.getElementById('Management-email').value;
+                const ManagementPhone = document.getElementById('Management-phone').value;
+                
+                if (!personalName || !personalEmail || !personalPhone  || !ManagementName || !ManagementEmail || !ManagementPhone) {
+                    alert('Please fill in all fields in Step 1 before proceeding.');
+                    return false;
+                }else{
+                return true;
+            }
+        
+            } else if (tab === 'tab_2') {
+                // Check inputs in tab 2
+                const companyReg = document.getElementById('companyReg').value;
+                const address = document.getElementById('address').value;
+                const Payment = document.getElementById('Payment').value; 
+                const City = document.getElementById('City').value;
+                const Pincode  = document.getElementById('Pincode').value;
+                const companyadmin = document.getElementById('companyadmin').value; 
+                const Website = document.getElementById('Website').value;
+                const Country  = document.getElementById('Country').value;
+                const Nature = document.getElementById('Nature').value;
+                
+                if ( !companyReg || !address || !Payment || !City || !Pincode || !Country || !Website || !Nature  ) {
+                    alert('Please fill in all fields in Step 2 before proceeding.');
+                    return false;
+                }else{
+                return true;}
+            } else if (tab === 'tab_3') {
+                // Check inputs in tab 3
+                const Username = document.getElementById('Username').value;
+                const password = document.getElementById('password').value;
+                const confirmPassword = document.getElementById('confirm-password').value;
+                if (!Username || !password || !confirmPassword) {
+                    alert('Please fill in all fields in Step 1 before proceeding.');
+                    return false;
+                }else{
+                return true;}
+            }
+        }
+        
+        
+            
+        
+      </script>
     </section>
     <footer class=" text-white text-lg z-10 bg-no-repeat bg-cover bg-center " style="background-image: url('../assets/footer-image.jpeg');">
       <div class="  w-full bg-[#202B45]/90">

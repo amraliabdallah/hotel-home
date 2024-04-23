@@ -51,8 +51,8 @@ html( dir="ltr" lang="en" )
                 div(class="w-full ") 
                     
                     div 
-                        label(for="company-admin", class="block mb-2 text-lg font-normal ") Company Name    
-                        input#company-admin(type="text", class="rounded-[7px]  bg-white   outline-none block flex-1 min-w-0 w-full text-sm  p-2.5  ", placeholder="Company Name")
+                        label(for="companyadmin", class="block mb-2 text-lg font-normal ") Company Name    
+                        input#companyadmin(type="text", class="rounded-[7px]  bg-white   outline-none block flex-1 min-w-0 w-full text-sm  p-2.5  ", placeholder="Company Name")
                     div(class="pt-6")
                         label(for="address", class="block mb-2 text-lg font-normal ") Address    
                         input#address(type="text", class="rounded-[7px]  bg-white   outline-none block flex-1 min-w-0 w-full text-sm  p-2.5 ", placeholder="Address")
@@ -65,47 +65,45 @@ html( dir="ltr" lang="en" )
                 div(class="w-full ") 
                     
                     div 
-                        label(for="Management-admin", class="block mb-2 text-lg font-normal ") Company Reg. No.     
-                        input#Management-admin(type="number", class="rounded-[7px]  bg-white   outline-none block flex-1 min-w-0 w-full text-sm  p-2.5  ", placeholder="Company Reg. No. ")
+                        label(for="companyReg", class="block mb-2 text-lg font-normal ") Company Reg. No.     
+                        input#companyReg(type="number", class="rounded-[7px]  bg-white   outline-none block flex-1 min-w-0 w-full text-sm  p-2.5  ", placeholder="Company Reg. No. ")
                     div(class="pt-6")
-                        label(for="Management-email", class="block mb-2 text-lg font-normal ") City     
-                        input#Management-email(type="text", class="rounded-[7px]  bg-white   outline-none block flex-1 min-w-0 w-full text-sm  p-2.5 ", placeholder=" City ")
+                        label(for="City", class="block mb-2 text-lg font-normal ") City     
+                        input#City(type="text", class="rounded-[7px]  bg-white   outline-none block flex-1 min-w-0 w-full text-sm  p-2.5 ", placeholder=" City ")
                     div(class="pt-6")
-                        label(for="Management-phone", class="block mb-2 text-lg font-normal ") Pincode     
-                        input#Management-phone(type="number", class="rounded-[7px]  bg-white   outline-none block flex-1 min-w-0 w-full text-sm  p-2.5 ", placeholder="Pincode")
+                        label(for="Pincode", class="block mb-2 text-lg font-normal ") Pincode     
+                        input#Pincode(type="number", class="rounded-[7px]  bg-white   outline-none block flex-1 min-w-0 w-full text-sm  p-2.5 ", placeholder="Pincode")
                 div(class="w-full ") 
                     
                     div 
-                        label(for="Management-admin", class="block mb-2 text-lg font-normal ") Nature of Business    
-                        select#Payment(name="" class="rounded-[7px]  bg-white   outline-none block flex-1 min-w-0 w-full text-sm  p-2.5 ") 
+                        label(for="Nature", class="block mb-2 text-lg font-normal ") Nature of Business    
+                        select#Nature(name="" class="rounded-[7px]  bg-white   outline-none block flex-1 min-w-0 w-full text-sm  p-2.5 ") 
                             option(selected hidden )  Nature of Business  
                             option( )  Nature of Business
                             option( )  Nature of Business
                     div(class="pt-6")
-                        label(for="Management-email", class="block mb-2 text-lg font-normal ") Country     
+                        label(for="Country", class="block mb-2 text-lg font-normal ") Country     
                         //- input#Management-email(type="email", class="rounded-[7px]  bg-white   outline-none block flex-1 min-w-0 w-full text-sm  p-2.5 ", placeholder="Your Email")
-                        select#Payment(name="" class="rounded-[7px]  bg-white   outline-none block flex-1 min-w-0 w-full text-sm  p-2.5 ") 
+                        select#Country(name="" class="rounded-[7px]  bg-white   outline-none block flex-1 min-w-0 w-full text-sm  p-2.5 ") 
                             option(selected hidden )  Country  
                             option( )  country 01
                             option( )  country 02
                         
                     div(class="pt-6")
-                        label(for="Management-phone", class="block mb-2 text-lg font-normal ") Website     
-                        input#Management-phone(type="text", class="rounded-[7px]  bg-white   outline-none block flex-1 min-w-0 w-full text-sm  p-2.5 ", placeholder="Website")
+                        label(for="Website", class="block mb-2 text-lg font-normal ") Website     
+                        input#Website(type="text", class="rounded-[7px]  bg-white   outline-none block flex-1 min-w-0 w-full text-sm  p-2.5 ", placeholder="Website")
             div(class="flex justify-center" x-show="tab=='tab_3'") 
                 div(class="w-full max-w-[470px]") 
                     
                     div 
-                        label(for="company-admin", class="block mb-2 text-lg font-normal ") Username    
-                        input#company-admin(type="text", class="rounded-[7px]  bg-white   outline-none block flex-1 min-w-0 w-full text-sm  p-2.5  ", placeholder="Company Name")
+                        label(for="Username", class="block mb-2 text-lg font-normal ") Username    
+                        input#Username(type="text", class="rounded-[7px]  bg-white   outline-none block flex-1 min-w-0 w-full text-sm  p-2.5  ", placeholder="Company Name")
                     div(class="pt-6")
                         label(for="password", class="block mb-2 text-lg font-normal ") password   
                         input#password(type="text", class="rounded-[7px]  bg-white   outline-none block flex-1 min-w-0 w-full text-sm  p-2.5 ", placeholder="Address")
                     div(class="pt-6")
                         label(for="confirm-password", class="block mb-2 text-lg font-normal ") Confirm Password   
                         input#confirm-password(type="text", class="rounded-[7px]  bg-white   outline-none block flex-1 min-w-0 w-full text-sm  p-2.5 ", placeholder="Address")
-
-
                         
             div(class="block")
                 div.flex.justify-center.gap-8.pt-12 
@@ -113,7 +111,7 @@ html( dir="ltr" lang="en" )
                         i(class="text-lg fa-solid fa-angle-left")
                         span prev
                         
-                    button(x-show="tab=='tab_1' || tab=='tab_2'" x-on:click="tab=='tab_1' ? tab='tab_2': tab='tab_3'" class="rounded-full text-white text-[28.59px] bg-[#32BA7C] w-[184px] flex items-center justify-center gap-2 font-bold") 
+                    button(x-show="tab=='tab_1' || tab=='tab_2'" x-on:click="if (validateInputs('next', tab)) { tab = (tab === 'tab_1') ? 'tab_2' : 'tab_3'; }" class="rounded-full text-white text-[28.59px] bg-[#32BA7C] w-[184px] flex items-center justify-center gap-2 font-bold") 
                         span Next
                         i(class="text-lg fa-solid fa-angle-right") 
                     button(x-show="tab=='tab_3' " x-on:click="successPop = true"  class="rounded-full text-white text-[28.59px] bg-[#32BA7C] w-[184px] flex items-center justify-center gap-2 font-bold") 
@@ -130,7 +128,56 @@ html( dir="ltr" lang="en" )
                     div(class="p-4 text-sm font-medium text-center text-white ") 
                         | go to 
                         a(href="./" class="text-blue-600 underline") homePage
+        script.
+            function validateInputs(action,tab) {
+                // Check if inputs are filled based on the current tab
+                console.log(tab);
+                if (tab === 'tab_1') {
+                    // Check inputs in tab 1
+                    const personalName = document.getElementById('personal-admin').value;
+                    const personalEmail = document.getElementById('personal-email').value;
+                    const personalPhone = document.getElementById('personal-phone').value;            
+                    const ManagementName = document.getElementById('Management-admin').value;
+                    const ManagementEmail = document.getElementById('Management-email').value;
+                    const ManagementPhone = document.getElementById('Management-phone').value;
+                    
+                    if (!personalName || !personalEmail || !personalPhone  || !ManagementName || !ManagementEmail || !ManagementPhone) {
+                        alert('Please fill in all fields in Step 1 before proceeding.');
+                        return false;
+                    }else{
+                    return true;
+                }
 
+                } else if (tab === 'tab_2') {
+                    // Check inputs in tab 2
+                    const companyReg = document.getElementById('companyReg').value;
+                    const address = document.getElementById('address').value;
+                    const Payment = document.getElementById('Payment').value; 
+                    const City = document.getElementById('City').value;
+                    const Pincode  = document.getElementById('Pincode').value;
+                    const companyadmin = document.getElementById('companyadmin').value; 
+                    const Website = document.getElementById('Website').value;
+                    const Country  = document.getElementById('Country').value;
+                    const Nature = document.getElementById('Nature').value;
+                    
+                    if ( !companyReg || !address || !Payment || !City || !Pincode || !Country || !Website || !Nature  ) {
+                        alert('Please fill in all fields in Step 2 before proceeding.');
+                        return false;
+                    }else{
+                    return true;}
+                } else if (tab === 'tab_3') {
+                    // Check inputs in tab 3
+                    const Username = document.getElementById('Username').value;
+                    const password = document.getElementById('password').value;
+                    const confirmPassword = document.getElementById('confirm-password').value;
+                    if (!Username || !password || !confirmPassword) {
+                        alert('Please fill in all fields in Step 1 before proceeding.');
+                        return false;
+                    }else{
+                    return true;}
+                }
+            }
+        
 
                 
 
